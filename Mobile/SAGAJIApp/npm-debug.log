@@ -1,0 +1,1217 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Web\\External\\Node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Web\\External\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.3.4
+3 info using node@v5.4.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData cordova-plugin-compat
+20 silly mapToRegistry name cordova-plugin-compat
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-compat
+24 silly fetchNamedPackageData cordova-plugin-console
+25 silly mapToRegistry name cordova-plugin-console
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-console
+29 silly fetchNamedPackageData cordova-plugin-device
+30 silly mapToRegistry name cordova-plugin-device
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-device
+34 silly fetchNamedPackageData cordova-plugin-file
+35 silly mapToRegistry name cordova-plugin-file
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-file
+39 silly fetchNamedPackageData cordova-plugin-globalization
+40 silly mapToRegistry name cordova-plugin-globalization
+41 silly mapToRegistry using default registry
+42 silly mapToRegistry registry https://registry.npmjs.org/
+43 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-globalization
+44 silly fetchNamedPackageData cordova-plugin-network-information
+45 silly mapToRegistry name cordova-plugin-network-information
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-network-information
+49 silly fetchNamedPackageData cordova-plugin-splashscreen
+50 silly mapToRegistry name cordova-plugin-splashscreen
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-splashscreen
+54 silly fetchNamedPackageData cordova-plugin-statusbar
+55 silly mapToRegistry name cordova-plugin-statusbar
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npmjs.org/
+58 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-statusbar
+59 silly fetchNamedPackageData cordova-plugin-whitelist
+60 silly mapToRegistry name cordova-plugin-whitelist
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npmjs.org/
+63 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-whitelist
+64 silly fetchNamedPackageData cordova-plugin-x-toast
+65 silly mapToRegistry name cordova-plugin-x-toast
+66 silly mapToRegistry using default registry
+67 silly mapToRegistry registry https://registry.npmjs.org/
+68 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-x-toast
+69 silly fetchNamedPackageData cordova-sqlite-storage
+70 silly mapToRegistry name cordova-sqlite-storage
+71 silly mapToRegistry using default registry
+72 silly mapToRegistry registry https://registry.npmjs.org/
+73 silly mapToRegistry uri https://registry.npmjs.org/cordova-sqlite-storage
+74 silly fetchNamedPackageData ionic-plugin-keyboard
+75 silly mapToRegistry name ionic-plugin-keyboard
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry uri https://registry.npmjs.org/ionic-plugin-keyboard
+79 silly fetchNamedPackageData me.rahul.plugins.sqlDB
+80 silly mapToRegistry name me.rahul.plugins.sqlDB
+81 silly mapToRegistry using default registry
+82 silly mapToRegistry registry https://registry.npmjs.org/
+83 silly mapToRegistry uri https://registry.npmjs.org/me.rahul.plugins.sqlDB
+84 verbose request uri https://registry.npmjs.org/cordova-plugin-compat
+85 verbose request no auth needed
+86 info attempt registry request try #1 at 12:47:47
+87 verbose request id b76992fd66a4efde
+88 http request GET https://registry.npmjs.org/cordova-plugin-compat
+89 verbose request uri https://registry.npmjs.org/cordova-plugin-console
+90 verbose request no auth needed
+91 info attempt registry request try #1 at 12:47:55
+92 http request GET https://registry.npmjs.org/cordova-plugin-console
+93 verbose request uri https://registry.npmjs.org/cordova-plugin-device
+94 verbose request no auth needed
+95 info attempt registry request try #1 at 12:47:55
+96 http request GET https://registry.npmjs.org/cordova-plugin-device
+97 verbose request uri https://registry.npmjs.org/cordova-plugin-file
+98 verbose request no auth needed
+99 info attempt registry request try #1 at 12:47:55
+100 http request GET https://registry.npmjs.org/cordova-plugin-file
+101 verbose request uri https://registry.npmjs.org/cordova-plugin-globalization
+102 verbose request no auth needed
+103 info attempt registry request try #1 at 12:47:55
+104 http request GET https://registry.npmjs.org/cordova-plugin-globalization
+105 verbose request uri https://registry.npmjs.org/cordova-plugin-network-information
+106 verbose request no auth needed
+107 info attempt registry request try #1 at 12:47:55
+108 http request GET https://registry.npmjs.org/cordova-plugin-network-information
+109 verbose request uri https://registry.npmjs.org/cordova-plugin-splashscreen
+110 verbose request no auth needed
+111 info attempt registry request try #1 at 12:47:55
+112 http request GET https://registry.npmjs.org/cordova-plugin-splashscreen
+113 verbose request uri https://registry.npmjs.org/cordova-plugin-statusbar
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 12:47:55
+116 http request GET https://registry.npmjs.org/cordova-plugin-statusbar
+117 verbose request uri https://registry.npmjs.org/cordova-plugin-whitelist
+118 verbose request no auth needed
+119 info attempt registry request try #1 at 12:47:55
+120 http request GET https://registry.npmjs.org/cordova-plugin-whitelist
+121 verbose request uri https://registry.npmjs.org/cordova-plugin-x-toast
+122 verbose request no auth needed
+123 info attempt registry request try #1 at 12:47:55
+124 http request GET https://registry.npmjs.org/cordova-plugin-x-toast
+125 verbose request uri https://registry.npmjs.org/cordova-sqlite-storage
+126 verbose request no auth needed
+127 info attempt registry request try #1 at 12:47:55
+128 http request GET https://registry.npmjs.org/cordova-sqlite-storage
+129 verbose request uri https://registry.npmjs.org/ionic-plugin-keyboard
+130 verbose request no auth needed
+131 info attempt registry request try #1 at 12:47:55
+132 http request GET https://registry.npmjs.org/ionic-plugin-keyboard
+133 verbose request uri https://registry.npmjs.org/me.rahul.plugins.sqlDB
+134 verbose request no auth needed
+135 info attempt registry request try #1 at 12:47:55
+136 http request GET https://registry.npmjs.org/me.rahul.plugins.sqlDB
+137 http 200 https://registry.npmjs.org/cordova-plugin-whitelist
+138 verbose headers { server: 'nginx/1.10.1',
+138 verbose headers   'content-type': 'application/json',
+138 verbose headers   'last-modified': 'Thu, 18 May 2017 16:20:21 GMT',
+138 verbose headers   etag: 'W/"591dc9c5-4cb5"',
+138 verbose headers   'content-encoding': 'gzip',
+138 verbose headers   'cache-control': 'max-age=300',
+138 verbose headers   'content-length': '4419',
+138 verbose headers   'accept-ranges': 'bytes',
+138 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+138 verbose headers   via: '1.1 varnish',
+138 verbose headers   age: '297',
+138 verbose headers   connection: 'keep-alive',
+138 verbose headers   'x-served-by': 'cache-dfw1821-DFW',
+138 verbose headers   'x-cache': 'HIT',
+138 verbose headers   'x-cache-hits': '1',
+138 verbose headers   'x-timer': 'S1500918476.716334,VS0,VE1',
+138 verbose headers   vary: 'Accept-Encoding, Accept' }
+139 silly get cb [ 200,
+139 silly get   { server: 'nginx/1.10.1',
+139 silly get     'content-type': 'application/json',
+139 silly get     'last-modified': 'Thu, 18 May 2017 16:20:21 GMT',
+139 silly get     etag: 'W/"591dc9c5-4cb5"',
+139 silly get     'content-encoding': 'gzip',
+139 silly get     'cache-control': 'max-age=300',
+139 silly get     'content-length': '4419',
+139 silly get     'accept-ranges': 'bytes',
+139 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+139 silly get     via: '1.1 varnish',
+139 silly get     age: '297',
+139 silly get     connection: 'keep-alive',
+139 silly get     'x-served-by': 'cache-dfw1821-DFW',
+139 silly get     'x-cache': 'HIT',
+139 silly get     'x-cache-hits': '1',
+139 silly get     'x-timer': 'S1500918476.716334,VS0,VE1',
+139 silly get     vary: 'Accept-Encoding, Accept' } ]
+140 verbose get saving cordova-plugin-whitelist to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-plugin-whitelist\.cache.json
+141 http 200 https://registry.npmjs.org/cordova-plugin-statusbar
+142 verbose headers { server: 'nginx/1.10.1',
+142 verbose headers   'content-type': 'application/json',
+142 verbose headers   'last-modified': 'Fri, 14 Jul 2017 08:58:23 GMT',
+142 verbose headers   etag: 'W/"596887af-8ef9"',
+142 verbose headers   'content-encoding': 'gzip',
+142 verbose headers   'cache-control': 'max-age=300',
+142 verbose headers   'content-length': '5857',
+142 verbose headers   'accept-ranges': 'bytes',
+142 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+142 verbose headers   via: '1.1 varnish',
+142 verbose headers   age: '5',
+142 verbose headers   connection: 'keep-alive',
+142 verbose headers   'x-served-by': 'cache-dfw1844-DFW',
+142 verbose headers   'x-cache': 'HIT',
+142 verbose headers   'x-cache-hits': '1',
+142 verbose headers   'x-timer': 'S1500918476.715697,VS0,VE1',
+142 verbose headers   vary: 'Accept-Encoding, Accept' }
+143 silly get cb [ 200,
+143 silly get   { server: 'nginx/1.10.1',
+143 silly get     'content-type': 'application/json',
+143 silly get     'last-modified': 'Fri, 14 Jul 2017 08:58:23 GMT',
+143 silly get     etag: 'W/"596887af-8ef9"',
+143 silly get     'content-encoding': 'gzip',
+143 silly get     'cache-control': 'max-age=300',
+143 silly get     'content-length': '5857',
+143 silly get     'accept-ranges': 'bytes',
+143 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+143 silly get     via: '1.1 varnish',
+143 silly get     age: '5',
+143 silly get     connection: 'keep-alive',
+143 silly get     'x-served-by': 'cache-dfw1844-DFW',
+143 silly get     'x-cache': 'HIT',
+143 silly get     'x-cache-hits': '1',
+143 silly get     'x-timer': 'S1500918476.715697,VS0,VE1',
+143 silly get     vary: 'Accept-Encoding, Accept' } ]
+144 verbose get saving cordova-plugin-statusbar to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-plugin-statusbar\.cache.json
+145 http 200 https://registry.npmjs.org/ionic-plugin-keyboard
+146 verbose headers { server: 'nginx/1.10.1',
+146 verbose headers   'content-type': 'application/json',
+146 verbose headers   'last-modified': 'Mon, 22 May 2017 11:48:57 GMT',
+146 verbose headers   etag: 'W/"5922d029-4a90"',
+146 verbose headers   'content-encoding': 'gzip',
+146 verbose headers   'cache-control': 'max-age=300',
+146 verbose headers   'content-length': '3038',
+146 verbose headers   'accept-ranges': 'bytes',
+146 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+146 verbose headers   via: '1.1 varnish',
+146 verbose headers   age: '5',
+146 verbose headers   connection: 'keep-alive',
+146 verbose headers   'x-served-by': 'cache-dfw1829-DFW',
+146 verbose headers   'x-cache': 'HIT',
+146 verbose headers   'x-cache-hits': '1',
+146 verbose headers   'x-timer': 'S1500918476.723199,VS0,VE1',
+146 verbose headers   vary: 'Accept-Encoding, Accept' }
+147 silly get cb [ 200,
+147 silly get   { server: 'nginx/1.10.1',
+147 silly get     'content-type': 'application/json',
+147 silly get     'last-modified': 'Mon, 22 May 2017 11:48:57 GMT',
+147 silly get     etag: 'W/"5922d029-4a90"',
+147 silly get     'content-encoding': 'gzip',
+147 silly get     'cache-control': 'max-age=300',
+147 silly get     'content-length': '3038',
+147 silly get     'accept-ranges': 'bytes',
+147 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+147 silly get     via: '1.1 varnish',
+147 silly get     age: '5',
+147 silly get     connection: 'keep-alive',
+147 silly get     'x-served-by': 'cache-dfw1829-DFW',
+147 silly get     'x-cache': 'HIT',
+147 silly get     'x-cache-hits': '1',
+147 silly get     'x-timer': 'S1500918476.723199,VS0,VE1',
+147 silly get     vary: 'Accept-Encoding, Accept' } ]
+148 verbose get saving ionic-plugin-keyboard to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\ionic-plugin-keyboard\.cache.json
+149 http 200 https://registry.npmjs.org/cordova-plugin-device
+150 verbose headers { server: 'nginx/1.10.1',
+150 verbose headers   'content-type': 'application/json',
+150 verbose headers   'last-modified': 'Sat, 17 Jun 2017 16:38:07 GMT',
+150 verbose headers   etag: 'W/"59455aef-ad2e"',
+150 verbose headers   'content-encoding': 'gzip',
+150 verbose headers   'cache-control': 'max-age=300',
+150 verbose headers   'content-length': '6942',
+150 verbose headers   'accept-ranges': 'bytes',
+150 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+150 verbose headers   via: '1.1 varnish',
+150 verbose headers   age: '5',
+150 verbose headers   connection: 'keep-alive',
+150 verbose headers   'x-served-by': 'cache-dfw1820-DFW',
+150 verbose headers   'x-cache': 'HIT',
+150 verbose headers   'x-cache-hits': '1',
+150 verbose headers   'x-timer': 'S1500918476.723497,VS0,VE0',
+150 verbose headers   vary: 'Accept-Encoding, Accept' }
+151 silly get cb [ 200,
+151 silly get   { server: 'nginx/1.10.1',
+151 silly get     'content-type': 'application/json',
+151 silly get     'last-modified': 'Sat, 17 Jun 2017 16:38:07 GMT',
+151 silly get     etag: 'W/"59455aef-ad2e"',
+151 silly get     'content-encoding': 'gzip',
+151 silly get     'cache-control': 'max-age=300',
+151 silly get     'content-length': '6942',
+151 silly get     'accept-ranges': 'bytes',
+151 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+151 silly get     via: '1.1 varnish',
+151 silly get     age: '5',
+151 silly get     connection: 'keep-alive',
+151 silly get     'x-served-by': 'cache-dfw1820-DFW',
+151 silly get     'x-cache': 'HIT',
+151 silly get     'x-cache-hits': '1',
+151 silly get     'x-timer': 'S1500918476.723497,VS0,VE0',
+151 silly get     vary: 'Accept-Encoding, Accept' } ]
+152 verbose get saving cordova-plugin-device to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-plugin-device\.cache.json
+153 http 200 https://registry.npmjs.org/cordova-plugin-network-information
+154 verbose headers { server: 'nginx/1.10.1',
+154 verbose headers   'content-type': 'application/json',
+154 verbose headers   'last-modified': 'Sat, 17 Jun 2017 16:41:12 GMT',
+154 verbose headers   etag: 'W/"59455ba8-c503"',
+154 verbose headers   'content-encoding': 'gzip',
+154 verbose headers   'cache-control': 'max-age=300',
+154 verbose headers   'content-length': '7325',
+154 verbose headers   'accept-ranges': 'bytes',
+154 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+154 verbose headers   via: '1.1 varnish',
+154 verbose headers   age: '5',
+154 verbose headers   connection: 'keep-alive',
+154 verbose headers   'x-served-by': 'cache-dfw1846-DFW',
+154 verbose headers   'x-cache': 'HIT',
+154 verbose headers   'x-cache-hits': '1',
+154 verbose headers   'x-timer': 'S1500918476.716547,VS0,VE0',
+154 verbose headers   vary: 'Accept-Encoding, Accept' }
+155 silly get cb [ 200,
+155 silly get   { server: 'nginx/1.10.1',
+155 silly get     'content-type': 'application/json',
+155 silly get     'last-modified': 'Sat, 17 Jun 2017 16:41:12 GMT',
+155 silly get     etag: 'W/"59455ba8-c503"',
+155 silly get     'content-encoding': 'gzip',
+155 silly get     'cache-control': 'max-age=300',
+155 silly get     'content-length': '7325',
+155 silly get     'accept-ranges': 'bytes',
+155 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+155 silly get     via: '1.1 varnish',
+155 silly get     age: '5',
+155 silly get     connection: 'keep-alive',
+155 silly get     'x-served-by': 'cache-dfw1846-DFW',
+155 silly get     'x-cache': 'HIT',
+155 silly get     'x-cache-hits': '1',
+155 silly get     'x-timer': 'S1500918476.716547,VS0,VE0',
+155 silly get     vary: 'Accept-Encoding, Accept' } ]
+156 verbose get saving cordova-plugin-network-information to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-plugin-network-information\.cache.json
+157 http 200 https://registry.npmjs.org/cordova-plugin-splashscreen
+158 verbose headers { server: 'nginx/1.10.1',
+158 verbose headers   'content-type': 'application/json',
+158 verbose headers   'last-modified': 'Thu, 11 May 2017 21:00:48 GMT',
+158 verbose headers   etag: 'W/"5914d100-11845"',
+158 verbose headers   'content-encoding': 'gzip',
+158 verbose headers   'cache-control': 'max-age=300',
+158 verbose headers   'content-length': '12737',
+158 verbose headers   'accept-ranges': 'bytes',
+158 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+158 verbose headers   via: '1.1 varnish',
+158 verbose headers   age: '5',
+158 verbose headers   connection: 'keep-alive',
+158 verbose headers   'x-served-by': 'cache-dfw1847-DFW',
+158 verbose headers   'x-cache': 'HIT',
+158 verbose headers   'x-cache-hits': '1',
+158 verbose headers   'x-timer': 'S1500918476.715761,VS0,VE1',
+158 verbose headers   vary: 'Accept-Encoding, Accept' }
+159 silly get cb [ 200,
+159 silly get   { server: 'nginx/1.10.1',
+159 silly get     'content-type': 'application/json',
+159 silly get     'last-modified': 'Thu, 11 May 2017 21:00:48 GMT',
+159 silly get     etag: 'W/"5914d100-11845"',
+159 silly get     'content-encoding': 'gzip',
+159 silly get     'cache-control': 'max-age=300',
+159 silly get     'content-length': '12737',
+159 silly get     'accept-ranges': 'bytes',
+159 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+159 silly get     via: '1.1 varnish',
+159 silly get     age: '5',
+159 silly get     connection: 'keep-alive',
+159 silly get     'x-served-by': 'cache-dfw1847-DFW',
+159 silly get     'x-cache': 'HIT',
+159 silly get     'x-cache-hits': '1',
+159 silly get     'x-timer': 'S1500918476.715761,VS0,VE1',
+159 silly get     vary: 'Accept-Encoding, Accept' } ]
+160 verbose get saving cordova-plugin-splashscreen to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-plugin-splashscreen\.cache.json
+161 http 404 https://registry.npmjs.org/me.rahul.plugins.sqlDB
+162 verbose headers { 'content-type': 'application/json',
+162 verbose headers   'cache-control': 'max-age=0',
+162 verbose headers   'content-length': '2',
+162 verbose headers   'accept-ranges': 'bytes',
+162 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+162 verbose headers   via: '1.1 varnish',
+162 verbose headers   age: '0',
+162 verbose headers   connection: 'keep-alive',
+162 verbose headers   'x-served-by': 'cache-dfw1831-DFW',
+162 verbose headers   'x-cache': 'MISS',
+162 verbose headers   'x-cache-hits': '0',
+162 verbose headers   'x-timer': 'S1500918476.720454,VS0,VE227',
+162 verbose headers   vary: 'Accept-Encoding' }
+163 silly get cb [ 404,
+163 silly get   { 'content-type': 'application/json',
+163 silly get     'cache-control': 'max-age=0',
+163 silly get     'content-length': '2',
+163 silly get     'accept-ranges': 'bytes',
+163 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+163 silly get     via: '1.1 varnish',
+163 silly get     age: '0',
+163 silly get     connection: 'keep-alive',
+163 silly get     'x-served-by': 'cache-dfw1831-DFW',
+163 silly get     'x-cache': 'MISS',
+163 silly get     'x-cache-hits': '0',
+163 silly get     'x-timer': 'S1500918476.720454,VS0,VE227',
+163 silly get     vary: 'Accept-Encoding' } ]
+164 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/me.rahul.plugins.sqlDB
+164 silly fetchPackageMetaData     at makeError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\npm-registry-client\lib\request.js:264:12)
+164 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\npm-registry-client\lib\request.js:242:14)
+164 silly fetchPackageMetaData     at Request._callback (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\npm-registry-client\lib\request.js:172:14)
+164 silly fetchPackageMetaData     at Request.self.callback (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\request.js:344:22)
+164 silly fetchPackageMetaData     at emitTwo (events.js:87:13)
+164 silly fetchPackageMetaData     at Request.emit (events.js:172:7)
+164 silly fetchPackageMetaData     at Request.<anonymous> (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\request.js:1239:14)
+164 silly fetchPackageMetaData     at emitOne (events.js:82:20)
+164 silly fetchPackageMetaData     at Request.emit (events.js:169:7)
+164 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\request.js:1187:12)
+164 silly fetchPackageMetaData  error for me.rahul.plugins.sqlDB@1.0.3 { [Error: Registry returned 404 for GET on https://registry.npmjs.org/me.rahul.plugins.sqlDB]
+164 silly fetchPackageMetaData   pkgid: 'me.rahul.plugins.sqlDB',
+164 silly fetchPackageMetaData   statusCode: 404,
+164 silly fetchPackageMetaData   code: 'E404' }
+165 http 200 https://registry.npmjs.org/cordova-plugin-compat
+166 verbose headers { server: 'nginx/1.10.1',
+166 verbose headers   'content-type': 'application/json',
+166 verbose headers   'last-modified': 'Mon, 29 May 2017 22:46:25 GMT',
+166 verbose headers   etag: 'W/"592ca4c1-15a5"',
+166 verbose headers   'content-encoding': 'gzip',
+166 verbose headers   'cache-control': 'max-age=300',
+166 verbose headers   'content-length': '1784',
+166 verbose headers   'accept-ranges': 'bytes',
+166 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+166 verbose headers   via: '1.1 varnish',
+166 verbose headers   age: '260',
+166 verbose headers   connection: 'keep-alive',
+166 verbose headers   'x-served-by': 'cache-dfw1832-DFW',
+166 verbose headers   'x-cache': 'HIT',
+166 verbose headers   'x-cache-hits': '1',
+166 verbose headers   'x-timer': 'S1500918476.802830,VS0,VE1',
+166 verbose headers   vary: 'Accept-Encoding, Accept' }
+167 silly get cb [ 200,
+167 silly get   { server: 'nginx/1.10.1',
+167 silly get     'content-type': 'application/json',
+167 silly get     'last-modified': 'Mon, 29 May 2017 22:46:25 GMT',
+167 silly get     etag: 'W/"592ca4c1-15a5"',
+167 silly get     'content-encoding': 'gzip',
+167 silly get     'cache-control': 'max-age=300',
+167 silly get     'content-length': '1784',
+167 silly get     'accept-ranges': 'bytes',
+167 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+167 silly get     via: '1.1 varnish',
+167 silly get     age: '260',
+167 silly get     connection: 'keep-alive',
+167 silly get     'x-served-by': 'cache-dfw1832-DFW',
+167 silly get     'x-cache': 'HIT',
+167 silly get     'x-cache-hits': '1',
+167 silly get     'x-timer': 'S1500918476.802830,VS0,VE1',
+167 silly get     vary: 'Accept-Encoding, Accept' } ]
+168 verbose get saving cordova-plugin-compat to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-plugin-compat\.cache.json
+169 http 200 https://registry.npmjs.org/cordova-plugin-x-toast
+170 verbose headers { server: 'nginx/1.10.1',
+170 verbose headers   'content-type': 'application/json',
+170 verbose headers   'last-modified': 'Sat, 18 Feb 2017 20:24:39 GMT',
+170 verbose headers   etag: 'W/"58a8ad87-8bf5"',
+170 verbose headers   'content-encoding': 'gzip',
+170 verbose headers   'cache-control': 'max-age=300',
+170 verbose headers   'content-length': '7247',
+170 verbose headers   'accept-ranges': 'bytes',
+170 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+170 verbose headers   via: '1.1 varnish',
+170 verbose headers   age: '0',
+170 verbose headers   connection: 'keep-alive',
+170 verbose headers   'x-served-by': 'cache-dfw1833-DFW',
+170 verbose headers   'x-cache': 'MISS',
+170 verbose headers   'x-cache-hits': '0',
+170 verbose headers   'x-timer': 'S1500918476.719434,VS0,VE33',
+170 verbose headers   vary: 'Accept-Encoding, Accept' }
+171 silly get cb [ 200,
+171 silly get   { server: 'nginx/1.10.1',
+171 silly get     'content-type': 'application/json',
+171 silly get     'last-modified': 'Sat, 18 Feb 2017 20:24:39 GMT',
+171 silly get     etag: 'W/"58a8ad87-8bf5"',
+171 silly get     'content-encoding': 'gzip',
+171 silly get     'cache-control': 'max-age=300',
+171 silly get     'content-length': '7247',
+171 silly get     'accept-ranges': 'bytes',
+171 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+171 silly get     via: '1.1 varnish',
+171 silly get     age: '0',
+171 silly get     connection: 'keep-alive',
+171 silly get     'x-served-by': 'cache-dfw1833-DFW',
+171 silly get     'x-cache': 'MISS',
+171 silly get     'x-cache-hits': '0',
+171 silly get     'x-timer': 'S1500918476.719434,VS0,VE33',
+171 silly get     vary: 'Accept-Encoding, Accept' } ]
+172 verbose get saving cordova-plugin-x-toast to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-plugin-x-toast\.cache.json
+173 http 200 https://registry.npmjs.org/cordova-plugin-globalization
+174 verbose headers { server: 'nginx/1.10.1',
+174 verbose headers   'content-type': 'application/json',
+174 verbose headers   'last-modified': 'Tue, 02 May 2017 00:40:42 GMT',
+174 verbose headers   etag: 'W/"5907d58a-fd50"',
+174 verbose headers   'content-encoding': 'gzip',
+174 verbose headers   'cache-control': 'max-age=300',
+174 verbose headers   'content-length': '10171',
+174 verbose headers   'accept-ranges': 'bytes',
+174 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+174 verbose headers   via: '1.1 varnish',
+174 verbose headers   age: '0',
+174 verbose headers   connection: 'keep-alive',
+174 verbose headers   'x-served-by': 'cache-dfw1834-DFW',
+174 verbose headers   'x-cache': 'HIT',
+174 verbose headers   'x-cache-hits': '1',
+174 verbose headers   'x-timer': 'S1500918476.714085,VS0,VE33',
+174 verbose headers   vary: 'Accept-Encoding, Accept' }
+175 silly get cb [ 200,
+175 silly get   { server: 'nginx/1.10.1',
+175 silly get     'content-type': 'application/json',
+175 silly get     'last-modified': 'Tue, 02 May 2017 00:40:42 GMT',
+175 silly get     etag: 'W/"5907d58a-fd50"',
+175 silly get     'content-encoding': 'gzip',
+175 silly get     'cache-control': 'max-age=300',
+175 silly get     'content-length': '10171',
+175 silly get     'accept-ranges': 'bytes',
+175 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+175 silly get     via: '1.1 varnish',
+175 silly get     age: '0',
+175 silly get     connection: 'keep-alive',
+175 silly get     'x-served-by': 'cache-dfw1834-DFW',
+175 silly get     'x-cache': 'HIT',
+175 silly get     'x-cache-hits': '1',
+175 silly get     'x-timer': 'S1500918476.714085,VS0,VE33',
+175 silly get     vary: 'Accept-Encoding, Accept' } ]
+176 verbose get saving cordova-plugin-globalization to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-plugin-globalization\.cache.json
+177 http 200 https://registry.npmjs.org/cordova-plugin-console
+178 verbose headers { server: 'nginx/1.10.1',
+178 verbose headers   'content-type': 'application/json',
+178 verbose headers   'last-modified': 'Wed, 28 Jun 2017 14:24:16 GMT',
+178 verbose headers   etag: 'W/"5953bc10-8017"',
+178 verbose headers   'content-encoding': 'gzip',
+178 verbose headers   'cache-control': 'max-age=300',
+178 verbose headers   'content-length': '4896',
+178 verbose headers   'accept-ranges': 'bytes',
+178 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+178 verbose headers   via: '1.1 varnish',
+178 verbose headers   age: '5',
+178 verbose headers   connection: 'keep-alive',
+178 verbose headers   'x-served-by': 'cache-dfw1843-DFW',
+178 verbose headers   'x-cache': 'HIT',
+178 verbose headers   'x-cache-hits': '1',
+178 verbose headers   'x-timer': 'S1500918476.869642,VS0,VE0',
+178 verbose headers   vary: 'Accept-Encoding, Accept' }
+179 silly get cb [ 200,
+179 silly get   { server: 'nginx/1.10.1',
+179 silly get     'content-type': 'application/json',
+179 silly get     'last-modified': 'Wed, 28 Jun 2017 14:24:16 GMT',
+179 silly get     etag: 'W/"5953bc10-8017"',
+179 silly get     'content-encoding': 'gzip',
+179 silly get     'cache-control': 'max-age=300',
+179 silly get     'content-length': '4896',
+179 silly get     'accept-ranges': 'bytes',
+179 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+179 silly get     via: '1.1 varnish',
+179 silly get     age: '5',
+179 silly get     connection: 'keep-alive',
+179 silly get     'x-served-by': 'cache-dfw1843-DFW',
+179 silly get     'x-cache': 'HIT',
+179 silly get     'x-cache-hits': '1',
+179 silly get     'x-timer': 'S1500918476.869642,VS0,VE0',
+179 silly get     vary: 'Accept-Encoding, Accept' } ]
+180 verbose get saving cordova-plugin-console to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-plugin-console\.cache.json
+181 http 200 https://registry.npmjs.org/cordova-plugin-file
+182 verbose headers { server: 'nginx/1.10.1',
+182 verbose headers   'content-type': 'application/json',
+182 verbose headers   'last-modified': 'Wed, 28 Jun 2017 07:34:54 GMT',
+182 verbose headers   etag: 'W/"59535c1e-1462f"',
+182 verbose headers   'content-encoding': 'gzip',
+182 verbose headers   'cache-control': 'max-age=300',
+182 verbose headers   'content-length': '17564',
+182 verbose headers   'accept-ranges': 'bytes',
+182 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+182 verbose headers   via: '1.1 varnish',
+182 verbose headers   age: '5',
+182 verbose headers   connection: 'keep-alive',
+182 verbose headers   'x-served-by': 'cache-dfw1829-DFW',
+182 verbose headers   'x-cache': 'HIT',
+182 verbose headers   'x-cache-hits': '1',
+182 verbose headers   'x-timer': 'S1500918476.769477,VS0,VE1',
+182 verbose headers   vary: 'Accept-Encoding, Accept' }
+183 silly get cb [ 200,
+183 silly get   { server: 'nginx/1.10.1',
+183 silly get     'content-type': 'application/json',
+183 silly get     'last-modified': 'Wed, 28 Jun 2017 07:34:54 GMT',
+183 silly get     etag: 'W/"59535c1e-1462f"',
+183 silly get     'content-encoding': 'gzip',
+183 silly get     'cache-control': 'max-age=300',
+183 silly get     'content-length': '17564',
+183 silly get     'accept-ranges': 'bytes',
+183 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+183 silly get     via: '1.1 varnish',
+183 silly get     age: '5',
+183 silly get     connection: 'keep-alive',
+183 silly get     'x-served-by': 'cache-dfw1829-DFW',
+183 silly get     'x-cache': 'HIT',
+183 silly get     'x-cache-hits': '1',
+183 silly get     'x-timer': 'S1500918476.769477,VS0,VE1',
+183 silly get     vary: 'Accept-Encoding, Accept' } ]
+184 verbose get saving cordova-plugin-file to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-plugin-file\.cache.json
+185 http 200 https://registry.npmjs.org/cordova-sqlite-storage
+186 verbose headers { server: 'nginx/1.10.1',
+186 verbose headers   'content-type': 'application/json',
+186 verbose headers   'last-modified': 'Sat, 17 Jun 2017 17:14:21 GMT',
+186 verbose headers   etag: 'W/"5945636d-1cb5b"',
+186 verbose headers   'content-encoding': 'gzip',
+186 verbose headers   'cache-control': 'max-age=300',
+186 verbose headers   'content-length': '24640',
+186 verbose headers   'accept-ranges': 'bytes',
+186 verbose headers   date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+186 verbose headers   via: '1.1 varnish',
+186 verbose headers   age: '261',
+186 verbose headers   connection: 'keep-alive',
+186 verbose headers   'x-served-by': 'cache-dfw1832-DFW',
+186 verbose headers   'x-cache': 'HIT',
+186 verbose headers   'x-cache-hits': '1',
+186 verbose headers   'x-timer': 'S1500918476.723990,VS0,VE1',
+186 verbose headers   vary: 'Accept-Encoding, Accept' }
+187 silly get cb [ 200,
+187 silly get   { server: 'nginx/1.10.1',
+187 silly get     'content-type': 'application/json',
+187 silly get     'last-modified': 'Sat, 17 Jun 2017 17:14:21 GMT',
+187 silly get     etag: 'W/"5945636d-1cb5b"',
+187 silly get     'content-encoding': 'gzip',
+187 silly get     'cache-control': 'max-age=300',
+187 silly get     'content-length': '24640',
+187 silly get     'accept-ranges': 'bytes',
+187 silly get     date: 'Mon, 24 Jul 2017 17:47:55 GMT',
+187 silly get     via: '1.1 varnish',
+187 silly get     age: '261',
+187 silly get     connection: 'keep-alive',
+187 silly get     'x-served-by': 'cache-dfw1832-DFW',
+187 silly get     'x-cache': 'HIT',
+187 silly get     'x-cache-hits': '1',
+187 silly get     'x-timer': 'S1500918476.723990,VS0,VE1',
+187 silly get     vary: 'Accept-Encoding, Accept' } ]
+188 verbose get saving cordova-sqlite-storage to C:\Users\edgar.salazar\AppData\Roaming\npm-cache\registry.npmjs.org\cordova-sqlite-storage\.cache.json
+189 silly resolveWithNewModule cordova-plugin-statusbar@2.1.3 checking installable status
+190 silly cache add args [ 'cordova-plugin-statusbar@~2.1.3', null ]
+191 verbose cache add spec cordova-plugin-statusbar@~2.1.3
+192 silly cache add parsed spec Result {
+192 silly cache add   raw: 'cordova-plugin-statusbar@~2.1.3',
+192 silly cache add   scope: null,
+192 silly cache add   name: 'cordova-plugin-statusbar',
+192 silly cache add   rawSpec: '~2.1.3',
+192 silly cache add   spec: '>=2.1.3-0 <2.2.0-0',
+192 silly cache add   type: 'range' }
+193 silly addNamed cordova-plugin-statusbar@>=2.1.3-0 <2.2.0-0
+194 verbose addNamed ">=2.1.3-0 <2.2.0-0" is a valid semver range for cordova-plugin-statusbar
+195 silly addNameRange { name: 'cordova-plugin-statusbar',
+195 silly addNameRange   range: '>=2.1.3-0 <2.2.0-0',
+195 silly addNameRange   hasData: false }
+196 silly mapToRegistry name cordova-plugin-statusbar
+197 silly mapToRegistry using default registry
+198 silly mapToRegistry registry https://registry.npmjs.org/
+199 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-statusbar
+200 verbose addNameRange registry:https://registry.npmjs.org/cordova-plugin-statusbar not in flight; fetching
+201 silly resolveWithNewModule cordova-plugin-network-information@1.2.1 checking installable status
+202 silly cache add args [ 'cordova-plugin-network-information@1.2.1', null ]
+203 verbose cache add spec cordova-plugin-network-information@1.2.1
+204 silly cache add parsed spec Result {
+204 silly cache add   raw: 'cordova-plugin-network-information@1.2.1',
+204 silly cache add   scope: null,
+204 silly cache add   name: 'cordova-plugin-network-information',
+204 silly cache add   rawSpec: '1.2.1',
+204 silly cache add   spec: '1.2.1',
+204 silly cache add   type: 'version' }
+205 silly addNamed cordova-plugin-network-information@1.2.1
+206 verbose addNamed "1.2.1" is a plain semver version for cordova-plugin-network-information
+207 silly mapToRegistry name cordova-plugin-network-information
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-network-information
+211 verbose addNameVersion registry:https://registry.npmjs.org/cordova-plugin-network-information not in flight; fetching
+212 silly resolveWithNewModule cordova-plugin-device@1.1.6 checking installable status
+213 silly cache add args [ 'cordova-plugin-device@~1.1.2', null ]
+214 verbose cache add spec cordova-plugin-device@~1.1.2
+215 silly cache add parsed spec Result {
+215 silly cache add   raw: 'cordova-plugin-device@~1.1.2',
+215 silly cache add   scope: null,
+215 silly cache add   name: 'cordova-plugin-device',
+215 silly cache add   rawSpec: '~1.1.2',
+215 silly cache add   spec: '>=1.1.2-0 <1.2.0-0',
+215 silly cache add   type: 'range' }
+216 silly addNamed cordova-plugin-device@>=1.1.2-0 <1.2.0-0
+217 verbose addNamed ">=1.1.2-0 <1.2.0-0" is a valid semver range for cordova-plugin-device
+218 silly addNameRange { name: 'cordova-plugin-device',
+218 silly addNameRange   range: '>=1.1.2-0 <1.2.0-0',
+218 silly addNameRange   hasData: false }
+219 silly mapToRegistry name cordova-plugin-device
+220 silly mapToRegistry using default registry
+221 silly mapToRegistry registry https://registry.npmjs.org/
+222 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-device
+223 verbose addNameRange registry:https://registry.npmjs.org/cordova-plugin-device not in flight; fetching
+224 silly resolveWithNewModule cordova-plugin-whitelist@1.2.2 checking installable status
+225 silly cache add args [ 'cordova-plugin-whitelist@~1.2.2', null ]
+226 verbose cache add spec cordova-plugin-whitelist@~1.2.2
+227 silly cache add parsed spec Result {
+227 silly cache add   raw: 'cordova-plugin-whitelist@~1.2.2',
+227 silly cache add   scope: null,
+227 silly cache add   name: 'cordova-plugin-whitelist',
+227 silly cache add   rawSpec: '~1.2.2',
+227 silly cache add   spec: '>=1.2.2-0 <1.3.0-0',
+227 silly cache add   type: 'range' }
+228 silly addNamed cordova-plugin-whitelist@>=1.2.2-0 <1.3.0-0
+229 verbose addNamed ">=1.2.2-0 <1.3.0-0" is a valid semver range for cordova-plugin-whitelist
+230 silly addNameRange { name: 'cordova-plugin-whitelist',
+230 silly addNameRange   range: '>=1.2.2-0 <1.3.0-0',
+230 silly addNameRange   hasData: false }
+231 silly mapToRegistry name cordova-plugin-whitelist
+232 silly mapToRegistry using default registry
+233 silly mapToRegistry registry https://registry.npmjs.org/
+234 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-whitelist
+235 verbose addNameRange registry:https://registry.npmjs.org/cordova-plugin-whitelist not in flight; fetching
+236 silly resolveWithNewModule ionic-plugin-keyboard@2.2.1 checking installable status
+237 silly cache add args [ 'ionic-plugin-keyboard@~2.2.1', null ]
+238 verbose cache add spec ionic-plugin-keyboard@~2.2.1
+239 silly cache add parsed spec Result {
+239 silly cache add   raw: 'ionic-plugin-keyboard@~2.2.1',
+239 silly cache add   scope: null,
+239 silly cache add   name: 'ionic-plugin-keyboard',
+239 silly cache add   rawSpec: '~2.2.1',
+239 silly cache add   spec: '>=2.2.1-0 <2.3.0-0',
+239 silly cache add   type: 'range' }
+240 silly addNamed ionic-plugin-keyboard@>=2.2.1-0 <2.3.0-0
+241 verbose addNamed ">=2.2.1-0 <2.3.0-0" is a valid semver range for ionic-plugin-keyboard
+242 silly addNameRange { name: 'ionic-plugin-keyboard',
+242 silly addNameRange   range: '>=2.2.1-0 <2.3.0-0',
+242 silly addNameRange   hasData: false }
+243 silly mapToRegistry name ionic-plugin-keyboard
+244 silly mapToRegistry using default registry
+245 silly mapToRegistry registry https://registry.npmjs.org/
+246 silly mapToRegistry uri https://registry.npmjs.org/ionic-plugin-keyboard
+247 verbose addNameRange registry:https://registry.npmjs.org/ionic-plugin-keyboard not in flight; fetching
+248 silly resolveWithNewModule cordova-plugin-splashscreen@3.2.2 checking installable status
+249 silly cache add args [ 'cordova-plugin-splashscreen@~3.2.2', null ]
+250 verbose cache add spec cordova-plugin-splashscreen@~3.2.2
+251 silly cache add parsed spec Result {
+251 silly cache add   raw: 'cordova-plugin-splashscreen@~3.2.2',
+251 silly cache add   scope: null,
+251 silly cache add   name: 'cordova-plugin-splashscreen',
+251 silly cache add   rawSpec: '~3.2.2',
+251 silly cache add   spec: '>=3.2.2-0 <3.3.0-0',
+251 silly cache add   type: 'range' }
+252 silly addNamed cordova-plugin-splashscreen@>=3.2.2-0 <3.3.0-0
+253 verbose addNamed ">=3.2.2-0 <3.3.0-0" is a valid semver range for cordova-plugin-splashscreen
+254 silly addNameRange { name: 'cordova-plugin-splashscreen',
+254 silly addNameRange   range: '>=3.2.2-0 <3.3.0-0',
+254 silly addNameRange   hasData: false }
+255 silly mapToRegistry name cordova-plugin-splashscreen
+256 silly mapToRegistry using default registry
+257 silly mapToRegistry registry https://registry.npmjs.org/
+258 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-splashscreen
+259 verbose addNameRange registry:https://registry.npmjs.org/cordova-plugin-splashscreen not in flight; fetching
+260 silly resolveWithNewModule cordova-plugin-compat@1.0.0 checking installable status
+261 silly cache add args [ 'cordova-plugin-compat@1.0.0', null ]
+262 verbose cache add spec cordova-plugin-compat@1.0.0
+263 silly cache add parsed spec Result {
+263 silly cache add   raw: 'cordova-plugin-compat@1.0.0',
+263 silly cache add   scope: null,
+263 silly cache add   name: 'cordova-plugin-compat',
+263 silly cache add   rawSpec: '1.0.0',
+263 silly cache add   spec: '1.0.0',
+263 silly cache add   type: 'version' }
+264 silly addNamed cordova-plugin-compat@1.0.0
+265 verbose addNamed "1.0.0" is a plain semver version for cordova-plugin-compat
+266 silly mapToRegistry name cordova-plugin-compat
+267 silly mapToRegistry using default registry
+268 silly mapToRegistry registry https://registry.npmjs.org/
+269 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-compat
+270 verbose addNameVersion registry:https://registry.npmjs.org/cordova-plugin-compat not in flight; fetching
+271 silly resolveWithNewModule cordova-plugin-x-toast@2.5.2 checking installable status
+272 silly cache add args [ 'cordova-plugin-x-toast@2.5.2', null ]
+273 verbose cache add spec cordova-plugin-x-toast@2.5.2
+274 silly cache add parsed spec Result {
+274 silly cache add   raw: 'cordova-plugin-x-toast@2.5.2',
+274 silly cache add   scope: null,
+274 silly cache add   name: 'cordova-plugin-x-toast',
+274 silly cache add   rawSpec: '2.5.2',
+274 silly cache add   spec: '2.5.2',
+274 silly cache add   type: 'version' }
+275 silly addNamed cordova-plugin-x-toast@2.5.2
+276 verbose addNamed "2.5.2" is a plain semver version for cordova-plugin-x-toast
+277 silly mapToRegistry name cordova-plugin-x-toast
+278 silly mapToRegistry using default registry
+279 silly mapToRegistry registry https://registry.npmjs.org/
+280 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-x-toast
+281 verbose addNameVersion registry:https://registry.npmjs.org/cordova-plugin-x-toast not in flight; fetching
+282 silly resolveWithNewModule cordova-plugin-globalization@1.0.3 checking installable status
+283 silly cache add args [ 'cordova-plugin-globalization@1.0.3', null ]
+284 verbose cache add spec cordova-plugin-globalization@1.0.3
+285 silly cache add parsed spec Result {
+285 silly cache add   raw: 'cordova-plugin-globalization@1.0.3',
+285 silly cache add   scope: null,
+285 silly cache add   name: 'cordova-plugin-globalization',
+285 silly cache add   rawSpec: '1.0.3',
+285 silly cache add   spec: '1.0.3',
+285 silly cache add   type: 'version' }
+286 silly addNamed cordova-plugin-globalization@1.0.3
+287 verbose addNamed "1.0.3" is a plain semver version for cordova-plugin-globalization
+288 silly mapToRegistry name cordova-plugin-globalization
+289 silly mapToRegistry using default registry
+290 silly mapToRegistry registry https://registry.npmjs.org/
+291 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-globalization
+292 verbose addNameVersion registry:https://registry.npmjs.org/cordova-plugin-globalization not in flight; fetching
+293 silly resolveWithNewModule cordova-plugin-console@1.0.7 checking installable status
+294 silly cache add args [ 'cordova-plugin-console@~1.0.3', null ]
+295 verbose cache add spec cordova-plugin-console@~1.0.3
+296 silly cache add parsed spec Result {
+296 silly cache add   raw: 'cordova-plugin-console@~1.0.3',
+296 silly cache add   scope: null,
+296 silly cache add   name: 'cordova-plugin-console',
+296 silly cache add   rawSpec: '~1.0.3',
+296 silly cache add   spec: '>=1.0.3-0 <1.1.0-0',
+296 silly cache add   type: 'range' }
+297 silly addNamed cordova-plugin-console@>=1.0.3-0 <1.1.0-0
+298 verbose addNamed ">=1.0.3-0 <1.1.0-0" is a valid semver range for cordova-plugin-console
+299 silly addNameRange { name: 'cordova-plugin-console',
+299 silly addNameRange   range: '>=1.0.3-0 <1.1.0-0',
+299 silly addNameRange   hasData: false }
+300 silly mapToRegistry name cordova-plugin-console
+301 silly mapToRegistry using default registry
+302 silly mapToRegistry registry https://registry.npmjs.org/
+303 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-console
+304 verbose addNameRange registry:https://registry.npmjs.org/cordova-plugin-console not in flight; fetching
+305 verbose get https://registry.npmjs.org/cordova-plugin-statusbar not expired, no request
+306 silly addNameRange number 2 { name: 'cordova-plugin-statusbar',
+306 silly addNameRange   range: '>=2.1.3-0 <2.2.0-0',
+306 silly addNameRange   hasData: true }
+307 silly addNameRange versions [ 'cordova-plugin-statusbar',
+307 silly addNameRange   [ '0.1.10',
+307 silly addNameRange     '0.1.5',
+307 silly addNameRange     '0.1.6',
+307 silly addNameRange     '0.1.7',
+307 silly addNameRange     '0.1.8',
+307 silly addNameRange     '0.1.9',
+307 silly addNameRange     '1.0.0',
+307 silly addNameRange     '1.0.1',
+307 silly addNameRange     '2.0.0',
+307 silly addNameRange     '2.1.0',
+307 silly addNameRange     '2.1.1',
+307 silly addNameRange     '2.1.2',
+307 silly addNameRange     '2.1.3',
+307 silly addNameRange     '2.2.0',
+307 silly addNameRange     '2.2.1',
+307 silly addNameRange     '2.2.2',
+307 silly addNameRange     '2.2.3' ] ]
+308 silly addNamed cordova-plugin-statusbar@2.1.3
+309 verbose addNamed "2.1.3" is a plain semver version for cordova-plugin-statusbar
+310 verbose get https://registry.npmjs.org/cordova-plugin-device not expired, no request
+311 silly addNameRange number 2 { name: 'cordova-plugin-device',
+311 silly addNameRange   range: '>=1.1.2-0 <1.2.0-0',
+311 silly addNameRange   hasData: true }
+312 silly addNameRange versions [ 'cordova-plugin-device',
+312 silly addNameRange   [ '0.2.13',
+312 silly addNameRange     '0.2.1',
+312 silly addNameRange     '0.2.10',
+312 silly addNameRange     '0.2.11',
+312 silly addNameRange     '0.2.12',
+312 silly addNameRange     '0.2.3',
+312 silly addNameRange     '0.2.4',
+312 silly addNameRange     '0.2.5',
+312 silly addNameRange     '0.2.6',
+312 silly addNameRange     '0.2.7',
+312 silly addNameRange     '0.2.8',
+312 silly addNameRange     '0.2.9',
+312 silly addNameRange     '0.3.0',
+312 silly addNameRange     '1.0.0',
+312 silly addNameRange     '1.0.1',
+312 silly addNameRange     '1.1.0',
+312 silly addNameRange     '1.1.1',
+312 silly addNameRange     '1.1.2',
+312 silly addNameRange     '1.1.3',
+312 silly addNameRange     '1.1.4',
+312 silly addNameRange     '1.1.5',
+312 silly addNameRange     '1.1.6' ] ]
+313 silly addNamed cordova-plugin-device@1.1.6
+314 verbose addNamed "1.1.6" is a plain semver version for cordova-plugin-device
+315 verbose get https://registry.npmjs.org/cordova-plugin-network-information not expired, no request
+316 verbose get https://registry.npmjs.org/cordova-plugin-whitelist not expired, no request
+317 silly addNameRange number 2 { name: 'cordova-plugin-whitelist',
+317 silly addNameRange   range: '>=1.2.2-0 <1.3.0-0',
+317 silly addNameRange   hasData: true }
+318 silly addNameRange versions [ 'cordova-plugin-whitelist',
+318 silly addNameRange   [ '1.0.0',
+318 silly addNameRange     '1.1.0',
+318 silly addNameRange     '1.2.0',
+318 silly addNameRange     '1.2.1',
+318 silly addNameRange     '1.2.2',
+318 silly addNameRange     '1.3.0',
+318 silly addNameRange     '1.3.1',
+318 silly addNameRange     '1.3.2' ] ]
+319 silly addNamed cordova-plugin-whitelist@1.2.2
+320 verbose addNamed "1.2.2" is a plain semver version for cordova-plugin-whitelist
+321 verbose get https://registry.npmjs.org/ionic-plugin-keyboard not expired, no request
+322 silly addNameRange number 2 { name: 'ionic-plugin-keyboard',
+322 silly addNameRange   range: '>=2.2.1-0 <2.3.0-0',
+322 silly addNameRange   hasData: true }
+323 silly addNameRange versions [ 'ionic-plugin-keyboard',
+323 silly addNameRange   [ '1.0.4',
+323 silly addNameRange     '1.0.5',
+323 silly addNameRange     '1.0.6',
+323 silly addNameRange     '1.0.7',
+323 silly addNameRange     '1.0.8',
+323 silly addNameRange     '2.0.0',
+323 silly addNameRange     '2.0.1',
+323 silly addNameRange     '1.0.9',
+323 silly addNameRange     '2.1.0',
+323 silly addNameRange     '2.2.0',
+323 silly addNameRange     '2.2.1' ] ]
+324 silly addNamed ionic-plugin-keyboard@2.2.1
+325 verbose addNamed "2.2.1" is a plain semver version for ionic-plugin-keyboard
+326 verbose get https://registry.npmjs.org/cordova-plugin-splashscreen not expired, no request
+327 silly addNameRange number 2 { name: 'cordova-plugin-splashscreen',
+327 silly addNameRange   range: '>=3.2.2-0 <3.3.0-0',
+327 silly addNameRange   hasData: true }
+328 silly addNameRange versions [ 'cordova-plugin-splashscreen',
+328 silly addNameRange   [ '0.2.0',
+328 silly addNameRange     '0.2.2',
+328 silly addNameRange     '0.2.3',
+328 silly addNameRange     '0.2.4',
+328 silly addNameRange     '0.2.5',
+328 silly addNameRange     '0.2.6',
+328 silly addNameRange     '0.2.7',
+328 silly addNameRange     '0.3.0',
+328 silly addNameRange     '0.3.1',
+328 silly addNameRange     '0.3.2',
+328 silly addNameRange     '0.3.3',
+328 silly addNameRange     '0.3.4',
+328 silly addNameRange     '0.3.5',
+328 silly addNameRange     '1.0.0',
+328 silly addNameRange     '2.0.0',
+328 silly addNameRange     '2.1.0',
+328 silly addNameRange     '3.0.0',
+328 silly addNameRange     '3.1.0',
+328 silly addNameRange     '3.2.0',
+328 silly addNameRange     '3.2.1',
+328 silly addNameRange     '3.2.2',
+328 silly addNameRange     '4.0.0',
+328 silly addNameRange     '4.0.1',
+328 silly addNameRange     '4.0.2',
+328 silly addNameRange     '4.0.3' ] ]
+329 silly addNamed cordova-plugin-splashscreen@3.2.2
+330 verbose addNamed "3.2.2" is a plain semver version for cordova-plugin-splashscreen
+331 silly mapToRegistry name cordova-plugin-statusbar
+332 silly mapToRegistry using default registry
+333 silly mapToRegistry registry https://registry.npmjs.org/
+334 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-statusbar
+335 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-statusbar/-/cordova-plugin-statusbar-2.1.3.tgz not in flight; adding
+336 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-statusbar/-/cordova-plugin-statusbar-2.1.3.tgz',
+336 verbose addRemoteTarball   '97044a8caf14d53a347296f6fcb15ef5cd3eab88' ]
+337 silly mapToRegistry name cordova-plugin-device
+338 silly mapToRegistry using default registry
+339 silly mapToRegistry registry https://registry.npmjs.org/
+340 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-device
+341 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-device/-/cordova-plugin-device-1.1.6.tgz not in flight; adding
+342 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-device/-/cordova-plugin-device-1.1.6.tgz',
+342 verbose addRemoteTarball   '2d21764cad7c9b801523e4e09a30e024b249334b' ]
+343 silly mapToRegistry name cordova-plugin-network-information
+344 silly mapToRegistry using default registry
+345 silly mapToRegistry registry https://registry.npmjs.org/
+346 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-network-information
+347 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-network-information/-/cordova-plugin-network-information-1.2.1.tgz not in flight; adding
+348 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-network-information/-/cordova-plugin-network-information-1.2.1.tgz',
+348 verbose addRemoteTarball   '1fd7b72af0662415b955c57638f7b7767c843d98' ]
+349 silly mapToRegistry name cordova-plugin-whitelist
+350 silly mapToRegistry using default registry
+351 silly mapToRegistry registry https://registry.npmjs.org/
+352 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-whitelist
+353 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-whitelist/-/cordova-plugin-whitelist-1.2.2.tgz not in flight; adding
+354 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-whitelist/-/cordova-plugin-whitelist-1.2.2.tgz',
+354 verbose addRemoteTarball   '08593fc9578856209d437b76c8b047529f19f623' ]
+355 silly mapToRegistry name ionic-plugin-keyboard
+356 silly mapToRegistry using default registry
+357 silly mapToRegistry registry https://registry.npmjs.org/
+358 silly mapToRegistry uri https://registry.npmjs.org/ionic-plugin-keyboard
+359 verbose addRemoteTarball https://registry.npmjs.org/ionic-plugin-keyboard/-/ionic-plugin-keyboard-2.2.1.tgz not in flight; adding
+360 verbose addRemoteTarball [ 'https://registry.npmjs.org/ionic-plugin-keyboard/-/ionic-plugin-keyboard-2.2.1.tgz',
+360 verbose addRemoteTarball   'f2a9e169bbe9b5522400347c9fd6d3467ee3fa12' ]
+361 silly mapToRegistry name cordova-plugin-splashscreen
+362 silly mapToRegistry using default registry
+363 silly mapToRegistry registry https://registry.npmjs.org/
+364 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-splashscreen
+365 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-splashscreen/-/cordova-plugin-splashscreen-3.2.2.tgz not in flight; adding
+366 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-splashscreen/-/cordova-plugin-splashscreen-3.2.2.tgz',
+366 verbose addRemoteTarball   'd5638bfb08bdbc9ab3e7da30c2174be64cf027b0' ]
+367 silly resolveWithNewModule cordova-plugin-file@4.2.0 checking installable status
+368 silly cache add args [ 'cordova-plugin-file@4.2.0', null ]
+369 verbose cache add spec cordova-plugin-file@4.2.0
+370 silly cache add parsed spec Result {
+370 silly cache add   raw: 'cordova-plugin-file@4.2.0',
+370 silly cache add   scope: null,
+370 silly cache add   name: 'cordova-plugin-file',
+370 silly cache add   rawSpec: '4.2.0',
+370 silly cache add   spec: '4.2.0',
+370 silly cache add   type: 'version' }
+371 silly addNamed cordova-plugin-file@4.2.0
+372 verbose addNamed "4.2.0" is a plain semver version for cordova-plugin-file
+373 silly mapToRegistry name cordova-plugin-file
+374 silly mapToRegistry using default registry
+375 silly mapToRegistry registry https://registry.npmjs.org/
+376 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-file
+377 verbose addNameVersion registry:https://registry.npmjs.org/cordova-plugin-file not in flight; fetching
+378 verbose get https://registry.npmjs.org/cordova-plugin-compat not expired, no request
+379 silly mapToRegistry name cordova-plugin-compat
+380 silly mapToRegistry using default registry
+381 silly mapToRegistry registry https://registry.npmjs.org/
+382 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-compat
+383 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-compat/-/cordova-plugin-compat-1.0.0.tgz not in flight; adding
+384 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-compat/-/cordova-plugin-compat-1.0.0.tgz',
+384 verbose addRemoteTarball   '54b773fa6a212fe8e60ad496bacb57aa01da4232' ]
+385 verbose get https://registry.npmjs.org/cordova-plugin-x-toast not expired, no request
+386 verbose get https://registry.npmjs.org/cordova-plugin-globalization not expired, no request
+387 verbose get https://registry.npmjs.org/cordova-plugin-console not expired, no request
+388 silly addNameRange number 2 { name: 'cordova-plugin-console',
+388 silly addNameRange   range: '>=1.0.3-0 <1.1.0-0',
+388 silly addNameRange   hasData: true }
+389 silly addNameRange versions [ 'cordova-plugin-console',
+389 silly addNameRange   [ '0.2.0',
+389 silly addNameRange     '0.2.10',
+389 silly addNameRange     '0.2.11',
+389 silly addNameRange     '0.2.12',
+389 silly addNameRange     '0.2.13',
+389 silly addNameRange     '0.2.3',
+389 silly addNameRange     '0.2.4',
+389 silly addNameRange     '0.2.5',
+389 silly addNameRange     '0.2.6',
+389 silly addNameRange     '0.2.7',
+389 silly addNameRange     '0.2.8',
+389 silly addNameRange     '0.2.9',
+389 silly addNameRange     '1.0.0',
+389 silly addNameRange     '1.0.1',
+389 silly addNameRange     '1.0.2',
+389 silly addNameRange     '1.0.3',
+389 silly addNameRange     '1.0.4',
+389 silly addNameRange     '1.0.5',
+389 silly addNameRange     '1.0.6',
+389 silly addNameRange     '1.0.7' ] ]
+390 silly addNamed cordova-plugin-console@1.0.7
+391 verbose addNamed "1.0.7" is a plain semver version for cordova-plugin-console
+392 silly mapToRegistry name cordova-plugin-x-toast
+393 silly mapToRegistry using default registry
+394 silly mapToRegistry registry https://registry.npmjs.org/
+395 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-x-toast
+396 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-x-toast/-/cordova-plugin-x-toast-2.5.2.tgz not in flight; adding
+397 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-x-toast/-/cordova-plugin-x-toast-2.5.2.tgz',
+397 verbose addRemoteTarball   'd41b0455cad4bc67562771c40ec316ef219c323b' ]
+398 silly mapToRegistry name cordova-plugin-globalization
+399 silly mapToRegistry using default registry
+400 silly mapToRegistry registry https://registry.npmjs.org/
+401 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-globalization
+402 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-globalization/-/cordova-plugin-globalization-1.0.3.tgz not in flight; adding
+403 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-globalization/-/cordova-plugin-globalization-1.0.3.tgz',
+403 verbose addRemoteTarball   '9bc319fb93273be3f8cc71da83b1b76ca50ddde9' ]
+404 silly mapToRegistry name cordova-plugin-console
+405 silly mapToRegistry using default registry
+406 silly mapToRegistry registry https://registry.npmjs.org/
+407 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-console
+408 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-console/-/cordova-plugin-console-1.0.7.tgz not in flight; adding
+409 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-console/-/cordova-plugin-console-1.0.7.tgz',
+409 verbose addRemoteTarball   '89b7a92ed1c335888dfc00d902dc417201cf3b0b' ]
+410 silly fetchPackageMetaData Error: No compatible version found: cordova-sqlite-storage@1.4.8-pre2
+410 silly fetchPackageMetaData Valid install targets:
+410 silly fetchPackageMetaData ["2.0.4","2.0.3","2.0.2","2.0.1","2.0.0","2.0.0-edge01","1.5.3","1.5.2","1.5.1","1.5.0","1.4.9","1.4.8","1.4.7","1.4.6","1.4.6-pre6a","1.4.6-pre5","1.4.5","1.4.4","1.4.3","1.4.2","1.4.1","1.4.0","1.2.2","1.2.1","1.2.0","0.8.5","0.8.2","0.8.0","0.7.14","0.7.14-pre","0.7.13","0.7.12","0.7.11","0.7.10","0.7.9","0.7.8"]
+410 silly fetchPackageMetaData
+410 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\npm\lib\fetch-package-metadata.js:146:16)
+410 silly fetchPackageMetaData     at C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\iferr\index.js:13:50
+410 silly fetchPackageMetaData     at C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\npm\lib\utils\pulse-till-done.js:19:8
+410 silly fetchPackageMetaData     at saved (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\npm\lib\cache\caching-client.js:168:7)
+410 silly fetchPackageMetaData     at C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\npm\node_modules\graceful-fs\polyfills.js:210:7
+410 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+410 silly fetchPackageMetaData  error for cordova-sqlite-storage@1.4.8-pre2 [Error: No compatible version found: cordova-sqlite-storage@1.4.8-pre2
+410 silly fetchPackageMetaData Valid install targets:
+410 silly fetchPackageMetaData ["2.0.4","2.0.3","2.0.2","2.0.1","2.0.0","2.0.0-edge01","1.5.3","1.5.2","1.5.1","1.5.0","1.4.9","1.4.8","1.4.7","1.4.6","1.4.6-pre6a","1.4.6-pre5","1.4.5","1.4.4","1.4.3","1.4.2","1.4.1","1.4.0","1.2.2","1.2.1","1.2.0","0.8.5","0.8.2","0.8.0","0.7.14","0.7.14-pre","0.7.13","0.7.12","0.7.11","0.7.10","0.7.9","0.7.8"]
+410 silly fetchPackageMetaData ]
+411 verbose get https://registry.npmjs.org/cordova-plugin-file not expired, no request
+412 info retry fetch attempt 1 at 12:47:56
+413 info attempt registry request try #1 at 12:47:56
+414 http fetch GET https://registry.npmjs.org/cordova-plugin-statusbar/-/cordova-plugin-statusbar-2.1.3.tgz
+415 silly mapToRegistry name cordova-plugin-file
+416 silly mapToRegistry using default registry
+417 silly mapToRegistry registry https://registry.npmjs.org/
+418 silly mapToRegistry uri https://registry.npmjs.org/cordova-plugin-file
+419 verbose addRemoteTarball https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-4.2.0.tgz not in flight; adding
+420 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-4.2.0.tgz',
+420 verbose addRemoteTarball   'df4e45b144e35dcfef7b4ae950cda96ea8ee9b1a' ]
+421 info retry fetch attempt 1 at 12:47:56
+422 info attempt registry request try #1 at 12:47:56
+423 http fetch GET https://registry.npmjs.org/cordova-plugin-console/-/cordova-plugin-console-1.0.7.tgz
+424 info retry fetch attempt 1 at 12:47:56
+425 info attempt registry request try #1 at 12:47:56
+426 http fetch GET https://registry.npmjs.org/cordova-plugin-x-toast/-/cordova-plugin-x-toast-2.5.2.tgz
+427 info retry fetch attempt 1 at 12:47:56
+428 info attempt registry request try #1 at 12:47:56
+429 http fetch GET https://registry.npmjs.org/cordova-plugin-globalization/-/cordova-plugin-globalization-1.0.3.tgz
+430 info retry fetch attempt 1 at 12:47:56
+431 info attempt registry request try #1 at 12:47:56
+432 http fetch GET https://registry.npmjs.org/cordova-plugin-compat/-/cordova-plugin-compat-1.0.0.tgz
+433 info retry fetch attempt 1 at 12:47:56
+434 info attempt registry request try #1 at 12:47:56
+435 http fetch GET https://registry.npmjs.org/cordova-plugin-device/-/cordova-plugin-device-1.1.6.tgz
+436 info retry fetch attempt 1 at 12:47:56
+437 info attempt registry request try #1 at 12:47:56
+438 http fetch GET https://registry.npmjs.org/ionic-plugin-keyboard/-/ionic-plugin-keyboard-2.2.1.tgz
+439 info retry fetch attempt 1 at 12:47:56
+440 info attempt registry request try #1 at 12:47:56
+441 http fetch GET https://registry.npmjs.org/cordova-plugin-whitelist/-/cordova-plugin-whitelist-1.2.2.tgz
+442 info retry fetch attempt 1 at 12:47:56
+443 info attempt registry request try #1 at 12:47:56
+444 http fetch GET https://registry.npmjs.org/cordova-plugin-splashscreen/-/cordova-plugin-splashscreen-3.2.2.tgz
+445 info retry fetch attempt 1 at 12:47:56
+446 info attempt registry request try #1 at 12:47:56
+447 http fetch GET https://registry.npmjs.org/cordova-plugin-network-information/-/cordova-plugin-network-information-1.2.1.tgz
+448 info retry fetch attempt 1 at 12:47:56
+449 info attempt registry request try #1 at 12:47:56
+450 http fetch GET https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-4.2.0.tgz
+451 http fetch 200 https://registry.npmjs.org/cordova-plugin-statusbar/-/cordova-plugin-statusbar-2.1.3.tgz
+452 http fetch 200 https://registry.npmjs.org/cordova-plugin-console/-/cordova-plugin-console-1.0.7.tgz
+453 http fetch 200 https://registry.npmjs.org/cordova-plugin-compat/-/cordova-plugin-compat-1.0.0.tgz
+454 http fetch 200 https://registry.npmjs.org/cordova-plugin-device/-/cordova-plugin-device-1.1.6.tgz
+455 http fetch 200 https://registry.npmjs.org/cordova-plugin-whitelist/-/cordova-plugin-whitelist-1.2.2.tgz
+456 http fetch 200 https://registry.npmjs.org/cordova-plugin-network-information/-/cordova-plugin-network-information-1.2.1.tgz
+457 http fetch 200 https://registry.npmjs.org/cordova-plugin-splashscreen/-/cordova-plugin-splashscreen-3.2.2.tgz
+458 http fetch 200 https://registry.npmjs.org/ionic-plugin-keyboard/-/ionic-plugin-keyboard-2.2.1.tgz
+459 silly fetchAndShaCheck shasum 54b773fa6a212fe8e60ad496bacb57aa01da4232
+460 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\cordova-plugin-compat\-\cordova-plugin-compat-1.0.0.tgz not in flight; adding
+461 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-compat@1.0.0
+462 silly fetchAndShaCheck shasum 89b7a92ed1c335888dfc00d902dc417201cf3b0b
+463 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\cordova-plugin-console\-\cordova-plugin-console-1.0.7.tgz not in flight; adding
+464 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-console@1.0.7
+465 silly cache afterAdd cordova-plugin-compat@1.0.0
+466 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-compat\1.0.0\package\package.json not in flight; writing
+467 silly fetchAndShaCheck shasum 97044a8caf14d53a347296f6fcb15ef5cd3eab88
+468 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\cordova-plugin-statusbar\-\cordova-plugin-statusbar-2.1.3.tgz not in flight; adding
+469 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-statusbar@2.1.3
+470 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-compat\1.0.0\package\package.json written
+471 silly fetchAndShaCheck shasum 08593fc9578856209d437b76c8b047529f19f623
+472 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\cordova-plugin-whitelist\-\cordova-plugin-whitelist-1.2.2.tgz not in flight; adding
+473 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-whitelist@1.2.2
+474 silly cache afterAdd cordova-plugin-console@1.0.7
+475 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-console\1.0.7\package\package.json not in flight; writing
+476 silly cache afterAdd cordova-plugin-statusbar@2.1.3
+477 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-statusbar\2.1.3\package\package.json not in flight; writing
+478 silly fetchAndShaCheck shasum 2d21764cad7c9b801523e4e09a30e024b249334b
+479 silly fetchAndShaCheck shasum 1fd7b72af0662415b955c57638f7b7767c843d98
+480 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-console\1.0.7\package\package.json written
+481 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\cordova-plugin-device\-\cordova-plugin-device-1.1.6.tgz not in flight; adding
+482 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-device@1.1.6
+483 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-statusbar\2.1.3\package\package.json written
+484 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\cordova-plugin-network-information\-\cordova-plugin-network-information-1.2.1.tgz not in flight; adding
+485 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-network-information@1.2.1
+486 silly cache afterAdd cordova-plugin-whitelist@1.2.2
+487 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-whitelist\1.2.2\package\package.json not in flight; writing
+488 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-whitelist\1.2.2\package\package.json written
+489 silly cache afterAdd cordova-plugin-device@1.1.6
+490 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-device\1.1.6\package\package.json not in flight; writing
+491 silly cache afterAdd cordova-plugin-network-information@1.2.1
+492 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-network-information\1.2.1\package\package.json not in flight; writing
+493 silly fetchAndShaCheck shasum d5638bfb08bdbc9ab3e7da30c2174be64cf027b0
+494 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-device\1.1.6\package\package.json written
+495 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-network-information\1.2.1\package\package.json written
+496 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\cordova-plugin-splashscreen\-\cordova-plugin-splashscreen-3.2.2.tgz not in flight; adding
+497 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-splashscreen@3.2.2
+498 silly cache afterAdd cordova-plugin-splashscreen@3.2.2
+499 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-splashscreen\3.2.2\package\package.json not in flight; writing
+500 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-splashscreen\3.2.2\package\package.json written
+501 http fetch 200 https://registry.npmjs.org/cordova-plugin-file/-/cordova-plugin-file-4.2.0.tgz
+502 http fetch 200 https://registry.npmjs.org/cordova-plugin-globalization/-/cordova-plugin-globalization-1.0.3.tgz
+503 silly fetchAndShaCheck shasum f2a9e169bbe9b5522400347c9fd6d3467ee3fa12
+504 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\ionic-plugin-keyboard\-\ionic-plugin-keyboard-2.2.1.tgz not in flight; adding
+505 verbose addTmpTarball already have metadata; skipping unpack for ionic-plugin-keyboard@2.2.1
+506 silly cache afterAdd ionic-plugin-keyboard@2.2.1
+507 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\ionic-plugin-keyboard\2.2.1\package\package.json not in flight; writing
+508 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\ionic-plugin-keyboard\2.2.1\package\package.json written
+509 silly fetchAndShaCheck shasum df4e45b144e35dcfef7b4ae950cda96ea8ee9b1a
+510 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\cordova-plugin-file\-\cordova-plugin-file-4.2.0.tgz not in flight; adding
+511 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-file@4.2.0
+512 silly cache afterAdd cordova-plugin-file@4.2.0
+513 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-file\4.2.0\package\package.json not in flight; writing
+514 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-file\4.2.0\package\package.json written
+515 http fetch 200 https://registry.npmjs.org/cordova-plugin-x-toast/-/cordova-plugin-x-toast-2.5.2.tgz
+516 silly fetchAndShaCheck shasum 9bc319fb93273be3f8cc71da83b1b76ca50ddde9
+517 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\cordova-plugin-globalization\-\cordova-plugin-globalization-1.0.3.tgz not in flight; adding
+518 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-globalization@1.0.3
+519 silly cache afterAdd cordova-plugin-globalization@1.0.3
+520 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-globalization\1.0.3\package\package.json not in flight; writing
+521 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-globalization\1.0.3\package\package.json written
+522 silly fetchAndShaCheck shasum d41b0455cad4bc67562771c40ec316ef219c323b
+523 verbose addTmpTarball C:\Users\EDGAR~1.SAL\AppData\Local\Temp\npm-9372-6242cd6f\registry.npmjs.org\cordova-plugin-x-toast\-\cordova-plugin-x-toast-2.5.2.tgz not in flight; adding
+524 verbose addTmpTarball already have metadata; skipping unpack for cordova-plugin-x-toast@2.5.2
+525 silly cache afterAdd cordova-plugin-x-toast@2.5.2
+526 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-x-toast\2.5.2\package\package.json not in flight; writing
+527 verbose afterAdd C:\Users\edgar.salazar\AppData\Roaming\npm-cache\cordova-plugin-x-toast\2.5.2\package\package.json written
+528 silly rollbackFailedOptional Starting
+529 silly rollbackFailedOptional Finishing
+530 silly runTopLevelLifecycles Starting
+531 silly runTopLevelLifecycles Finishing
+532 silly install printInstalled
+533 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/me.rahul.plugins.sqlDB
+533 verbose stack     at makeError (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\npm-registry-client\lib\request.js:264:12)
+533 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\npm-registry-client\lib\request.js:242:14)
+533 verbose stack     at Request._callback (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\npm-registry-client\lib\request.js:172:14)
+533 verbose stack     at Request.self.callback (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\request.js:344:22)
+533 verbose stack     at emitTwo (events.js:87:13)
+533 verbose stack     at Request.emit (events.js:172:7)
+533 verbose stack     at Request.<anonymous> (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\request.js:1239:14)
+533 verbose stack     at emitOne (events.js:82:20)
+533 verbose stack     at Request.emit (events.js:169:7)
+533 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Web\External\node_modules\request\request.js:1187:12)
+534 verbose statusCode 404
+535 verbose pkgid me.rahul.plugins.sqlDB
+536 verbose cwd C:\Users\edgar.salazar\Desktop\HH\Mobile\SAGAJIApp
+537 error Windows_NT 6.1.7601
+538 error argv "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Web\\External\\Node.exe" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Community\\Web\\External\\node_modules\\npm\\bin\\npm-cli.js" "install"
+539 error node v5.4.1
+540 error npm  v3.3.4
+541 error code E404
+542 error 404 Registry returned 404 for GET on https://registry.npmjs.org/me.rahul.plugins.sqlDB
+542 error 404
+542 error 404 'me.rahul.plugins.sqlDB' is not in the npm registry.
+542 error 404 Your package name is not valid, because
+542 error 404
+542 error 404  1. name can no longer contain capital letters
+542 error 404 It was specified as a dependency of 'sagaji.app'
+542 error 404
+542 error 404 Note that you can also install from a
+542 error 404 tarball, folder, http url, or git url.
+543 verbose exit [ 1, true ]

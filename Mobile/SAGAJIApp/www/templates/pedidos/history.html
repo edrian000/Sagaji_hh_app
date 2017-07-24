@@ -1,0 +1,51 @@
+﻿<ion-view view-title="Historico de pedidos : {{loginData}}" cache-view="false">
+    <ion-header-bar class="bar-light bar-subheader">
+        <input type="search" placeholder="Número de cliente"
+               ng-model="SearchFilter" />
+        <button class="button button-icon ion-search"ng-disabled="SearchFilter.length === 0" ng-click="Search(SearchFilter)"></button>
+    </ion-header-bar>
+    <ion-content class="has-header" scroll="true" >
+        <h4>Pedidos enviados</h4>
+        <ion-list>
+
+            <div ng-repeat="item in History track by item.CvePedido">
+                <ion-item class="item item-icon-left" ng-click="clickMe(item)">
+                    <i class="icon" ng-class="togglePlus(item)"></i>
+                    <small>
+                        {{item.Cliente.NoCliente}} : {{item.Cliente.Nombre}}
+                    </small>
+                </ion-item>
+                <ion-item class="item-button-right" ng-show="isGroupShowing(item)">
+                    <p>
+                        <small>Partidas: {{item.Partidas.length}}</small>
+                        <br />
+                        <small>IVA: <strong>{{item.Iva|currency}}</strong> </small>
+                        <br />
+                        <small>Subtotal: <strong>{{item.SubTotal|currency}}</strong> </small>
+                        <br />
+                        <small>Total: <strong>{{item.Total|currency}}</strong> </small>
+                        <br />
+                        <small>Fecha de captura: <strong>{{item.FechaCaptura|date:'dd/MM/y'}}</strong> </small>
+                    </p>
+
+                    <a ng-click="cloneMe(item)" class="button button-dark">
+                        <i class="icon ion-android-sync"></i>
+                    </a>
+                </ion-item>
+                <ion-item class="item-accordion ico" ng-show="isGroupShowing(item)"
+                          ng-repeat="partida in item.Partidas track by partida.Codigo">
+                    <p>
+                        <small>
+                            Codigo: <strong>{{partida.Codigo}} - {{partida.Descripcion}}</strong>
+                        </small>
+                        <small>
+                            Cantidad: <strong>{{partida.Cantidad}} : {{partida.Linea}}</strong>
+                        </small>
+                    </p>
+
+
+                </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,52 @@
+﻿<ion-view title="Catalogos / Sincronización">
+    <ion-content >
+        <h5>{{Dashboard.Status}}</h5>
+        <div class="button-bar">
+            <button class="button button-balanced" ng-click="SyncAll('domicilios')" ng-disabled="IsRunning">
+                <i class="icon ion-ios-loop-strong"> Sincronizar todo</i>
+            </button>
+        </div>
+        <ion-list class="list">
+
+            <ion-item class="item item-button-right">
+                <p>
+                    {{Dashboard.Products}}
+                </p>
+                <button class="button button-balanced" ng-click="SyncCatalogo('productos')" ng-disabled="IsRunning">
+                    <i class="icon ion-ios-loop-strong"> Sincronizar productos/Equivalencias</i>
+                </button>
+            </ion-item>
+
+            <ion-item class="item item-button-right">
+                <p>
+                    {{Dashboard.Equivalencias}}
+                </p>
+                <button class="button button-balanced" ng-click="SyncCatalogo('existencias')" ng-disabled="IsRunning">
+                    <i class="icon ion-ios-loop-strong"> Sincronizar existencias</i>
+                </button>
+            </ion-item>
+
+            <ion-item class="item item-button-right">
+                <p>
+                    {{Dashboard.Carteras}}
+                </p>
+                <button class="button button-balanced" ng-click="SyncCatalogo('Clientes/Carteras/Domicilios')" ng-disabled="IsRunning">
+                    <i class="icon ion-ios-loop-strong"> Sincronizar carteras</i>
+                </button>
+            </ion-item>
+
+            <ion-item class="item item-button-right">
+                <p>
+                    {{Dashboard.Devoluciones}}
+                </p>
+                <button class="button button-balanced" ng-click="SyncCatalogo('Devoluciones')" ng-disabled="IsRunning">
+                    <i class="icon ion-ios-loop-strong"> Sincronizar Devoluciones</i>
+                </button>
+            </ion-item>
+
+            
+
+        </ion-list>
+
+    </ion-content>
+</ion-view>

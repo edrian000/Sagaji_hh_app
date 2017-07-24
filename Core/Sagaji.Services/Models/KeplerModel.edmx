@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="KEPLERModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="KDII">
+          <Key>
+            <PropertyRef Name="C1" />
+          </Key>
+          <Property Name="C1" Type="char" MaxLength="18" Nullable="false" />
+          <Property Name="C2" Type="char" MaxLength="200" />
+          <Property Name="C3" Type="char" MaxLength="5" />
+          <Property Name="C4" Type="char" MaxLength="5" />
+          <Property Name="C5" Type="char" MaxLength="5" />
+          <Property Name="C6" Type="char" MaxLength="18" />
+          <Property Name="C7" Type="char" MaxLength="18" />
+          <Property Name="C8" Type="char" MaxLength="7" />
+          <Property Name="C9" Type="char" MaxLength="7" />
+          <Property Name="C10" Type="char" MaxLength="20" />
+          <Property Name="C11" Type="char" MaxLength="3" />
+          <Property Name="C12" Type="char" MaxLength="3" />
+          <Property Name="C13" Type="float" />
+          <Property Name="C14" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="C15" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="C16" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="C17" Type="decimal" Precision="13" Scale="2" />
+          <Property Name="C18" Type="float" />
+          <Property Name="C19" Type="float" />
+          <Property Name="C20" Type="char" MaxLength="5" />
+          <Property Name="C21" Type="char" MaxLength="1" />
+          <Property Name="C22" Type="char" MaxLength="1" />
+          <Property Name="C23" Type="decimal" Precision="15" Scale="6" />
+          <Property Name="C24" Type="float" />
+          <Property Name="C25" Type="char" MaxLength="18" />
+          <Property Name="C26" Type="char" MaxLength="18" />
+          <Property Name="C27" Type="char" MaxLength="1" />
+          <Property Name="C28" Type="char" MaxLength="17" />
+          <Property Name="C29" Type="float" />
+          <Property Name="C30" Type="char" MaxLength="7" />
+          <Property Name="C31" Type="char" MaxLength="5" />
+          <Property Name="C32" Type="char" MaxLength="60" />
+          <Property Name="C33" Type="decimal" Precision="13" Scale="0" />
+          <Property Name="C34" Type="decimal" Precision="13" Scale="0" />
+          <Property Name="C35" Type="decimal" Precision="13" Scale="0" />
+          <Property Name="C36" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="C37" Type="char" MaxLength="5" />
+          <Property Name="C38" Type="char" MaxLength="5" />
+          <Property Name="C39" Type="char" MaxLength="60" />
+          <Property Name="C40" Type="char" MaxLength="60" />
+          <Property Name="C41" Type="char" MaxLength="60" />
+          <Property Name="C42" Type="float" />
+          <Property Name="C43" Type="char" MaxLength="1" />
+          <Property Name="C44" Type="decimal" Precision="1" Scale="0" />
+          <Property Name="C45" Type="char" MaxLength="20" />
+          <Property Name="C46" Type="char" MaxLength="3" />
+          <Property Name="C47" Type="char" MaxLength="3" />
+          <Property Name="C48" Type="char" MaxLength="1" />
+          <Property Name="C49" Type="char" MaxLength="1" />
+          <Property Name="C50" Type="datetime" />
+          <Property Name="C51" Type="char" MaxLength="1" />
+          <Property Name="C52" Type="decimal" Precision="2" Scale="0" />
+          <Property Name="C53" Type="decimal" Precision="5" Scale="0" />
+          <Property Name="C54" Type="decimal" Precision="5" Scale="0" />
+          <Property Name="C55" Type="decimal" Precision="5" Scale="0" />
+          <Property Name="C56" Type="datetime" />
+          <Property Name="C57" Type="decimal" Precision="5" Scale="0" />
+          <Property Name="C58" Type="decimal" Precision="5" Scale="0" />
+          <Property Name="C59" Type="decimal" Precision="5" Scale="0" />
+          <Property Name="C60" Type="datetime" />
+          <Property Name="C61" Type="decimal" Precision="5" Scale="0" />
+          <Property Name="C62" Type="decimal" Precision="5" Scale="0" />
+          <Property Name="C63" Type="decimal" Precision="5" Scale="0" />
+          <Property Name="C64" Type="datetime" />
+          <Property Name="C65" Type="datetime" />
+          <Property Name="C66" Type="float" />
+          <Property Name="C67" Type="decimal" Precision="1" Scale="0" />
+          <Property Name="C68" Type="decimal" Precision="7" Scale="0" />
+          <Property Name="C69" Type="char" MaxLength="1" />
+          <Property Name="C70" Type="char" MaxLength="30" />
+          <Property Name="C71" Type="char" MaxLength="1" />
+          <Property Name="C72" Type="char" MaxLength="1" />
+          <Property Name="C73" Type="char" MaxLength="1" />
+          <Property Name="C74" Type="char" MaxLength="1" />
+          <Property Name="C75" Type="char" MaxLength="1" />
+          <Property Name="C76" Type="char" MaxLength="1" />
+          <Property Name="C77" Type="char" MaxLength="1" />
+          <Property Name="C78" Type="char" MaxLength="1" />
+          <Property Name="C79" Type="char" MaxLength="1" />
+          <Property Name="C80" Type="decimal" Precision="15" Scale="0" />
+          <Property Name="C81" Type="char" MaxLength="1" />
+          <Property Name="C82" Type="char" MaxLength="1" />
+          <Property Name="C83" Type="char" MaxLength="1" />
+          <Property Name="C84" Type="char" MaxLength="1" />
+          <Property Name="C85" Type="char" MaxLength="1" />
+          <Property Name="C86" Type="char" MaxLength="1" />
+          <Property Name="C87" Type="char" MaxLength="1" />
+          <Property Name="C88" Type="char" MaxLength="1" />
+          <Property Name="C89" Type="char" MaxLength="10" />
+          <Property Name="C90" Type="char" MaxLength="10" />
+          <Property Name="C91" Type="char" MaxLength="10" />
+          <Property Name="C92" Type="char" MaxLength="10" />
+          <Property Name="C93" Type="char" MaxLength="10" />
+          <Property Name="C94" Type="char" MaxLength="10" />
+          <Property Name="C95" Type="char" MaxLength="10" />
+          <Property Name="C96" Type="char" MaxLength="1" />
+          <Property Name="C97" Type="char" MaxLength="1" />
+          <Property Name="C98" Type="char" MaxLength="1" />
+          <Property Name="C99" Type="char" MaxLength="1" />
+          <Property Name="C100" Type="char" MaxLength="1" />
+          <Property Name="C101" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="C102" Type="char" MaxLength="1" />
+          <Property Name="C103" Type="decimal" Precision="5" Scale="2" />
+          <Property Name="C104" Type="char" MaxLength="10" />
+          <Property Name="C105" Type="decimal" Precision="6" Scale="4" />
+          <Property Name="C106" Type="decimal" Precision="6" Scale="4" />
+        </EntityType>
+        <EntityType Name="KDUDENT">
+          <Key>
+            <PropertyRef Name="C1" />
+            <PropertyRef Name="C2" />
+          </Key>
+          <Property Name="C1" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="C2" Type="char" MaxLength="10" Nullable="false" />
+          <Property Name="C3" Type="char" MaxLength="90" />
+          <Property Name="C4" Type="char" MaxLength="90" />
+          <Property Name="C5" Type="char" MaxLength="90" />
+          <Property Name="C6" Type="char" MaxLength="30" />
+          <Property Name="C7" Type="char" MaxLength="30" />
+          <Property Name="C8" Type="char" MaxLength="90" />
+          <Property Name="C9" Type="char" MaxLength="90" />
+          <Property Name="C10" Type="char" MaxLength="244" />
+          <Property Name="C11" Type="char" MaxLength="10" />
+          <Property Name="C12" Type="char" MaxLength="30" />
+          <Property Name="C13" Type="char" MaxLength="30" />
+          <Property Name="C14" Type="char" MaxLength="18" />
+          <Property Name="C15" Type="decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'KEPLER.dbo.KIUSRS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="KIUSRS">
+          <Key>
+            <PropertyRef Name="C1" />
+          </Key>
+          <Property Name="C1" Type="char" MaxLength="35" Nullable="false" />
+          <Property Name="C2" Type="char" MaxLength="15" />
+          <Property Name="C3" Type="char" MaxLength="40" />
+          <Property Name="C4" Type="char" MaxLength="40" />
+          <Property Name="C5" Type="char" MaxLength="12" />
+        </EntityType>
+        <EntityContainer Name="KEPLERModelStoreContainer">
+          <EntitySet Name="KDII" EntityType="Self.KDII" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KDUDENT" EntityType="Self.KDUDENT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="KIUSRS" EntityType="Self.KIUSRS" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [KIUSRS].[C1] AS [C1], 
+    [KIUSRS].[C2] AS [C2], 
+    [KIUSRS].[C3] AS [C3], 
+    [KIUSRS].[C4] AS [C4], 
+    [KIUSRS].[C5] AS [C5]
+    FROM [dbo].[KIUSRS] AS [KIUSRS]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KEPLERModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="KDII">
+          <Key>
+            <PropertyRef Name="C1" />
+          </Key>
+          <Property Name="C1" Type="String" MaxLength="18" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="C2" Type="String" MaxLength="200" FixedLength="true" Unicode="false" />
+          <Property Name="C3" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="C4" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="C5" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="C6" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+          <Property Name="C7" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+          <Property Name="C8" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+          <Property Name="C9" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+          <Property Name="C10" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="C11" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="C12" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="C13" Type="Double" />
+          <Property Name="C14" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="C15" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="C16" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="C17" Type="Decimal" Precision="13" Scale="2" />
+          <Property Name="C18" Type="Double" />
+          <Property Name="C19" Type="Double" />
+          <Property Name="C20" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="C21" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C22" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C23" Type="Decimal" Precision="15" Scale="6" />
+          <Property Name="C24" Type="Double" />
+          <Property Name="C25" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+          <Property Name="C26" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+          <Property Name="C27" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C28" Type="String" MaxLength="17" FixedLength="true" Unicode="false" />
+          <Property Name="C29" Type="Double" />
+          <Property Name="C30" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+          <Property Name="C31" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="C32" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+          <Property Name="C33" Type="Decimal" Precision="13" Scale="0" />
+          <Property Name="C34" Type="Decimal" Precision="13" Scale="0" />
+          <Property Name="C35" Type="Decimal" Precision="13" Scale="0" />
+          <Property Name="C36" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="C37" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="C38" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+          <Property Name="C39" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+          <Property Name="C40" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+          <Property Name="C41" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+          <Property Name="C42" Type="Double" />
+          <Property Name="C43" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C44" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="C45" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+          <Property Name="C46" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="C47" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+          <Property Name="C48" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C49" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C50" Type="DateTime" Precision="3" />
+          <Property Name="C51" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C52" Type="Decimal" Precision="2" Scale="0" />
+          <Property Name="C53" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="C54" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="C55" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="C56" Type="DateTime" Precision="3" />
+          <Property Name="C57" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="C58" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="C59" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="C60" Type="DateTime" Precision="3" />
+          <Property Name="C61" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="C62" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="C63" Type="Decimal" Precision="5" Scale="0" />
+          <Property Name="C64" Type="DateTime" Precision="3" />
+          <Property Name="C65" Type="DateTime" Precision="3" />
+          <Property Name="C66" Type="Double" />
+          <Property Name="C67" Type="Decimal" Precision="1" Scale="0" />
+          <Property Name="C68" Type="Decimal" Precision="7" Scale="0" />
+          <Property Name="C69" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C70" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Name="C71" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C72" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C73" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C74" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C75" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C76" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C77" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C78" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C79" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C80" Type="Decimal" Precision="15" Scale="0" />
+          <Property Name="C81" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C82" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C83" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C84" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C85" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C86" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C87" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C88" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C89" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="C90" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="C91" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="C92" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="C93" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="C94" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="C95" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="C96" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C97" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C98" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C99" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C100" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C101" Type="Decimal" Precision="10" Scale="0" />
+          <Property Name="C102" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+          <Property Name="C103" Type="Decimal" Precision="5" Scale="2" />
+          <Property Name="C104" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="C105" Type="Decimal" Precision="6" Scale="4" />
+          <Property Name="C106" Type="Decimal" Precision="6" Scale="4" />
+        </EntityType>
+        <EntityType Name="KDUDENT">
+          <Key>
+            <PropertyRef Name="C1" />
+            <PropertyRef Name="C2" />
+          </Key>
+          <Property Name="C1" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="C2" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="C3" Type="String" MaxLength="90" FixedLength="true" Unicode="false" />
+          <Property Name="C4" Type="String" MaxLength="90" FixedLength="true" Unicode="false" />
+          <Property Name="C5" Type="String" MaxLength="90" FixedLength="true" Unicode="false" />
+          <Property Name="C6" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Name="C7" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Name="C8" Type="String" MaxLength="90" FixedLength="true" Unicode="false" />
+          <Property Name="C9" Type="String" MaxLength="90" FixedLength="true" Unicode="false" />
+          <Property Name="C10" Type="String" MaxLength="244" FixedLength="true" Unicode="false" />
+          <Property Name="C11" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="C12" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Name="C13" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+          <Property Name="C14" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+          <Property Name="C15" Type="Decimal" Precision="10" Scale="2" />
+        </EntityType>
+        <EntityType Name="KIUSRS">
+          <Key>
+            <PropertyRef Name="C1" />
+          </Key>
+          <Property Name="C1" Type="String" MaxLength="35" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="C2" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Name="C3" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+          <Property Name="C4" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+          <Property Name="C5" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="KEPLEREntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="KDII" EntityType="Self.KDII" />
+          <EntitySet Name="KDUDENT" EntityType="Self.KDUDENT" />
+          <EntitySet Name="KIUSRS" EntityType="Self.KIUSRS" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KEPLERModelStoreContainer" CdmEntityContainer="KEPLEREntities">
+          <EntitySetMapping Name="KDII">
+            <EntityTypeMapping TypeName="KEPLERModel.KDII">
+              <MappingFragment StoreEntitySet="KDII">
+                <ScalarProperty Name="C1" ColumnName="C1" />
+                <ScalarProperty Name="C2" ColumnName="C2" />
+                <ScalarProperty Name="C3" ColumnName="C3" />
+                <ScalarProperty Name="C4" ColumnName="C4" />
+                <ScalarProperty Name="C5" ColumnName="C5" />
+                <ScalarProperty Name="C6" ColumnName="C6" />
+                <ScalarProperty Name="C7" ColumnName="C7" />
+                <ScalarProperty Name="C8" ColumnName="C8" />
+                <ScalarProperty Name="C9" ColumnName="C9" />
+                <ScalarProperty Name="C10" ColumnName="C10" />
+                <ScalarProperty Name="C11" ColumnName="C11" />
+                <ScalarProperty Name="C12" ColumnName="C12" />
+                <ScalarProperty Name="C13" ColumnName="C13" />
+                <ScalarProperty Name="C14" ColumnName="C14" />
+                <ScalarProperty Name="C15" ColumnName="C15" />
+                <ScalarProperty Name="C16" ColumnName="C16" />
+                <ScalarProperty Name="C17" ColumnName="C17" />
+                <ScalarProperty Name="C18" ColumnName="C18" />
+                <ScalarProperty Name="C19" ColumnName="C19" />
+                <ScalarProperty Name="C20" ColumnName="C20" />
+                <ScalarProperty Name="C21" ColumnName="C21" />
+                <ScalarProperty Name="C22" ColumnName="C22" />
+                <ScalarProperty Name="C23" ColumnName="C23" />
+                <ScalarProperty Name="C24" ColumnName="C24" />
+                <ScalarProperty Name="C25" ColumnName="C25" />
+                <ScalarProperty Name="C26" ColumnName="C26" />
+                <ScalarProperty Name="C27" ColumnName="C27" />
+                <ScalarProperty Name="C28" ColumnName="C28" />
+                <ScalarProperty Name="C29" ColumnName="C29" />
+                <ScalarProperty Name="C30" ColumnName="C30" />
+                <ScalarProperty Name="C31" ColumnName="C31" />
+                <ScalarProperty Name="C32" ColumnName="C32" />
+                <ScalarProperty Name="C33" ColumnName="C33" />
+                <ScalarProperty Name="C34" ColumnName="C34" />
+                <ScalarProperty Name="C35" ColumnName="C35" />
+                <ScalarProperty Name="C36" ColumnName="C36" />
+                <ScalarProperty Name="C37" ColumnName="C37" />
+                <ScalarProperty Name="C38" ColumnName="C38" />
+                <ScalarProperty Name="C39" ColumnName="C39" />
+                <ScalarProperty Name="C40" ColumnName="C40" />
+                <ScalarProperty Name="C41" ColumnName="C41" />
+                <ScalarProperty Name="C42" ColumnName="C42" />
+                <ScalarProperty Name="C43" ColumnName="C43" />
+                <ScalarProperty Name="C44" ColumnName="C44" />
+                <ScalarProperty Name="C45" ColumnName="C45" />
+                <ScalarProperty Name="C46" ColumnName="C46" />
+                <ScalarProperty Name="C47" ColumnName="C47" />
+                <ScalarProperty Name="C48" ColumnName="C48" />
+                <ScalarProperty Name="C49" ColumnName="C49" />
+                <ScalarProperty Name="C50" ColumnName="C50" />
+                <ScalarProperty Name="C51" ColumnName="C51" />
+                <ScalarProperty Name="C52" ColumnName="C52" />
+                <ScalarProperty Name="C53" ColumnName="C53" />
+                <ScalarProperty Name="C54" ColumnName="C54" />
+                <ScalarProperty Name="C55" ColumnName="C55" />
+                <ScalarProperty Name="C56" ColumnName="C56" />
+                <ScalarProperty Name="C57" ColumnName="C57" />
+                <ScalarProperty Name="C58" ColumnName="C58" />
+                <ScalarProperty Name="C59" ColumnName="C59" />
+                <ScalarProperty Name="C60" ColumnName="C60" />
+                <ScalarProperty Name="C61" ColumnName="C61" />
+                <ScalarProperty Name="C62" ColumnName="C62" />
+                <ScalarProperty Name="C63" ColumnName="C63" />
+                <ScalarProperty Name="C64" ColumnName="C64" />
+                <ScalarProperty Name="C65" ColumnName="C65" />
+                <ScalarProperty Name="C66" ColumnName="C66" />
+                <ScalarProperty Name="C67" ColumnName="C67" />
+                <ScalarProperty Name="C68" ColumnName="C68" />
+                <ScalarProperty Name="C69" ColumnName="C69" />
+                <ScalarProperty Name="C70" ColumnName="C70" />
+                <ScalarProperty Name="C71" ColumnName="C71" />
+                <ScalarProperty Name="C72" ColumnName="C72" />
+                <ScalarProperty Name="C73" ColumnName="C73" />
+                <ScalarProperty Name="C74" ColumnName="C74" />
+                <ScalarProperty Name="C75" ColumnName="C75" />
+                <ScalarProperty Name="C76" ColumnName="C76" />
+                <ScalarProperty Name="C77" ColumnName="C77" />
+                <ScalarProperty Name="C78" ColumnName="C78" />
+                <ScalarProperty Name="C79" ColumnName="C79" />
+                <ScalarProperty Name="C80" ColumnName="C80" />
+                <ScalarProperty Name="C81" ColumnName="C81" />
+                <ScalarProperty Name="C82" ColumnName="C82" />
+                <ScalarProperty Name="C83" ColumnName="C83" />
+                <ScalarProperty Name="C84" ColumnName="C84" />
+                <ScalarProperty Name="C85" ColumnName="C85" />
+                <ScalarProperty Name="C86" ColumnName="C86" />
+                <ScalarProperty Name="C87" ColumnName="C87" />
+                <ScalarProperty Name="C88" ColumnName="C88" />
+                <ScalarProperty Name="C89" ColumnName="C89" />
+                <ScalarProperty Name="C90" ColumnName="C90" />
+                <ScalarProperty Name="C91" ColumnName="C91" />
+                <ScalarProperty Name="C92" ColumnName="C92" />
+                <ScalarProperty Name="C93" ColumnName="C93" />
+                <ScalarProperty Name="C94" ColumnName="C94" />
+                <ScalarProperty Name="C95" ColumnName="C95" />
+                <ScalarProperty Name="C96" ColumnName="C96" />
+                <ScalarProperty Name="C97" ColumnName="C97" />
+                <ScalarProperty Name="C98" ColumnName="C98" />
+                <ScalarProperty Name="C99" ColumnName="C99" />
+                <ScalarProperty Name="C100" ColumnName="C100" />
+                <ScalarProperty Name="C101" ColumnName="C101" />
+                <ScalarProperty Name="C102" ColumnName="C102" />
+                <ScalarProperty Name="C103" ColumnName="C103" />
+                <ScalarProperty Name="C104" ColumnName="C104" />
+                <ScalarProperty Name="C105" ColumnName="C105" />
+                <ScalarProperty Name="C106" ColumnName="C106" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KDUDENT">
+            <EntityTypeMapping TypeName="KEPLERModel.KDUDENT">
+              <MappingFragment StoreEntitySet="KDUDENT">
+                <ScalarProperty Name="C1" ColumnName="C1" />
+                <ScalarProperty Name="C2" ColumnName="C2" />
+                <ScalarProperty Name="C3" ColumnName="C3" />
+                <ScalarProperty Name="C4" ColumnName="C4" />
+                <ScalarProperty Name="C5" ColumnName="C5" />
+                <ScalarProperty Name="C6" ColumnName="C6" />
+                <ScalarProperty Name="C7" ColumnName="C7" />
+                <ScalarProperty Name="C8" ColumnName="C8" />
+                <ScalarProperty Name="C9" ColumnName="C9" />
+                <ScalarProperty Name="C10" ColumnName="C10" />
+                <ScalarProperty Name="C11" ColumnName="C11" />
+                <ScalarProperty Name="C12" ColumnName="C12" />
+                <ScalarProperty Name="C13" ColumnName="C13" />
+                <ScalarProperty Name="C14" ColumnName="C14" />
+                <ScalarProperty Name="C15" ColumnName="C15" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KIUSRS">
+            <EntityTypeMapping TypeName="KEPLERModel.KIUSRS">
+              <MappingFragment StoreEntitySet="KIUSRS">
+                <ScalarProperty Name="C1" ColumnName="C1" />
+                <ScalarProperty Name="C2" ColumnName="C2" />
+                <ScalarProperty Name="C3" ColumnName="C3" />
+                <ScalarProperty Name="C4" ColumnName="C4" />
+                <ScalarProperty Name="C5" ColumnName="C5" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

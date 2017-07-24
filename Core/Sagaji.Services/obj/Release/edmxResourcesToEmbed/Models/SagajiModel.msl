@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MobileAppModelStoreContainer" CdmEntityContainer="MobileAppEntities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="MobileAppModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="app_version">
+      <EntityTypeMapping TypeName="MobileAppModel.app_version">
+        <MappingFragment StoreEntitySet="app_version">
+          <ScalarProperty Name="app" ColumnName="app" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="liberacion" ColumnName="liberacion" />
+          <ScalarProperty Name="plataforma_id" ColumnName="plataforma_id" />
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="MobileAppModel.AspNetRoles">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="MobileAppModel.AspNetUserClaims">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="MobileAppModel.AspNetUserLogins">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="MobileAppModel.AspNetUsers">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="catalogo_bd">
+      <EntityTypeMapping TypeName="MobileAppModel.catalogo_bd">
+        <MappingFragment StoreEntitySet="catalogo_bd">
+          <ScalarProperty Name="cat_info" ColumnName="cat_info" />
+          <ScalarProperty Name="release_date" ColumnName="release_date" />
+          <ScalarProperty Name="cat_id" ColumnName="cat_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="catalogo_csv">
+      <EntityTypeMapping TypeName="MobileAppModel.catalogo_csv">
+        <MappingFragment StoreEntitySet="catalogo_csv">
+          <ScalarProperty Name="cat_info" ColumnName="cat_info" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="cat_id" ColumnName="cat_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cliente_info">
+      <EntityTypeMapping TypeName="MobileAppModel.cliente_info">
+        <MappingFragment StoreEntitySet="cliente_info">
+          <ScalarProperty Name="count_pedidos" ColumnName="count_pedidos" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="nocliente" ColumnName="nocliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="descarga_clientes">
+      <EntityTypeMapping TypeName="MobileAppModel.descarga_clientes">
+        <MappingFragment StoreEntitySet="descarga_clientes">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="fecha_descarga" ColumnName="fecha_descarga" />
+          <ScalarProperty Name="nocliente" ColumnName="nocliente" />
+          <ScalarProperty Name="plataforma_id" ColumnName="plataforma_id" />
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="event_status">
+      <EntityTypeMapping TypeName="MobileAppModel.event_status">
+        <MappingFragment StoreEntitySet="event_status">
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="id_status" ColumnName="id_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="itempedido">
+      <EntityTypeMapping TypeName="MobileAppModel.itempedido">
+        <MappingFragment StoreEntitySet="itempedido">
+          <ScalarProperty Name="fecharegistro" ColumnName="fecharegistro" />
+          <ScalarProperty Name="sincronizado" ColumnName="sincronizado" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="unidad" ColumnName="unidad" />
+          <ScalarProperty Name="linea" ColumnName="linea" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="cvepedido" ColumnName="cvepedido" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pedidoapp">
+      <EntityTypeMapping TypeName="MobileAppModel.pedidoapp">
+        <MappingFragment StoreEntitySet="pedidoapp">
+          <ScalarProperty Name="proceso_folio" ColumnName="proceso_folio" />
+          <ScalarProperty Name="keppler_folio" ColumnName="keppler_folio" />
+          <ScalarProperty Name="fecharegistro" ColumnName="fecharegistro" />
+          <ScalarProperty Name="sincronizado" ColumnName="sincronizado" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="iva" ColumnName="iva" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="domentrega" ColumnName="domentrega" />
+          <ScalarProperty Name="usuariologin" ColumnName="usuariologin" />
+          <ScalarProperty Name="nocliente" ColumnName="nocliente" />
+          <ScalarProperty Name="idcartera" ColumnName="idcartera" />
+          <ScalarProperty Name="cvepedido" ColumnName="cvepedido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="perfil">
+      <EntityTypeMapping TypeName="MobileAppModel.perfil">
+        <MappingFragment StoreEntitySet="perfil">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id_role" ColumnName="id_role" />
+          <ScalarProperty Name="id_modulo" ColumnName="id_modulo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plataforma">
+      <EntityTypeMapping TypeName="MobileAppModel.plataforma">
+        <MappingFragment StoreEntitySet="plataforma">
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="plataforma_id" ColumnName="plataforma_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role">
+      <EntityTypeMapping TypeName="MobileAppModel.role">
+        <MappingFragment StoreEntitySet="role">
+          <ScalarProperty Name="descriptcion" ColumnName="descriptcion" />
+          <ScalarProperty Name="id_role" ColumnName="id_role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="system_logger">
+      <EntityTypeMapping TypeName="MobileAppModel.system_logger">
+        <MappingFragment StoreEntitySet="system_logger">
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="register_event" ColumnName="register_event" />
+          <ScalarProperty Name="cvepedido" ColumnName="cvepedido" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="id_status" ColumnName="id_status" />
+          <ScalarProperty Name="logger_id" ColumnName="logger_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="MobileAppModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="fullname" ColumnName="fullname" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="id_role" ColumnName="id_role" />
+          <ScalarProperty Name="login" ColumnName="login" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios_sincronizacion">
+      <EntityTypeMapping TypeName="MobileAppModel.usuarios_sincronizacion">
+        <MappingFragment StoreEntitySet="usuarios_sincronizacion">
+          <ScalarProperty Name="stauts" ColumnName="stauts" />
+          <ScalarProperty Name="fecha_descarga" ColumnName="fecha_descarga" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="cat_id" ColumnName="cat_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="MobileAppModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

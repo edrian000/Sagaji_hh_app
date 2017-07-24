@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MobileAppModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="app_version">
+    <Key>
+      <PropertyRef Name="app_id" />
+      <PropertyRef Name="plataforma_id" />
+    </Key>
+    <Property Name="app_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="plataforma_id" Type="Int16" Nullable="false" />
+    <Property Name="liberacion" Type="DateTime" Precision="3" />
+    <Property Name="version" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="app" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="plataforma" Relationship="Self.fk_app_vers_app_plata_platafor" FromRole="app_version" ToRole="plataforma" />
+    <NavigationProperty Name="descarga_clientes" Relationship="Self.fk_descarga_app_desca_app_vers" FromRole="app_version" ToRole="descarga_clientes" />
+  </EntityType>
+  <EntityType Name="catalogo_csv">
+    <Key>
+      <PropertyRef Name="cat_id" />
+    </Key>
+    <Property Name="cat_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="cat_info" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="usuarios_sincronizacion" Relationship="Self.fk_usuarios_catalogo__catalogo" FromRole="catalogo_csv" ToRole="usuarios_sincronizacion" />
+  </EntityType>
+  <EntityType Name="cliente_info">
+    <Key>
+      <PropertyRef Name="nocliente" />
+    </Key>
+    <Property Name="nocliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="count_pedidos" Type="Int64" />
+    <NavigationProperty Name="descarga_clientes" Relationship="Self.fk_descarga_cliente_d_cliente_" FromRole="cliente_info" ToRole="descarga_clientes" />
+  </EntityType>
+  <EntityType Name="descarga_clientes">
+    <Key>
+      <PropertyRef Name="app_id" />
+      <PropertyRef Name="plataforma_id" />
+      <PropertyRef Name="nocliente" />
+    </Key>
+    <Property Name="app_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="plataforma_id" Type="Int16" Nullable="false" />
+    <Property Name="nocliente" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fecha_descarga" Type="DateTime" Precision="3" />
+    <Property Name="status" Type="Boolean" />
+    <NavigationProperty Name="app_version" Relationship="Self.fk_descarga_app_desca_app_vers" FromRole="descarga_clientes" ToRole="app_version" />
+    <NavigationProperty Name="cliente_info" Relationship="Self.fk_descarga_cliente_d_cliente_" FromRole="descarga_clientes" ToRole="cliente_info" />
+  </EntityType>
+  <EntityType Name="itempedido">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="id" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cvepedido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="precio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="linea" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="unidad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cantidad" Type="Int16" />
+    <Property Name="sincronizado" Type="Boolean" />
+    <Property Name="fecharegistro" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="pedidoapp" Relationship="Self.fk_itempedi_pedido_it_pedidoap" FromRole="itempedido" ToRole="pedidoapp" />
+  </EntityType>
+  <EntityType Name="pedidoapp">
+    <Key>
+      <PropertyRef Name="cvepedido" />
+    </Key>
+    <Property Name="cvepedido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="idcartera" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="nocliente" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="usuariologin" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="domentrega" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="observaciones" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="subtotal" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="iva" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="total" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="sincronizado" Type="Boolean" />
+    <Property Name="fecharegistro" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="itempedido" Relationship="Self.fk_itempedi_pedido_it_pedidoap" FromRole="pedidoapp" ToRole="itempedido" />
+  </EntityType>
+  <EntityType Name="plataforma">
+    <Key>
+      <PropertyRef Name="plataforma_id" />
+    </Key>
+    <Property Name="plataforma_id" Type="Int16" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="app_version" Relationship="Self.fk_app_vers_app_plata_platafor" FromRole="plataforma" ToRole="app_version" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="login" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="hash_paswword" Type="Int32" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="usuarios_sincronizacion" Relationship="Self.fk_usuarios_usuario_d_usuario" FromRole="usuario" ToRole="usuarios_sincronizacion" />
+  </EntityType>
+  <EntityType Name="usuarios_sincronizacion">
+    <Key>
+      <PropertyRef Name="cat_id" />
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="cat_id" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="fecha_descarga" Type="DateTime" Precision="3" />
+    <Property Name="stauts" Type="Boolean" />
+    <NavigationProperty Name="catalogo_csv" Relationship="Self.fk_usuarios_catalogo__catalogo" FromRole="usuarios_sincronizacion" ToRole="catalogo_csv" />
+    <NavigationProperty Name="usuario" Relationship="Self.fk_usuarios_usuario_d_usuario" FromRole="usuarios_sincronizacion" ToRole="usuario" />
+  </EntityType>
+  <Association Name="fk_app_vers_app_plata_platafor">
+    <End Role="plataforma" Type="Self.plataforma" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="app_version" Type="Self.app_version" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="plataforma">
+        <PropertyRef Name="plataforma_id" />
+      </Principal>
+      <Dependent Role="app_version">
+        <PropertyRef Name="plataforma_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_descarga_app_desca_app_vers">
+    <End Role="app_version" Type="Self.app_version" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="descarga_clientes" Type="Self.descarga_clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="app_version">
+        <PropertyRef Name="app_id" />
+        <PropertyRef Name="plataforma_id" />
+      </Principal>
+      <Dependent Role="descarga_clientes">
+        <PropertyRef Name="app_id" />
+        <PropertyRef Name="plataforma_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usuarios_catalogo__catalogo">
+    <End Role="catalogo_csv" Type="Self.catalogo_csv" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="usuarios_sincronizacion" Type="Self.usuarios_sincronizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="catalogo_csv">
+        <PropertyRef Name="cat_id" />
+      </Principal>
+      <Dependent Role="usuarios_sincronizacion">
+        <PropertyRef Name="cat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_descarga_cliente_d_cliente_">
+    <End Role="cliente_info" Type="Self.cliente_info" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="descarga_clientes" Type="Self.descarga_clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente_info">
+        <PropertyRef Name="nocliente" />
+      </Principal>
+      <Dependent Role="descarga_clientes">
+        <PropertyRef Name="nocliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_itempedi_pedido_it_pedidoap">
+    <End Role="pedidoapp" Type="Self.pedidoapp" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="itempedido" Type="Self.itempedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidoapp">
+        <PropertyRef Name="cvepedido" />
+      </Principal>
+      <Dependent Role="itempedido">
+        <PropertyRef Name="cvepedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usuarios_usuario_d_usuario">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="usuarios_sincronizacion" Type="Self.usuarios_sincronizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="login" />
+      </Principal>
+      <Dependent Role="usuarios_sincronizacion">
+        <PropertyRef Name="login" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MobileAppEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="app_version" EntityType="Self.app_version" />
+    <EntitySet Name="catalogo_csv" EntityType="Self.catalogo_csv" />
+    <EntitySet Name="cliente_info" EntityType="Self.cliente_info" />
+    <EntitySet Name="descarga_clientes" EntityType="Self.descarga_clientes" />
+    <EntitySet Name="itempedido" EntityType="Self.itempedido" />
+    <EntitySet Name="pedidoapp" EntityType="Self.pedidoapp" />
+    <EntitySet Name="plataforma" EntityType="Self.plataforma" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" />
+    <EntitySet Name="usuarios_sincronizacion" EntityType="Self.usuarios_sincronizacion" />
+    <AssociationSet Name="fk_app_vers_app_plata_platafor" Association="Self.fk_app_vers_app_plata_platafor">
+      <End Role="plataforma" EntitySet="plataforma" />
+      <End Role="app_version" EntitySet="app_version" />
+    </AssociationSet>
+    <AssociationSet Name="fk_descarga_app_desca_app_vers" Association="Self.fk_descarga_app_desca_app_vers">
+      <End Role="app_version" EntitySet="app_version" />
+      <End Role="descarga_clientes" EntitySet="descarga_clientes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usuarios_catalogo__catalogo" Association="Self.fk_usuarios_catalogo__catalogo">
+      <End Role="catalogo_csv" EntitySet="catalogo_csv" />
+      <End Role="usuarios_sincronizacion" EntitySet="usuarios_sincronizacion" />
+    </AssociationSet>
+    <AssociationSet Name="fk_descarga_cliente_d_cliente_" Association="Self.fk_descarga_cliente_d_cliente_">
+      <End Role="cliente_info" EntitySet="cliente_info" />
+      <End Role="descarga_clientes" EntitySet="descarga_clientes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_itempedi_pedido_it_pedidoap" Association="Self.fk_itempedi_pedido_it_pedidoap">
+      <End Role="pedidoapp" EntitySet="pedidoapp" />
+      <End Role="itempedido" EntitySet="itempedido" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usuarios_usuario_d_usuario" Association="Self.fk_usuarios_usuario_d_usuario">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="usuarios_sincronizacion" EntitySet="usuarios_sincronizacion" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

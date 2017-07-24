@@ -1,0 +1,137 @@
+﻿
+<section id="dashboard" data-ng-controller="DashboardController">
+    <div class="row" data-ng-show="accessToken !== null">
+        <div class="col-sm-8 col-md-8 col-lg-8 col-xs-12">
+
+            <table class="table table-responsive">
+                <caption>
+                    <h4>Pedidos en Kepler</h4>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Proceso</th>
+                        <th>Folio Kepler</th>
+                        <th>Cliente</th>
+                        <th>Cartera</th>
+                        <th>Estado</th>
+                        <th>Prioridad</th>
+                        <th>Domicilio</th>
+                        <th>Consecutivo</th>
+                        <th># Partidas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="pedido in Pedidos">
+                        <td>
+                            <small class="label label-primary"> {{pedido.Proceso|date}}</small>
+                        </td>
+                        <td>
+                            <small class="label label-info">{{pedido.FolioKepler}}</small>
+                        </td>
+                        <td>
+                            <small class="label label-default">{{pedido.Cliente}}</small>
+                        </td>
+                        <td>
+                            <small class="label label-default">{{pedido.Cartera}}</small>
+                        </td>
+                        <td>
+                            <small class="label label-default">{{pedido.Status}}</small>
+                        </td>
+                        <td>
+                            <small class="label label-default">{{pedido.Prioridad}}</small>
+                        </td>
+                        <td>
+                            <small class="label label-default">{{pedido.Domicilio}}</small>
+                        </td>
+                        <td>
+                            <small class="label label-default">{{pedido.Consecutivo}}</small>
+                        </td>
+                        <td>
+                            <small class="label label-default">{{pedido.Partidas}}</small>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+            <table class="table table-responsive">
+                <caption>
+                    <h4>Carga en servidor</h4>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>
+                            CPU(%)
+                        </th>
+                        <th>
+                            MEM(GB)
+                        </th>
+                        <th>
+                            MB/S
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="panel"></div>
+        </div>
+    </div>
+
+    <div class="row sectionHeight" data-ng-show="accessToken !== null">
+        <div class="col-sm-12 col-md-12 col-xs-12">
+            <h4>Eventos en sistema</h4>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Usuario</th>
+                        <th>Pedido</th>
+                        <th>Mensaje</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="item in Operations">
+                        <td>
+                            <span>{{item.Time|date:'yyyy-MM-dd HH:mm:ss'}}</span>
+                        </td>
+                        <td>
+                            <small>
+                                {{item.Login}}
+                            </small>
+                        </td>
+                        <td>
+                            <small>
+                                {{item.CvePedido}}
+                            </small>
+                        </td>
+                        <td>
+                            <small>
+                                {{item.Message}}
+                            </small>
+                        </td>
+                        <td>
+                            <small>
+                                {{item.StatusDescription}}
+                            </small>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+</section>
+
+
+@section scripts{
+    <script src="~/App/app-controllers/dashboard.controller.js"></script>
+}

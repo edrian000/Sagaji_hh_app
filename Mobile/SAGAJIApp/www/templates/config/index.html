@@ -1,0 +1,51 @@
+﻿<ion-view cache-view="false" view-title="Sincronización" >
+    <ion-content scroll="true" class="padding ">
+        <h4 class="title">Sincronización de catalogos</h4>
+
+        <ion-list class="list">
+
+            <ion-item>
+                <p>Catalogo:<strong>{{process.catalogo}}</strong>
+                <p>Total de registros:<strong>{{process.total}}</strong></p>
+                <p>Regigistro procesados:<strong>{{process.processed}}</strong></p>
+                <p>Estado:<strong>{{process.status}}</strong></p>
+                <p>Progreso: <strong>{{process.progress|number:2}} %</strong></p>
+                <progress value="{{process.progress}}" max="100">
+                </progress>
+            </ion-item>
+
+
+
+            <ion-item ng-disabled="stepp != undefined">
+                <i class="icon ion-ios-pricetag"> Productos/Existencias/Equivalencias</i>
+                <ion-option-button class="button button-calm icon ion-ios-loop-strong" ng-click="startSyncAll()" ng-disabled="IsRunning"></ion-option-button>
+            </ion-item>
+
+            <!--<ion-item ng-disabled="stepp != undefined">
+                <i class="icon ion-ios-pricetag"> Equivalencias</i>
+                <ion-option-button class="button button-calm icon ion-ios-loop-strong" ng-click="startSync('equivalencias')" ng-disabled="IsRunning"></ion-option-button>
+            </ion-item>-->
+            <!--<ion-item ng-disabled="stepp != undefined">
+                <i class="icon ion-ios-pricetag"> Productos</i>
+                <ion-option-button class="button button-calm icon ion-ios-loop-strong" ng-click="startSync('productos')" ng-disabled="IsRunning"></ion-option-button>
+            </ion-item>
+
+            <ion-item ng-disabled="stepp != undefined">
+                <i class="icon ion-ios-pricetag-outline"> Sincronizar existencias</i>
+                <ion-option-button class="button button-calm icon ion-ios-loop-strong" ng-click="startSync('existencias')" ng-disabled="IsRunning"></ion-option-button>
+            </ion-item>-->
+
+            <ion-item ng-disabled="stepp != undefined">
+                <i class="icon ion-ios-people"> Carteras/clientes/domicilios</i>
+                <ion-option-button class="button button-calm icon ion-ios-loop-strong" ng-click="startUser()" ng-disabled="IsRunning"></ion-option-button>
+            </ion-item>
+
+             <ion-item ng-disabled="stepp != undefined">
+                <i class="icon ion-ios-pricetag"> Devoluciones</i>
+                <ion-option-button class="button button-calm icon ion-ios-loop-strong" ng-click="startUser()" ng-disabled="IsRunning"></ion-option-button>
+            </ion-item>
+
+        </ion-list>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,88 @@
+﻿<section class="container">
+    <div class="row panel panel-body">
+
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+            <ul>
+                <li>
+                    <a href="#" onclick="loadAnotherVideo(0)">Descarga de app Android</a>
+                </li>
+                <li>
+                    <a href="#" onclick="loadAnotherVideo(1)">Descarga de app iOS</a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="loadAnotherVideo(4)">Acceso a la app</a>
+                </li>
+
+                <li>
+
+                    <a href="#" onclick="loadAnotherVideo(2)">Sincronizar catalogos</a>
+                </li>
+
+                <li>
+                    <a href="#" onclick="loadAnotherVideo(3)">Realizar pedido</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-8 col-md-8 col-lg-8 col-xs-12">
+            <video id="video" width="640" height="480" controls="controls" autoplay="autoplay">
+                <source src="~/Content/Media/android-download.mp4" type="video/webm">
+            </video>
+        </div>
+    </div>
+</section>
+
+@section scripts{
+
+    <script>
+        function loadAnotherVideo(id) {
+            var video = document.getElementsByTagName('video')[0];
+            var sources = video.getElementsByTagName('source');
+            switch (id) {
+                case 0:
+                    sources[0].src = "/Content/Media/android-download.mp4";
+                    break;
+                case 1:
+                    sources[0].src = "/Content/Media/ios-download.mp4";
+                    break;
+                case 2:
+                    sources[0].src = "/Content/Media/sinc-aplicativo.mov";
+                    break;
+                case 3:
+                    sources[0].src = "/Content/Media/do-pedido.mov";
+                    break;
+                case 4:
+                    sources[0].src = "/Content/Media/acceso-app.mp4";
+                    break;
+            }
+
+
+            video.load();
+        }
+
+        $(function () {
+            $('.navbar-toggle').click(function () {
+                $('.navbar-nav').toggleClass('slide-in');
+                $('.side-body').toggleClass('body-slide-in');
+                $('#search').removeClass('in').addClass('collapse').slideUp(200);
+
+                /// uncomment code for absolute positioning tweek see top comment in css
+                //$('.absolute-wrapper').toggleClass('slide-in');
+
+            });
+
+            // Remove menu for searching
+            $('#search-trigger').click(function () {
+                $('.navbar-nav').removeClass('slide-in');
+                $('.side-body').removeClass('body-slide-in');
+
+                /// uncomment code for absolute positioning tweek see top comment in css
+                //$('.absolute-wrapper').removeClass('slide-in');
+
+            });
+        });
+    </script>
+
+
+}

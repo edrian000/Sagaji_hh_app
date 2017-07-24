@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KEPLERModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="KUSRSECO">
+    <Key>
+      <PropertyRef Name="C1" />
+    </Key>
+    <Property Name="C1" Type="String" MaxLength="35" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="C2" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+    <Property Name="C3" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="C4" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="C5" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="C6" Type="String" MaxLength="45" FixedLength="true" Unicode="false" />
+    <Property Name="C7" Type="String" MaxLength="45" FixedLength="true" Unicode="false" />
+    <Property Name="C8" Type="String" MaxLength="45" FixedLength="true" Unicode="false" />
+    <Property Name="C9" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="KEPLEREntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="KUSRSECO" EntityType="Self.KUSRSECO" />
+  </EntityContainer>
+</Schema>

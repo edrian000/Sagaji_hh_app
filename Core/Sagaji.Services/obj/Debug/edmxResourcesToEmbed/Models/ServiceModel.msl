@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="sagajiservicesModelStoreContainer" CdmEntityContainer="ServiceEntities">
+    <EntitySetMapping Name="itempedido">
+      <EntityTypeMapping TypeName="sagaji.servicesModel.itempedido">
+        <MappingFragment StoreEntitySet="itempedido">
+          <ScalarProperty Name="fecharegistro" ColumnName="fecharegistro" />
+          <ScalarProperty Name="sincronizado" ColumnName="sincronizado" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="unidad" ColumnName="unidad" />
+          <ScalarProperty Name="linea" ColumnName="linea" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="cvepedido" ColumnName="cvepedido" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pedidoapp">
+      <EntityTypeMapping TypeName="sagaji.servicesModel.pedidoapp">
+        <MappingFragment StoreEntitySet="pedidoapp">
+          <ScalarProperty Name="fecharegistro" ColumnName="fecharegistro" />
+          <ScalarProperty Name="sincronizado" ColumnName="sincronizado" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="iva" ColumnName="iva" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="domentrega" ColumnName="domentrega" />
+          <ScalarProperty Name="usuariologin" ColumnName="usuariologin" />
+          <ScalarProperty Name="nocliente" ColumnName="nocliente" />
+          <ScalarProperty Name="idcartera" ColumnName="idcartera" />
+          <ScalarProperty Name="cvepedido" ColumnName="cvepedido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

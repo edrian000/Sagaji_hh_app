@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MobileAppModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MobileAppEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="MobileAppModel.C__MigrationHistory" />
+    <EntitySet Name="app_version" EntityType="MobileAppModel.app_version" />
+    <EntitySet Name="AspNetRoles" EntityType="MobileAppModel.AspNetRoles" />
+    <EntitySet Name="AspNetUserClaims" EntityType="MobileAppModel.AspNetUserClaims" />
+    <EntitySet Name="AspNetUserLogins" EntityType="MobileAppModel.AspNetUserLogins" />
+    <EntitySet Name="AspNetUsers" EntityType="MobileAppModel.AspNetUsers" />
+    <EntitySet Name="catalogo_bd" EntityType="MobileAppModel.catalogo_bd" />
+    <EntitySet Name="catalogo_csv" EntityType="MobileAppModel.catalogo_csv" />
+    <EntitySet Name="cliente_info" EntityType="MobileAppModel.cliente_info" />
+    <EntitySet Name="descarga_clientes" EntityType="MobileAppModel.descarga_clientes" />
+    <EntitySet Name="event_status" EntityType="MobileAppModel.event_status" />
+    <EntitySet Name="itempedido" EntityType="MobileAppModel.itempedido" />
+    <EntitySet Name="pedidoapp" EntityType="MobileAppModel.pedidoapp" />
+    <EntitySet Name="perfil" EntityType="MobileAppModel.perfil" />
+    <EntitySet Name="plataforma" EntityType="MobileAppModel.plataforma" />
+    <EntitySet Name="role" EntityType="MobileAppModel.role" />
+    <EntitySet Name="system_logger" EntityType="MobileAppModel.system_logger" />
+    <EntitySet Name="usuario" EntityType="MobileAppModel.usuario" />
+    <EntitySet Name="usuarios_sincronizacion" EntityType="MobileAppModel.usuarios_sincronizacion" />
+    <AssociationSet Name="fk_app_vers_app_plata_platafor" Association="MobileAppModel.fk_app_vers_app_plata_platafor">
+      <End Role="plataforma" EntitySet="plataforma" />
+      <End Role="app_version" EntitySet="app_version" />
+    </AssociationSet>
+    <AssociationSet Name="fk_descarga_app_desca_app_vers" Association="MobileAppModel.fk_descarga_app_desca_app_vers">
+      <End Role="app_version" EntitySet="app_version" />
+      <End Role="descarga_clientes" EntitySet="descarga_clientes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="MobileAppModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="MobileAppModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usuarios_catalogo__catalogo" Association="MobileAppModel.fk_usuarios_catalogo__catalogo">
+      <End Role="catalogo_bd" EntitySet="catalogo_bd" />
+      <End Role="usuarios_sincronizacion" EntitySet="usuarios_sincronizacion" />
+    </AssociationSet>
+    <AssociationSet Name="fk_descarga_cliente_d_cliente_" Association="MobileAppModel.fk_descarga_cliente_d_cliente_">
+      <End Role="cliente_info" EntitySet="cliente_info" />
+      <End Role="descarga_clientes" EntitySet="descarga_clientes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_system_l_event_s_s_event_st" Association="MobileAppModel.fk_system_l_event_s_s_event_st">
+      <End Role="event_status" EntitySet="event_status" />
+      <End Role="system_logger" EntitySet="system_logger" />
+    </AssociationSet>
+    <AssociationSet Name="fk_itempedi_pedido_it_pedidoap" Association="MobileAppModel.fk_itempedi_pedido_it_pedidoap">
+      <End Role="pedidoapp" EntitySet="pedidoapp" />
+      <End Role="itempedido" EntitySet="itempedido" />
+    </AssociationSet>
+    <AssociationSet Name="fk_perfil_role_perf_role" Association="MobileAppModel.fk_perfil_role_perf_role">
+      <End Role="role" EntitySet="role" />
+      <End Role="perfil" EntitySet="perfil" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usuario_usuario_r_role" Association="MobileAppModel.fk_usuario_usuario_r_role">
+      <End Role="role" EntitySet="role" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usuarios_usuario_d_usuario" Association="MobileAppModel.fk_usuarios_usuario_d_usuario">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="usuarios_sincronizacion" EntitySet="usuarios_sincronizacion" />
+    </AssociationSet>
+    <AssociationSet Name="AspNetUserRoles" Association="MobileAppModel.AspNetUserRoles">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="app_version">
+    <Key>
+      <PropertyRef Name="app_id" />
+      <PropertyRef Name="plataforma_id" />
+    </Key>
+    <Property Name="app_id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="plataforma_id" Type="Int16" Nullable="false" />
+    <Property Name="liberacion" Type="DateTime" Precision="3" />
+    <Property Name="version" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="app" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="plataforma" Relationship="MobileAppModel.fk_app_vers_app_plata_platafor" FromRole="app_version" ToRole="plataforma" />
+    <NavigationProperty Name="descarga_clientes" Relationship="MobileAppModel.fk_descarga_app_desca_app_vers" FromRole="app_version" ToRole="descarga_clientes" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="MobileAppModel.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="MobileAppModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderKey" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="UserId" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUsers" Relationship="MobileAppModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+    <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AspNetUserClaims" Relationship="MobileAppModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
+    <NavigationProperty Name="AspNetUserLogins" Relationship="MobileAppModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
+    <NavigationProperty Name="AspNetRoles" Relationship="MobileAppModel.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+  </EntityType>
+  <EntityType Name="catalogo_bd">
+    <Key>
+      <PropertyRef Name="cat_id" />
+    </Key>
+    <Property Name="cat_id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="release_date" Type="DateTime" Precision="3" />
+    <Property Name="cat_info" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="usuarios_sincronizacion" Relationship="MobileAppModel.fk_usuarios_catalogo__catalogo" FromRole="catalogo_bd" ToRole="usuarios_sincronizacion" />
+  </EntityType>
+  <EntityType Name="catalogo_csv">
+    <Key>
+      <PropertyRef Name="cat_id" />
+    </Key>
+    <Property Name="cat_id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="cat_info" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="cliente_info">
+    <Key>
+      <PropertyRef Name="nocliente" />
+    </Key>
+    <Property Name="nocliente" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="count_pedidos" Type="Int64" />
+    <NavigationProperty Name="descarga_clientes" Relationship="MobileAppModel.fk_descarga_cliente_d_cliente_" FromRole="cliente_info" ToRole="descarga_clientes" />
+  </EntityType>
+  <EntityType Name="descarga_clientes">
+    <Key>
+      <PropertyRef Name="app_id" />
+      <PropertyRef Name="plataforma_id" />
+      <PropertyRef Name="nocliente" />
+    </Key>
+    <Property Name="app_id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="plataforma_id" Type="Int16" Nullable="false" />
+    <Property Name="nocliente" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_descarga" Type="DateTime" Precision="3" />
+    <Property Name="status" Type="Boolean" />
+    <NavigationProperty Name="app_version" Relationship="MobileAppModel.fk_descarga_app_desca_app_vers" FromRole="descarga_clientes" ToRole="app_version" />
+    <NavigationProperty Name="cliente_info" Relationship="MobileAppModel.fk_descarga_cliente_d_cliente_" FromRole="descarga_clientes" ToRole="cliente_info" />
+  </EntityType>
+  <EntityType Name="event_status">
+    <Key>
+      <PropertyRef Name="id_status" />
+    </Key>
+    <Property Name="id_status" Type="Int16" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="system_logger" Relationship="MobileAppModel.fk_system_l_event_s_s_event_st" FromRole="event_status" ToRole="system_logger" />
+  </EntityType>
+  <EntityType Name="itempedido">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="id" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cvepedido" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="precio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="linea" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="unidad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cantidad" Type="Int16" />
+    <Property Name="sincronizado" Type="Boolean" />
+    <Property Name="fecharegistro" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="pedidoapp" Relationship="MobileAppModel.fk_itempedi_pedido_it_pedidoap" FromRole="itempedido" ToRole="pedidoapp" />
+  </EntityType>
+  <EntityType Name="pedidoapp">
+    <Key>
+      <PropertyRef Name="cvepedido" />
+    </Key>
+    <Property Name="cvepedido" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idcartera" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="nocliente" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="usuariologin" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="domentrega" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="observaciones" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="subtotal" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="iva" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="total" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="sincronizado" Type="Boolean" />
+    <Property Name="fecharegistro" Type="DateTime" Precision="3" />
+    <Property Name="keppler_folio" Type="Int64" />
+    <Property Name="proceso_folio" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="itempedido" Relationship="MobileAppModel.fk_itempedi_pedido_it_pedidoap" FromRole="pedidoapp" ToRole="itempedido" />
+  </EntityType>
+  <EntityType Name="perfil">
+    <Key>
+      <PropertyRef Name="id_modulo" />
+    </Key>
+    <Property Name="id_modulo" Type="Int16" Nullable="false" />
+    <Property Name="id_role" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="role" Relationship="MobileAppModel.fk_perfil_role_perf_role" FromRole="perfil" ToRole="role" />
+  </EntityType>
+  <EntityType Name="plataforma">
+    <Key>
+      <PropertyRef Name="plataforma_id" />
+    </Key>
+    <Property Name="plataforma_id" Type="Int16" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="app_version" Relationship="MobileAppModel.fk_app_vers_app_plata_platafor" FromRole="plataforma" ToRole="app_version" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="id_role" />
+    </Key>
+    <Property Name="id_role" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="descriptcion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="perfil" Relationship="MobileAppModel.fk_perfil_role_perf_role" FromRole="role" ToRole="perfil" />
+    <NavigationProperty Name="usuario" Relationship="MobileAppModel.fk_usuario_usuario_r_role" FromRole="role" ToRole="usuario" />
+  </EntityType>
+  <EntityType Name="system_logger">
+    <Key>
+      <PropertyRef Name="logger_id" />
+    </Key>
+    <Property Name="logger_id" Type="Decimal" Nullable="false" Precision="18" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_status" Type="Int16" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="cvepedido" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="register_event" Type="DateTime" Precision="3" />
+    <Property Name="message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="event_status" Relationship="MobileAppModel.fk_system_l_event_s_s_event_st" FromRole="system_logger" ToRole="event_status" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="login" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="id_role" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="Int32" />
+    <Property Name="fullname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="register" Type="DateTime" Precision="3" />
+    <Property Name="photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="role" Relationship="MobileAppModel.fk_usuario_usuario_r_role" FromRole="usuario" ToRole="role" />
+    <NavigationProperty Name="usuarios_sincronizacion" Relationship="MobileAppModel.fk_usuarios_usuario_d_usuario" FromRole="usuario" ToRole="usuarios_sincronizacion" />
+  </EntityType>
+  <EntityType Name="usuarios_sincronizacion">
+    <Key>
+      <PropertyRef Name="cat_id" />
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="cat_id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="login" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_descarga" Type="DateTime" Precision="3" />
+    <Property Name="stauts" Type="Boolean" />
+    <NavigationProperty Name="catalogo_bd" Relationship="MobileAppModel.fk_usuarios_catalogo__catalogo" FromRole="usuarios_sincronizacion" ToRole="catalogo_bd" />
+    <NavigationProperty Name="usuario" Relationship="MobileAppModel.fk_usuarios_usuario_d_usuario" FromRole="usuarios_sincronizacion" ToRole="usuario" />
+  </EntityType>
+  <Association Name="fk_app_vers_app_plata_platafor">
+    <End Type="MobileAppModel.plataforma" Role="plataforma" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.app_version" Role="app_version" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="plataforma">
+        <PropertyRef Name="plataforma_id" />
+      </Principal>
+      <Dependent Role="app_version">
+        <PropertyRef Name="plataforma_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_descarga_app_desca_app_vers">
+    <End Type="MobileAppModel.app_version" Role="app_version" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.descarga_clientes" Role="descarga_clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="app_version">
+        <PropertyRef Name="app_id" />
+        <PropertyRef Name="plataforma_id" />
+      </Principal>
+      <Dependent Role="descarga_clientes">
+        <PropertyRef Name="app_id" />
+        <PropertyRef Name="plataforma_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Type="MobileAppModel.AspNetUsers" Role="AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.AspNetUserClaims" Role="AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Type="MobileAppModel.AspNetUsers" Role="AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.AspNetUserLogins" Role="AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usuarios_catalogo__catalogo">
+    <End Type="MobileAppModel.catalogo_bd" Role="catalogo_bd" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.usuarios_sincronizacion" Role="usuarios_sincronizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="catalogo_bd">
+        <PropertyRef Name="cat_id" />
+      </Principal>
+      <Dependent Role="usuarios_sincronizacion">
+        <PropertyRef Name="cat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_descarga_cliente_d_cliente_">
+    <End Type="MobileAppModel.cliente_info" Role="cliente_info" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.descarga_clientes" Role="descarga_clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente_info">
+        <PropertyRef Name="nocliente" />
+      </Principal>
+      <Dependent Role="descarga_clientes">
+        <PropertyRef Name="nocliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_system_l_event_s_s_event_st">
+    <End Type="MobileAppModel.event_status" Role="event_status" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.system_logger" Role="system_logger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="event_status">
+        <PropertyRef Name="id_status" />
+      </Principal>
+      <Dependent Role="system_logger">
+        <PropertyRef Name="id_status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_itempedi_pedido_it_pedidoap">
+    <End Type="MobileAppModel.pedidoapp" Role="pedidoapp" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.itempedido" Role="itempedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidoapp">
+        <PropertyRef Name="cvepedido" />
+      </Principal>
+      <Dependent Role="itempedido">
+        <PropertyRef Name="cvepedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_perfil_role_perf_role">
+    <End Type="MobileAppModel.role" Role="role" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.perfil" Role="perfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="role">
+        <PropertyRef Name="id_role" />
+      </Principal>
+      <Dependent Role="perfil">
+        <PropertyRef Name="id_role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usuario_usuario_r_role">
+    <End Type="MobileAppModel.role" Role="role" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.usuario" Role="usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="role">
+        <PropertyRef Name="id_role" />
+      </Principal>
+      <Dependent Role="usuario">
+        <PropertyRef Name="id_role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usuarios_usuario_d_usuario">
+    <End Type="MobileAppModel.usuario" Role="usuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="MobileAppModel.usuarios_sincronizacion" Role="usuarios_sincronizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="login" />
+      </Principal>
+      <Dependent Role="usuarios_sincronizacion">
+        <PropertyRef Name="login" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AspNetUserRoles">
+    <End Type="MobileAppModel.AspNetRoles" Role="AspNetRoles" Multiplicity="*" />
+    <End Type="MobileAppModel.AspNetUsers" Role="AspNetUsers" Multiplicity="*" />
+  </Association>
+</Schema>

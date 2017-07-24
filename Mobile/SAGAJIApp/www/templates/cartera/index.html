@@ -1,0 +1,34 @@
+﻿<ion-view view-title="Cartera/Clientes : {{loginData}}" cache-view="false">
+    <ion-content class="padding " scroll="true">
+        <div class="row ">
+            <div class="col col-33">
+                <ion-list>
+                    <ion-item>
+                        <i class="ion ion-briefcase">
+                            <small>Carteras</small>
+                        </i>
+                    </ion-item>
+                    <ion-item ng-repeat="item in Carteras"
+                              ng-click="SelectCartera(item)">
+                        <small>{{item}}</small>
+                    </ion-item>
+                </ion-list>
+            </div>
+            <div class="col">
+                <ion-list>
+                    <ion-item>
+                        <i class="ion ion-person-stalker">
+                            <small>Clientes</small>
+                        </i>
+                    </ion-item>
+                    <ion-item ng-repeat="item in Clientes" ng-click="SelectCliente(item)">
+                        <strong>{{item.NoCliente}}</strong>
+                        <small>{{item.Nombre}} </small>
+                        <br />
+                        <small>{{item.Rfc}}</small>
+                    </ion-item>
+                </ion-list>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

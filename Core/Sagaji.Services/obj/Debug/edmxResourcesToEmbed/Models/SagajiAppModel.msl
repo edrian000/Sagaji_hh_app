@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MobileAppModelStoreContainer" CdmEntityContainer="MobileAppEntities">
+    <EntitySetMapping Name="app_version">
+      <EntityTypeMapping TypeName="MobileAppModel.app_version">
+        <MappingFragment StoreEntitySet="app_version">
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="plataforma_id" ColumnName="plataforma_id" />
+          <ScalarProperty Name="liberacion" ColumnName="liberacion" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="app" ColumnName="app" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="catalogo_csv">
+      <EntityTypeMapping TypeName="MobileAppModel.catalogo_csv">
+        <MappingFragment StoreEntitySet="catalogo_csv">
+          <ScalarProperty Name="cat_id" ColumnName="cat_id" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="cat_info" ColumnName="cat_info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cliente_info">
+      <EntityTypeMapping TypeName="MobileAppModel.cliente_info">
+        <MappingFragment StoreEntitySet="cliente_info">
+          <ScalarProperty Name="nocliente" ColumnName="nocliente" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="count_pedidos" ColumnName="count_pedidos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="descarga_clientes">
+      <EntityTypeMapping TypeName="MobileAppModel.descarga_clientes">
+        <MappingFragment StoreEntitySet="descarga_clientes">
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="plataforma_id" ColumnName="plataforma_id" />
+          <ScalarProperty Name="nocliente" ColumnName="nocliente" />
+          <ScalarProperty Name="fecha_descarga" ColumnName="fecha_descarga" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="itempedido">
+      <EntityTypeMapping TypeName="MobileAppModel.itempedido">
+        <MappingFragment StoreEntitySet="itempedido">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="cvepedido" ColumnName="cvepedido" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+          <ScalarProperty Name="precio" ColumnName="precio" />
+          <ScalarProperty Name="linea" ColumnName="linea" />
+          <ScalarProperty Name="unidad" ColumnName="unidad" />
+          <ScalarProperty Name="cantidad" ColumnName="cantidad" />
+          <ScalarProperty Name="sincronizado" ColumnName="sincronizado" />
+          <ScalarProperty Name="fecharegistro" ColumnName="fecharegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pedidoapp">
+      <EntityTypeMapping TypeName="MobileAppModel.pedidoapp">
+        <MappingFragment StoreEntitySet="pedidoapp">
+          <ScalarProperty Name="cvepedido" ColumnName="cvepedido" />
+          <ScalarProperty Name="idcartera" ColumnName="idcartera" />
+          <ScalarProperty Name="nocliente" ColumnName="nocliente" />
+          <ScalarProperty Name="usuariologin" ColumnName="usuariologin" />
+          <ScalarProperty Name="domentrega" ColumnName="domentrega" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+          <ScalarProperty Name="iva" ColumnName="iva" />
+          <ScalarProperty Name="total" ColumnName="total" />
+          <ScalarProperty Name="sincronizado" ColumnName="sincronizado" />
+          <ScalarProperty Name="fecharegistro" ColumnName="fecharegistro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="plataforma">
+      <EntityTypeMapping TypeName="MobileAppModel.plataforma">
+        <MappingFragment StoreEntitySet="plataforma">
+          <ScalarProperty Name="plataforma_id" ColumnName="plataforma_id" />
+          <ScalarProperty Name="descripcion" ColumnName="descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuario">
+      <EntityTypeMapping TypeName="MobileAppModel.usuario">
+        <MappingFragment StoreEntitySet="usuario">
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="hash_paswword" ColumnName="hash_paswword" />
+          <ScalarProperty Name="register" ColumnName="register" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="usuarios_sincronizacion">
+      <EntityTypeMapping TypeName="MobileAppModel.usuarios_sincronizacion">
+        <MappingFragment StoreEntitySet="usuarios_sincronizacion">
+          <ScalarProperty Name="cat_id" ColumnName="cat_id" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="fecha_descarga" ColumnName="fecha_descarga" />
+          <ScalarProperty Name="stauts" ColumnName="stauts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

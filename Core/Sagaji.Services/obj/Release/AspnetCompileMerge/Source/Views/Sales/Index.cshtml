@@ -1,0 +1,55 @@
+﻿
+<div class="container" ng-controller="adviser_controller">
+    <h3>Ventas</h3>
+    <div class="row">
+        <div class="col-sm-4 col-md-4 col-xs-4">
+            <h4>Asesores</h4>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="usr in Advisers">
+                    <div class="panel panel-body">
+                        <p>
+                            <a href="" class="btn btn-link" ng-click="Select(usr.Login)">
+                                <i class="glyphicon glyphicon-user">
+                                    <span>
+                                        {{usr.Login}}
+                                    </span>
+                                </i>
+                            </a>
+                            
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="col-sm-8 col-md-8 col-xs-8">
+            <h4>Pedidos</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Pedido</th>
+                        <th>Fecha Captura</th>
+                        <th>Cliente</th>
+                        <th># Articulos</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="pedido in Adviser.Pedidos">
+                        <th>{{pedido.CvePedido}}</th>
+                        <th>{{pedido.FechaCaptura}}</th>
+                        <th>{{pedido.Cliente.NoCliente}}</th>
+                        <th>{{pedido.Pedidos.length}}</th>
+                        <th>{{pedido.Total}}</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section scripts{    
+    <script src="~/App/app-services/adviser_factory.js"></script>
+    <script src="~/App/app-controllers/adviser_controller.js"></script>
+
+}

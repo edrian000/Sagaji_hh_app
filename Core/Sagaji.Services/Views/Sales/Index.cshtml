@@ -1,0 +1,47 @@
+﻿
+<div class="container" ng-controller="adviser_controller">
+    <h3>Historico de pedidos</h3>
+    <div class="row">
+        <div class="col-sm-4 col-md-4 col-xs-4">
+            <h4>Asesor</h4>
+            <p>
+                <label>Nombre:</label>
+                <strong>{{Adviser.FullName}}</strong>
+            </p>
+
+            <p>
+                <label>Correo:</label>
+                <strong>{{Adviser.UserEmail}}</strong>
+            </p>
+
+
+        </div>
+        <div class="col-sm-8 col-md-8 col-xs-8">
+            <h4>Pedidos</h4>
+            <div data-ng-repeat="pedido in Pedidos">
+                <div class="row panel panel-body">
+                    <div class="col-xs-1">
+                        <div class="glyphicon glyphicon-chevron-right"
+                             data-ng-click="collapse($event)"
+                             data-target="#view_{{pedido.CvePedido}}"
+                             data-toggle="collapse" aria-expanded="false"
+                             aria-controls="view_{{pedido.CvePedido}}"
+                             data-ng-if="pedido.Partidas.length > 0">
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-xs-12" data-ng-bind="pedido.FechaCaptura|date:'yyyy-MM-dd'"></div>
+                    <div class="col-sm-2 col-xs-12" data-ng-bind="pedido.Cliente.NoCliente"></div>
+                    <div class="col-sm-2 col-xs-12" data-ng-bind="pedido.SubTotal|currency"></div>
+                    <div class="col-sm-2 col-xs-12" data-ng-bind="pedido.Total|currency"></div>
+                    <div class="col-sm-2 col-xs-12" data-ng-bind="pedido.Partidas.length"></div>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/App/app-services/adviser_factory.js"></script>
+    <script src="~/App/app-controllers/adviser_controller.js"></script>
+
+}

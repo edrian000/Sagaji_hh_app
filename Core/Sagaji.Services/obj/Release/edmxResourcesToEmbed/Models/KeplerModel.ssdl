@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KEPLERModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="KDII">
+    <Key>
+      <PropertyRef Name="C1" />
+    </Key>
+    <Property Name="C1" Type="char" MaxLength="18" Nullable="false" />
+    <Property Name="C2" Type="char" MaxLength="200" />
+    <Property Name="C3" Type="char" MaxLength="5" />
+    <Property Name="C4" Type="char" MaxLength="5" />
+    <Property Name="C5" Type="char" MaxLength="5" />
+    <Property Name="C6" Type="char" MaxLength="18" />
+    <Property Name="C7" Type="char" MaxLength="18" />
+    <Property Name="C8" Type="char" MaxLength="7" />
+    <Property Name="C9" Type="char" MaxLength="7" />
+    <Property Name="C10" Type="char" MaxLength="20" />
+    <Property Name="C11" Type="char" MaxLength="3" />
+    <Property Name="C12" Type="char" MaxLength="3" />
+    <Property Name="C13" Type="float" />
+    <Property Name="C14" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="C15" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="C16" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="C17" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="C18" Type="float" />
+    <Property Name="C19" Type="float" />
+    <Property Name="C20" Type="char" MaxLength="5" />
+    <Property Name="C21" Type="char" MaxLength="1" />
+    <Property Name="C22" Type="char" MaxLength="1" />
+    <Property Name="C23" Type="decimal" Precision="15" Scale="6" />
+    <Property Name="C24" Type="float" />
+    <Property Name="C25" Type="char" MaxLength="18" />
+    <Property Name="C26" Type="char" MaxLength="18" />
+    <Property Name="C27" Type="char" MaxLength="1" />
+    <Property Name="C28" Type="char" MaxLength="17" />
+    <Property Name="C29" Type="float" />
+    <Property Name="C30" Type="char" MaxLength="7" />
+    <Property Name="C31" Type="char" MaxLength="5" />
+    <Property Name="C32" Type="char" MaxLength="60" />
+    <Property Name="C33" Type="decimal" Precision="13" Scale="0" />
+    <Property Name="C34" Type="decimal" Precision="13" Scale="0" />
+    <Property Name="C35" Type="decimal" Precision="13" Scale="0" />
+    <Property Name="C36" Type="decimal" Precision="2" Scale="0" />
+    <Property Name="C37" Type="char" MaxLength="5" />
+    <Property Name="C38" Type="char" MaxLength="5" />
+    <Property Name="C39" Type="char" MaxLength="60" />
+    <Property Name="C40" Type="char" MaxLength="60" />
+    <Property Name="C41" Type="char" MaxLength="60" />
+    <Property Name="C42" Type="float" />
+    <Property Name="C43" Type="char" MaxLength="1" />
+    <Property Name="C44" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="C45" Type="char" MaxLength="20" />
+    <Property Name="C46" Type="char" MaxLength="3" />
+    <Property Name="C47" Type="char" MaxLength="3" />
+    <Property Name="C48" Type="char" MaxLength="1" />
+    <Property Name="C49" Type="char" MaxLength="1" />
+    <Property Name="C50" Type="datetime" />
+    <Property Name="C51" Type="char" MaxLength="1" />
+    <Property Name="C52" Type="decimal" Precision="2" Scale="0" />
+    <Property Name="C53" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="C54" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="C55" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="C56" Type="datetime" />
+    <Property Name="C57" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="C58" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="C59" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="C60" Type="datetime" />
+    <Property Name="C61" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="C62" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="C63" Type="decimal" Precision="5" Scale="0" />
+    <Property Name="C64" Type="datetime" />
+    <Property Name="C65" Type="datetime" />
+    <Property Name="C66" Type="float" />
+    <Property Name="C67" Type="decimal" Precision="1" Scale="0" />
+    <Property Name="C68" Type="decimal" Precision="7" Scale="0" />
+    <Property Name="C69" Type="char" MaxLength="1" />
+    <Property Name="C70" Type="char" MaxLength="30" />
+    <Property Name="C71" Type="char" MaxLength="1" />
+    <Property Name="C72" Type="char" MaxLength="1" />
+    <Property Name="C73" Type="char" MaxLength="1" />
+    <Property Name="C74" Type="char" MaxLength="1" />
+    <Property Name="C75" Type="char" MaxLength="1" />
+    <Property Name="C76" Type="char" MaxLength="1" />
+    <Property Name="C77" Type="char" MaxLength="1" />
+    <Property Name="C78" Type="char" MaxLength="1" />
+    <Property Name="C79" Type="char" MaxLength="1" />
+    <Property Name="C80" Type="decimal" Precision="15" Scale="0" />
+    <Property Name="C81" Type="char" MaxLength="1" />
+    <Property Name="C82" Type="char" MaxLength="1" />
+    <Property Name="C83" Type="char" MaxLength="1" />
+    <Property Name="C84" Type="char" MaxLength="1" />
+    <Property Name="C85" Type="char" MaxLength="1" />
+    <Property Name="C86" Type="char" MaxLength="1" />
+    <Property Name="C87" Type="char" MaxLength="1" />
+    <Property Name="C88" Type="char" MaxLength="1" />
+    <Property Name="C89" Type="char" MaxLength="10" />
+    <Property Name="C90" Type="char" MaxLength="10" />
+    <Property Name="C91" Type="char" MaxLength="10" />
+    <Property Name="C92" Type="char" MaxLength="10" />
+    <Property Name="C93" Type="char" MaxLength="10" />
+    <Property Name="C94" Type="char" MaxLength="10" />
+    <Property Name="C95" Type="char" MaxLength="10" />
+    <Property Name="C96" Type="char" MaxLength="1" />
+    <Property Name="C97" Type="char" MaxLength="1" />
+    <Property Name="C98" Type="char" MaxLength="1" />
+    <Property Name="C99" Type="char" MaxLength="1" />
+    <Property Name="C100" Type="char" MaxLength="1" />
+    <Property Name="C101" Type="decimal" Precision="10" Scale="0" />
+    <Property Name="C102" Type="char" MaxLength="1" />
+    <Property Name="C103" Type="decimal" Precision="5" Scale="2" />
+    <Property Name="C104" Type="char" MaxLength="10" />
+    <Property Name="C105" Type="decimal" Precision="6" Scale="4" />
+    <Property Name="C106" Type="decimal" Precision="6" Scale="4" />
+  </EntityType>
+  <EntityType Name="KDUDENT">
+    <Key>
+      <PropertyRef Name="C1" />
+      <PropertyRef Name="C2" />
+    </Key>
+    <Property Name="C1" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="C2" Type="char" MaxLength="10" Nullable="false" />
+    <Property Name="C3" Type="char" MaxLength="90" />
+    <Property Name="C4" Type="char" MaxLength="90" />
+    <Property Name="C5" Type="char" MaxLength="90" />
+    <Property Name="C6" Type="char" MaxLength="30" />
+    <Property Name="C7" Type="char" MaxLength="30" />
+    <Property Name="C8" Type="char" MaxLength="90" />
+    <Property Name="C9" Type="char" MaxLength="90" />
+    <Property Name="C10" Type="char" MaxLength="244" />
+    <Property Name="C11" Type="char" MaxLength="10" />
+    <Property Name="C12" Type="char" MaxLength="30" />
+    <Property Name="C13" Type="char" MaxLength="30" />
+    <Property Name="C14" Type="char" MaxLength="18" />
+    <Property Name="C15" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'KEPLER.dbo.KIUSRS' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="KIUSRS">
+    <Key>
+      <PropertyRef Name="C1" />
+    </Key>
+    <Property Name="C1" Type="char" MaxLength="35" Nullable="false" />
+    <Property Name="C2" Type="char" MaxLength="15" />
+    <Property Name="C3" Type="char" MaxLength="40" />
+    <Property Name="C4" Type="char" MaxLength="40" />
+    <Property Name="C5" Type="char" MaxLength="12" />
+  </EntityType>
+  <EntityContainer Name="KEPLERModelStoreContainer">
+    <EntitySet Name="KDII" EntityType="Self.KDII" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KDUDENT" EntityType="Self.KDUDENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="KIUSRS" EntityType="Self.KIUSRS" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KIUSRS].[C1] AS [C1], 
+    [KIUSRS].[C2] AS [C2], 
+    [KIUSRS].[C3] AS [C3], 
+    [KIUSRS].[C4] AS [C4], 
+    [KIUSRS].[C5] AS [C5]
+    FROM [dbo].[KIUSRS] AS [KIUSRS]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

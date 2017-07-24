@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KEPLERModelStoreContainer" CdmEntityContainer="KEPLEREntities">
+    <EntitySetMapping Name="KDII">
+      <EntityTypeMapping TypeName="KEPLERModel.KDII">
+        <MappingFragment StoreEntitySet="KDII">
+          <ScalarProperty Name="C1" ColumnName="C1" />
+          <ScalarProperty Name="C2" ColumnName="C2" />
+          <ScalarProperty Name="C3" ColumnName="C3" />
+          <ScalarProperty Name="C4" ColumnName="C4" />
+          <ScalarProperty Name="C5" ColumnName="C5" />
+          <ScalarProperty Name="C6" ColumnName="C6" />
+          <ScalarProperty Name="C7" ColumnName="C7" />
+          <ScalarProperty Name="C8" ColumnName="C8" />
+          <ScalarProperty Name="C9" ColumnName="C9" />
+          <ScalarProperty Name="C10" ColumnName="C10" />
+          <ScalarProperty Name="C11" ColumnName="C11" />
+          <ScalarProperty Name="C12" ColumnName="C12" />
+          <ScalarProperty Name="C13" ColumnName="C13" />
+          <ScalarProperty Name="C14" ColumnName="C14" />
+          <ScalarProperty Name="C15" ColumnName="C15" />
+          <ScalarProperty Name="C16" ColumnName="C16" />
+          <ScalarProperty Name="C17" ColumnName="C17" />
+          <ScalarProperty Name="C18" ColumnName="C18" />
+          <ScalarProperty Name="C19" ColumnName="C19" />
+          <ScalarProperty Name="C20" ColumnName="C20" />
+          <ScalarProperty Name="C21" ColumnName="C21" />
+          <ScalarProperty Name="C22" ColumnName="C22" />
+          <ScalarProperty Name="C23" ColumnName="C23" />
+          <ScalarProperty Name="C24" ColumnName="C24" />
+          <ScalarProperty Name="C25" ColumnName="C25" />
+          <ScalarProperty Name="C26" ColumnName="C26" />
+          <ScalarProperty Name="C27" ColumnName="C27" />
+          <ScalarProperty Name="C28" ColumnName="C28" />
+          <ScalarProperty Name="C29" ColumnName="C29" />
+          <ScalarProperty Name="C30" ColumnName="C30" />
+          <ScalarProperty Name="C31" ColumnName="C31" />
+          <ScalarProperty Name="C32" ColumnName="C32" />
+          <ScalarProperty Name="C33" ColumnName="C33" />
+          <ScalarProperty Name="C34" ColumnName="C34" />
+          <ScalarProperty Name="C35" ColumnName="C35" />
+          <ScalarProperty Name="C36" ColumnName="C36" />
+          <ScalarProperty Name="C37" ColumnName="C37" />
+          <ScalarProperty Name="C38" ColumnName="C38" />
+          <ScalarProperty Name="C39" ColumnName="C39" />
+          <ScalarProperty Name="C40" ColumnName="C40" />
+          <ScalarProperty Name="C41" ColumnName="C41" />
+          <ScalarProperty Name="C42" ColumnName="C42" />
+          <ScalarProperty Name="C43" ColumnName="C43" />
+          <ScalarProperty Name="C44" ColumnName="C44" />
+          <ScalarProperty Name="C45" ColumnName="C45" />
+          <ScalarProperty Name="C46" ColumnName="C46" />
+          <ScalarProperty Name="C47" ColumnName="C47" />
+          <ScalarProperty Name="C48" ColumnName="C48" />
+          <ScalarProperty Name="C49" ColumnName="C49" />
+          <ScalarProperty Name="C50" ColumnName="C50" />
+          <ScalarProperty Name="C51" ColumnName="C51" />
+          <ScalarProperty Name="C52" ColumnName="C52" />
+          <ScalarProperty Name="C53" ColumnName="C53" />
+          <ScalarProperty Name="C54" ColumnName="C54" />
+          <ScalarProperty Name="C55" ColumnName="C55" />
+          <ScalarProperty Name="C56" ColumnName="C56" />
+          <ScalarProperty Name="C57" ColumnName="C57" />
+          <ScalarProperty Name="C58" ColumnName="C58" />
+          <ScalarProperty Name="C59" ColumnName="C59" />
+          <ScalarProperty Name="C60" ColumnName="C60" />
+          <ScalarProperty Name="C61" ColumnName="C61" />
+          <ScalarProperty Name="C62" ColumnName="C62" />
+          <ScalarProperty Name="C63" ColumnName="C63" />
+          <ScalarProperty Name="C64" ColumnName="C64" />
+          <ScalarProperty Name="C65" ColumnName="C65" />
+          <ScalarProperty Name="C66" ColumnName="C66" />
+          <ScalarProperty Name="C67" ColumnName="C67" />
+          <ScalarProperty Name="C68" ColumnName="C68" />
+          <ScalarProperty Name="C69" ColumnName="C69" />
+          <ScalarProperty Name="C70" ColumnName="C70" />
+          <ScalarProperty Name="C71" ColumnName="C71" />
+          <ScalarProperty Name="C72" ColumnName="C72" />
+          <ScalarProperty Name="C73" ColumnName="C73" />
+          <ScalarProperty Name="C74" ColumnName="C74" />
+          <ScalarProperty Name="C75" ColumnName="C75" />
+          <ScalarProperty Name="C76" ColumnName="C76" />
+          <ScalarProperty Name="C77" ColumnName="C77" />
+          <ScalarProperty Name="C78" ColumnName="C78" />
+          <ScalarProperty Name="C79" ColumnName="C79" />
+          <ScalarProperty Name="C80" ColumnName="C80" />
+          <ScalarProperty Name="C81" ColumnName="C81" />
+          <ScalarProperty Name="C82" ColumnName="C82" />
+          <ScalarProperty Name="C83" ColumnName="C83" />
+          <ScalarProperty Name="C84" ColumnName="C84" />
+          <ScalarProperty Name="C85" ColumnName="C85" />
+          <ScalarProperty Name="C86" ColumnName="C86" />
+          <ScalarProperty Name="C87" ColumnName="C87" />
+          <ScalarProperty Name="C88" ColumnName="C88" />
+          <ScalarProperty Name="C89" ColumnName="C89" />
+          <ScalarProperty Name="C90" ColumnName="C90" />
+          <ScalarProperty Name="C91" ColumnName="C91" />
+          <ScalarProperty Name="C92" ColumnName="C92" />
+          <ScalarProperty Name="C93" ColumnName="C93" />
+          <ScalarProperty Name="C94" ColumnName="C94" />
+          <ScalarProperty Name="C95" ColumnName="C95" />
+          <ScalarProperty Name="C96" ColumnName="C96" />
+          <ScalarProperty Name="C97" ColumnName="C97" />
+          <ScalarProperty Name="C98" ColumnName="C98" />
+          <ScalarProperty Name="C99" ColumnName="C99" />
+          <ScalarProperty Name="C100" ColumnName="C100" />
+          <ScalarProperty Name="C101" ColumnName="C101" />
+          <ScalarProperty Name="C102" ColumnName="C102" />
+          <ScalarProperty Name="C103" ColumnName="C103" />
+          <ScalarProperty Name="C104" ColumnName="C104" />
+          <ScalarProperty Name="C105" ColumnName="C105" />
+          <ScalarProperty Name="C106" ColumnName="C106" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KDUDENT">
+      <EntityTypeMapping TypeName="KEPLERModel.KDUDENT">
+        <MappingFragment StoreEntitySet="KDUDENT">
+          <ScalarProperty Name="C1" ColumnName="C1" />
+          <ScalarProperty Name="C2" ColumnName="C2" />
+          <ScalarProperty Name="C3" ColumnName="C3" />
+          <ScalarProperty Name="C4" ColumnName="C4" />
+          <ScalarProperty Name="C5" ColumnName="C5" />
+          <ScalarProperty Name="C6" ColumnName="C6" />
+          <ScalarProperty Name="C7" ColumnName="C7" />
+          <ScalarProperty Name="C8" ColumnName="C8" />
+          <ScalarProperty Name="C9" ColumnName="C9" />
+          <ScalarProperty Name="C10" ColumnName="C10" />
+          <ScalarProperty Name="C11" ColumnName="C11" />
+          <ScalarProperty Name="C12" ColumnName="C12" />
+          <ScalarProperty Name="C13" ColumnName="C13" />
+          <ScalarProperty Name="C14" ColumnName="C14" />
+          <ScalarProperty Name="C15" ColumnName="C15" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KIUSRS">
+      <EntityTypeMapping TypeName="KEPLERModel.KIUSRS">
+        <MappingFragment StoreEntitySet="KIUSRS">
+          <ScalarProperty Name="C1" ColumnName="C1" />
+          <ScalarProperty Name="C2" ColumnName="C2" />
+          <ScalarProperty Name="C3" ColumnName="C3" />
+          <ScalarProperty Name="C4" ColumnName="C4" />
+          <ScalarProperty Name="C5" ColumnName="C5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

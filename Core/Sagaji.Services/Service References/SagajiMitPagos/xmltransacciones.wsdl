@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:tns="http://wstrans.cpagos" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" targetNamespace="http://wstrans.cpagos" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://wstrans.cpagos">
+      <xsd:element name="transaccionesCargosAutomaticos">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="transaccionesCargosAutomaticosResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="transacciones">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="transaccionesResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="transaccionesDomiciliacion">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="transaccionesDomiciliacionResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cancelacionesCargosAutomaticos">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cancelacionesCargosAutomaticosResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="transaccionesResponse">
+    <wsdl:part name="parameters" element="tns:transaccionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="transaccionesRequest">
+    <wsdl:part name="parameters" element="tns:transacciones" />
+  </wsdl:message>
+  <wsdl:message name="transaccionesDomiciliacionResponse">
+    <wsdl:part name="parameters" element="tns:transaccionesDomiciliacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="transaccionesCargosAutomaticosRequest">
+    <wsdl:part name="parameters" element="tns:transaccionesCargosAutomaticos" />
+  </wsdl:message>
+  <wsdl:message name="cancelacionesCargosAutomaticosResponse">
+    <wsdl:part name="parameters" element="tns:cancelacionesCargosAutomaticosResponse" />
+  </wsdl:message>
+  <wsdl:message name="transaccionesDomiciliacionRequest">
+    <wsdl:part name="parameters" element="tns:transaccionesDomiciliacion" />
+  </wsdl:message>
+  <wsdl:message name="cancelacionesCargosAutomaticosRequest">
+    <wsdl:part name="parameters" element="tns:cancelacionesCargosAutomaticos" />
+  </wsdl:message>
+  <wsdl:message name="transaccionesCargosAutomaticosResponse">
+    <wsdl:part name="parameters" element="tns:transaccionesCargosAutomaticosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="xmltransaccionesPortType">
+    <wsdl:operation name="transaccionesCargosAutomaticos">
+      <wsdl:input name="transaccionesCargosAutomaticosRequest" message="tns:transaccionesCargosAutomaticosRequest" />
+      <wsdl:output name="transaccionesCargosAutomaticosResponse" message="tns:transaccionesCargosAutomaticosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="transacciones">
+      <wsdl:input name="transaccionesRequest" message="tns:transaccionesRequest" />
+      <wsdl:output name="transaccionesResponse" message="tns:transaccionesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="transaccionesDomiciliacion">
+      <wsdl:input name="transaccionesDomiciliacionRequest" message="tns:transaccionesDomiciliacionRequest" />
+      <wsdl:output name="transaccionesDomiciliacionResponse" message="tns:transaccionesDomiciliacionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cancelacionesCargosAutomaticos">
+      <wsdl:input name="cancelacionesCargosAutomaticosRequest" message="tns:cancelacionesCargosAutomaticosRequest" />
+      <wsdl:output name="cancelacionesCargosAutomaticosResponse" message="tns:cancelacionesCargosAutomaticosResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="xmltransaccionesHttpBinding" type="tns:xmltransaccionesPortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="transaccionesCargosAutomaticos">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="transaccionesCargosAutomaticosRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="transaccionesCargosAutomaticosResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transacciones">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="transaccionesRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="transaccionesResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="transaccionesDomiciliacion">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="transaccionesDomiciliacionRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="transaccionesDomiciliacionResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelacionesCargosAutomaticos">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cancelacionesCargosAutomaticosRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cancelacionesCargosAutomaticosResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="xmltransacciones">
+    <wsdl:port name="xmltransaccionesHttpPort" binding="tns:xmltransaccionesHttpBinding">
+      <wsdlsoap:address location="https://ssl.e-pago.com.mx/pgs/services/xmltransacciones" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

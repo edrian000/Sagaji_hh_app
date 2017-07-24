@@ -1,0 +1,80 @@
+﻿<section id="dashboard" data-ng-controller="DashboardController">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3>Usuarios en línea</h3>
+                </div>
+                <div class="panel-body">
+                    <p><i class="glyphicon glyphicon-user"> {{OnLineUser}}</i> </p>
+                </div>
+                <div class="panel-footer">
+                    <span>{{timer|date:'yyyy-MM-dd HH:mm:ss' }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Eventos</h3>
+                </div>
+                <div class="panel-body">
+                    <ul id="eventos" class="list-group">
+                        <li class="list-group-item-info" data-ng-repeat="item in Events">
+                            {{item}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>Errores</h3>
+                </div>
+                <div class="panel-body">
+                    <ul id="eventos" class="list-group">
+                        <li class="list-group-item-danger" data-ng-repeat="item in Errors" ng-cloak>
+                            {{item}}
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-xs-12">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Mensaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="item in Operations">
+                        <td>
+                            <span>{{item.time|date:'yyyy-MM-dd HH:mm:ss'}}</span>
+                        </td>
+                        <td>
+                            <small>
+                                {{item.message}}
+                            </small>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+@section scripts{
+
+
+    <script src="~/App/app-controllers/dashboard.controller.js"></script>
+}

@@ -1,0 +1,213 @@
+﻿<ion-side-menus>
+    <ion-side-menu-content drag-content="false">
+        <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+            <ion-nav-back-button class="button-clear">
+                <i class="icon ion-ios7-arrow-back"></i> <<
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" animation="slide-left-right">
+        </ion-nav-view>
+    </ion-side-menu-content>
+</ion-side-menus>
+
+<ion-view title="Browse">
+
+    <ion-nav-buttons side="left">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button menu-toggle="right" class="button button-icon icon ion-ios7-more-outline"></button>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <div class="button-bar">
+            <a class="button button-positive" ng-click="goCarteraClientes()">
+                <i class="icon ion-person-stalker">
+                </i>
+            </a>
+            <a class="button button-balanced" ng-click="goBusquedProductos()">
+                <i class="icon ion-android-search">
+                </i>
+            </a>
+
+            <a class="button button-dark" ng-click="goPedidosHistory()">
+                <i class="icon ion-ios-book-outline">
+                </i>
+            </a>
+        </div>
+
+        <span class="item">
+            <i class="icon ion-key">
+                <small>Pedido: </small>
+            </i>
+            <small ng-hide="Request.Cliente === null">{{Request.CvePedido}}</small>
+        </span>
+
+        <span class="item">
+            <i class="icon ion-briefcase">
+                <small>Cartera: </small>
+            </i>
+            <small ng-hide="Request.Cliente === null">{{Request.Cliente.Cartera}} : {{Request.Cliente.NoCliente}}</small>
+        </span>
+
+        <span class="item">
+            <i class="icon ion-android-person">
+                <small>Cliente: </small>
+            </i>
+            <small>{{Request.Cliente.Nombre}}</small>
+        </span>
+
+        <span class="item">
+            <i class="icon ion-ios-email">
+                <small>Observaciones: </small>
+            </i>
+            <input type="text" class="ion-input" ng-model="Request.Observaciones" />
+        </span>
+
+        <span class="item item-input item-select">
+            <i class="icon ion-ios-email">
+                <small>Entrega:</small>
+            </i>
+            <select ng-model="Request.Entrega"
+                    ng-options="item as item.DomEntrega for item in Request.Cliente.Domicilios track by item.Id"></select>
+        </span>
+
+        <label class="item item-input item-select">
+            <i class="icon ion-briefcase">
+                <small>Prioridad de envió: </small>
+            </i>
+
+            <select ng-model="Request.TipoEntrega"
+                    ng-options="item.ID as item.Title for item in Prioridades"></select>
+        </label>
+
+        <ion-list>
+
+            <ion-item ng-repeat="item in Request.Partidas track by item.Codigo">
+
+                <div class="row row-stretch">
+                    <div class="col">
+                        <div class="button-bar">
+                            <button class="button button-energized" ng-click="RemoveCantidad(item)">
+                                <i class="ion ion-minus"> </i>
+                            </button>
+                            <button class="button button-positive" ng-click="AddCantidad(item)">
+                                <i class="ion ion-plus"> </i>
+                            </button>
+
+                            <button class="button button-assertive " ng-click="RemoveInCart(item)">
+                                <i class="icon ion-ios-trash"> </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-stretch">
+                    <div class="col">
+                        <label class="item item-input">
+                            <span class="input-label">
+                                <small>Cantidad: </small>
+                            </span>
+                            <br />
+                            <input type="number" ng-model="item.Cantidad"
+                                   ng-change="Validate(item)"
+                                   placeholder="Cantidad"
+                                   min="1"
+                                   select-on-click />
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row row-stretch">
+                    <div class="col">
+                        <label class="item-input-wrapper">
+                            <span>
+                                <small>Código: </small>
+                                <strong>
+                                    {{item.Codigo}}
+                                </strong>
+
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="col">
+                        <label class="item-input-wrapper">
+                            <span>Precio: {{item.Precio | currency}}</span>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="row row-stretch">
+                    <div class="col">
+                        <label class="item-input-wrapper">
+                            <span> Linea: {{item.Linea}}</span>
+                        </label>
+                    </div>
+
+                    <div class="col">
+                        <label class="item-input-wrapper">
+                            <span> Unidad: {{item.Unidad}}</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="row row-stretch">
+                    <div class="col">
+                        <label class="item-input-wrapper">
+                            <small> Descipcion: {{item.Descripcion}}</small>
+                        </label>
+                    </div>
+                </div>
+            </ion-item>
+
+
+            <ion-item class="item">
+
+                <div class="row row-stretch">
+                    <div class="col">
+                        <span>
+                            <small># Partidas: {{Request.Partidas.length}}</small>
+                        </span>
+                        <br />
+                        <span>
+                            <small># Articulos: {{Request.NumArticulos}}</small>
+                        </span>
+                        <br />
+
+                    </div>
+                    <div class="col">
+                        <span>
+                            <small>Subtotal: {{Request.SubTotal|currency}}</small>
+                        </span>
+                        <br />
+                        <span>
+                            <small>IVA: {{Request.Iva|currency}}</small>
+                        </span>
+                        <br />
+                        <span>
+                            <small>
+                                Total: {{Request.Total | currency}}
+                            </small>
+                        </span>
+                    </div>
+
+                </div>
+            </ion-item>
+
+        </ion-list>
+
+        <div class="button-bar">
+            <div class="button-bar">
+                <button class="button button-calm"
+                        ng-disabled="IsProcessing  || Request.Partidas.length == 0"
+                        ng-click="SolicitaPedido()">
+                    <i class="icon ion-android-cart"> Guarda pedido</i>
+                </button>
+                <button class="button button-assertive"
+                        ng-disabled="IsProcessing  || Request.Partidas.length == 0"
+                        ng-click="RemovePedido()">
+                    <i class="icon ion-close"> Cancelar pedido</i>
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

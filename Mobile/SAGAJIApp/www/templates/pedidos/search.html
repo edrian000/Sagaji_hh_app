@@ -1,0 +1,194 @@
+﻿<ion-view view-title="Búsqueda de productos : {{loginData}}" cache-view="false">
+
+    <ion-content scroll="true" class="padding">
+        <form>
+            <ion-header-bar class="bar bar-header item-input-inset">
+                <label class="item-input-wrapper">
+                    <i class="icon ion-ios-search placeholder-icon"></i>
+                    <input type="search" placeholder="Código o descripción"
+                           ng-change="ClearView()"
+                           ng-model="Product.Search">
+
+                </label>
+
+                <button class="button button-positive" ng-click="searchProduct(Product.Search)">
+                    Búsqueda
+                </button>
+            </ion-header-bar>
+        </form>
+
+        <ion-item>
+            <label>Partidas: <strong>{{$scope.Request.Partidas.length}}</strong></label>
+        </ion-item>
+
+        <ion-list ng-hide="Product.Products.length == 0">
+            <h5>Articulos</h5>
+
+            <ion-item class="item item-icon-left item-icon-right"
+                      ng-repeat="item in Product.Products" ng-click="SelectItem(item.Codigo, '')">
+                <b>{{item.Codigo}}</b>
+                <p>
+
+                    <small>{{item.Descripcion}}</small>
+
+                    <br />
+                    <strong>{{item.Precio|currency}}</strong>
+                </p>
+                <i class="icon ion-ios-cart"></i>
+            </ion-item>
+        </ion-list>
+
+        <ion-list ng-hide="Product.Products.length > 0">
+            <h5>Articulo</h5>
+            <ion-item class="item item-button-right">
+                <b>Código</b>
+                <!--{{Product.Codigo}}-->
+                <input class="text-left" type="text" ng-model="Product.Codigo" disabled />
+                <button class="button button-calm" ng-click="SelectItem(Product.CodigoEquivalente, Product.Codigo)"
+                        ng-disabled="Product.CodigoEquivalente === '' ">
+                    <i class="icon ion-arrow-return-right"></i>
+                </button>
+            </ion-item>
+
+            <ion-item class="item item-button-right" style="align-content:center;">
+                <p>
+                    <b>Cantidad</b>
+                    <label class="item item-input-inset">
+                        <input type="number"
+                               autofocus
+                               ng-required="true"
+                               ng-disabled="Product.Codigo === ''"
+                               ng-model="Product.Cantidad"
+                               placeholder="Cantidad"
+                               select-on-click />
+                    </label>
+                </p>
+
+                <button class="button button-assertive" ng-click="AddinCart(Product)"
+                        ng-disabled="Product.Codigo === ''">
+                    <i class="ion ion-android-cart"> </i>
+                </button>
+            </ion-item>
+
+            <ion-item>
+                <div class="row row-stretch">
+                    <div class="col">
+                        <h4>Descripción</h4>
+                        <p>
+                            <small>{{Product.Descripcion}}</small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row row-stretch">
+                    <div class="col">
+                        <b>
+                            Precio
+                        </b>
+                        <p>
+                            {{Product.Precio | currency}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <b>Unidad </b>
+                        <p>{{Product.Unidad}}</p>
+                    </div>
+                    <div class="col">
+                        <b>Multiplo </b>
+                        <p>{{Product.Unidad}}</p>
+                    </div>
+                    <div class="col">
+                        <b>Linea </b>
+                        <p>{{Product.Linea}}</p>
+                    </div>
+                </div>
+
+                <div class="row row-stretch">
+                    <div class="col">
+                        <small>Leon</small>
+                        <p>{{Product.Leon}}</p>
+                    </div>
+                    <div class="col">
+                        <small>Mexico</small>
+                        <p>{{Product.Mexico}}</p>
+                    </div>
+                    <div class="col">
+                        <small>Oaxaca</small>
+                        <p>{{Product.Oaxaca}}</p>
+                    </div>
+                    <div class="col">
+                        <small>Puebla</small>
+                        <p>{{Product.Puebla}}</p>
+                    </div>
+                    <div class="col">
+                        <small>Tuxtla</small><p>{{Product.Tuxtla}}</p>
+                    </div>
+                </div>
+
+            </ion-item>
+
+            <ion-item type="item-text-wrap">
+                <h3>Equivalencias</h3>
+                <span class="badge badge-balanced">{{Product.Equivalencias.length}}</span>
+            </ion-item>
+
+            <ion-item ng-repeat="item in Product.Equivalencias">
+                <div class="row row-stretch">
+                    <div class="col">
+                        <h4>Código</h4>
+                        <p>
+                            <small>{{item.Codigo}}</small>
+                        </p>
+                    </div>
+                    <div class="col col-33 col-offset-33">
+                        <button class="button button-positive" ng-click="SelectItem(item.Codigo, Product.Codigo)">
+                            <i class="icon ion-arrow-swap"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-stretch">
+                    <div class="col">
+                        <b>
+                            Precio
+                        </b>
+                        <p>
+                            {{item.Precio | currency}}
+                        </p>
+                    </div>
+                    <div class="col">
+                        <b>Unidad </b>
+                        <p>{{item.Unidad}}</p>
+                    </div>
+                    <div class="col">
+                        <b>Linea </b>
+                        <p>{{item.Linea}}</p>
+                    </div>
+                </div>
+
+                <div class="row row-stretch">
+                    <div class="col">
+                        <small>Leon</small>
+                        <p>{{item.Leon}}</p>
+                    </div>
+                    <div class="col">
+                        <small>Mexico</small>
+                        <p>{{item.Mexico}}</p>
+                    </div>
+                    <div class="col">
+                        <small>Oaxaca</small>
+                        <p>{{item.Oaxaca}}</p>
+                    </div>
+                    <div class="col">
+                        <small>Puebla</small>
+                        <p>{{item.Puebla}}</p>
+                    </div>
+                    <div class="col">
+                        <small>Tuxtla</small><p>{{item.Tuxtla}}</p>
+                    </div>
+                </div>
+
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4ead624bd6c940c98200fce5f153f5b1" Name="Diagram1">
+        <EntityTypeShape EntityType="MobileAppModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.app_version" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.AspNetRoles" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.AspNetUsers" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.catalogo_bd" Width="1.5" PointX="3" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.cliente_info" Width="1.5" PointX="10" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.descarga_clientes" Width="1.5" PointX="12.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.event_status" Width="1.5" PointX="7.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.itempedido" Width="1.5" PointX="15" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.pedidoapp" Width="1.5" PointX="12.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.perfil" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.plataforma" Width="1.5" PointX="7.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.role" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.system_logger" Width="1.5" PointX="10" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.usuario" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MobileAppModel.usuarios_sincronizacion" Width="1.5" PointX="5.25" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="MobileAppModel.fk_app_vers_app_plata_platafor" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.fk_descarga_app_desca_app_vers" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.fk_usuarios_catalogo__catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.fk_descarga_cliente_d_cliente_" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.fk_system_l_event_s_s_event_st" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.fk_itempedi_pedido_it_pedidoap" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.fk_perfil_role_perf_role" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.fk_usuario_usuario_r_role" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.fk_usuarios_usuario_d_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="MobileAppModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

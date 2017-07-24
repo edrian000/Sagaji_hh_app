@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sagaji.servicesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ServiceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="itempedido" EntityType="sagaji.servicesModel.itempedido" />
+    <EntitySet Name="pedidoapp" EntityType="sagaji.servicesModel.pedidoapp" />
+    <AssociationSet Name="fk_itempedi_pedido_it_pedidoap" Association="sagaji.servicesModel.fk_itempedi_pedido_it_pedidoap">
+      <End Role="pedidoapp" EntitySet="pedidoapp" />
+      <End Role="itempedido" EntitySet="itempedido" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="itempedido">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cvepedido" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="descripcion" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="precio" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="linea" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="unidad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="cantidad" Type="Int16" />
+    <Property Name="sincronizado" Type="Boolean" />
+    <Property Name="fecharegistro" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="pedidoapp" Relationship="sagaji.servicesModel.fk_itempedi_pedido_it_pedidoap" FromRole="itempedido" ToRole="pedidoapp" />
+  </EntityType>
+  <EntityType Name="pedidoapp">
+    <Key>
+      <PropertyRef Name="cvepedido" />
+    </Key>
+    <Property Name="cvepedido" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="idcartera" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="nocliente" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="usuariologin" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="domentrega" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="observaciones" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="subtotal" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="iva" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="total" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="sincronizado" Type="Boolean" />
+    <Property Name="fecharegistro" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="itempedido" Relationship="sagaji.servicesModel.fk_itempedi_pedido_it_pedidoap" FromRole="pedidoapp" ToRole="itempedido" />
+  </EntityType>
+  <Association Name="fk_itempedi_pedido_it_pedidoap">
+    <End Type="sagaji.servicesModel.pedidoapp" Role="pedidoapp" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="sagaji.servicesModel.itempedido" Role="itempedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidoapp">
+        <PropertyRef Name="cvepedido" />
+      </Principal>
+      <Dependent Role="itempedido">
+        <PropertyRef Name="cvepedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

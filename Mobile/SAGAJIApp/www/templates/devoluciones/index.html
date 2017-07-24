@@ -1,0 +1,82 @@
+﻿<ion-view view-title="Devoluciones : {{loginData}}" cache-view="false">
+    <ion-content class="padding" scroll="true">
+        <div class="button-bar">
+            <a class="button button-block button-small button-positive" ng-click="selectDate()">
+
+                <i class="icon ion-calendar">
+                </i>
+            </a>
+        </div>
+
+<div class="col col-33">
+                <ion-list>
+                    <ion-item>
+                        <i class="ion ion-briefcase">
+                            <small>Carteras</small>
+                        </i>
+                    </ion-item>
+                    <ion-item ng-repeat="item in Carteras"
+                              ng-click="SelectCartera(item)">
+                        <small>{{item}}</small>
+                    </ion-item>
+                </ion-list>
+            </div>
+
+       <div class="row row-stretch">
+                            <div class="col">
+                                <small>Ped.Kepler:</small>
+                                <p>{{Devoluciones.Ped.Kepler}}</p>
+                            </div>
+                            <div class="col">
+                                <small>Total:</small>
+                                <p>{{Devoluciones.Total}}</p>
+                            </div>
+                            <div class="col">
+                                <small>Status:</small>
+                                <p>{{Devoluciones.Status}}</p>
+                            </div>
+                             <div class="col">
+                                <small>Plazo:</small>
+                                <p>{{Devoluciones.Plazo}}</p>
+                            </div>
+                            <div class="col">
+                                <small>Fec.Factura:</small>
+                                <p>{{Devoluciones.Fec.Factura}}</p>
+                            </div>
+                            <div class="col">
+                                <small>Fec.Ven:</small><p>{{Devoluciones.Fec.ven}}</p>
+                            </div>
+                        </div>
+        <ion-list>
+           
+            <small class="item">
+                Fecha:{{Model.DateFilter|date:'MM/dd/yyyy'}}
+            </small>
+            
+            <ion-item ng-repeat="item in Model.Facturas track by item.NumDoc" class="item-icon-left">
+                <ion-item class="item item-icon-left" ng-click="clickMe(item)">
+                    <i class="icon" ng-class="togglePlus(item)"></i>
+                    <small>
+                        {{item.NumDoc}}
+                    </small>
+                </ion-item>
+                <ion-item class="item-button-right" ng-show="isGroupShowing(item)">
+                    
+                    <p>
+                        <small>Partidas: {{item.Facturas.length}}</small>
+                        <br />
+                        <small>Total: {{item.Total}}</small>
+                    </p>
+
+                    <a ng-click="editMe(item)" class="button button-positive">
+                        <i class="icon ion-android-sync"></i>
+                    </a>
+                </ion-item>
+
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
+ 
+ 
+                        

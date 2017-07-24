@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sagaji.servicesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="itempedido">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cvepedido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="precio" Type="money" />
+    <Property Name="linea" Type="varchar" MaxLength="20" />
+    <Property Name="unidad" Type="varchar" MaxLength="20" />
+    <Property Name="cantidad" Type="smallint" />
+    <Property Name="sincronizado" Type="bit" />
+    <Property Name="fecharegistro" Type="datetime" />
+  </EntityType>
+  <EntityType Name="pedidoapp">
+    <Key>
+      <PropertyRef Name="cvepedido" />
+    </Key>
+    <Property Name="cvepedido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idcartera" Type="varchar" MaxLength="20" />
+    <Property Name="nocliente" Type="varchar" MaxLength="20" />
+    <Property Name="usuariologin" Type="varchar" MaxLength="20" />
+    <Property Name="domentrega" Type="varchar" MaxLength="2" />
+    <Property Name="observaciones" Type="varchar" MaxLength="255" />
+    <Property Name="subtotal" Type="money" />
+    <Property Name="iva" Type="money" />
+    <Property Name="total" Type="money" />
+    <Property Name="sincronizado" Type="bit" />
+    <Property Name="fecharegistro" Type="datetime" />
+  </EntityType>
+  <Association Name="fk_itempedi_pedido_it_pedidoap">
+    <End Role="pedidoapp" Type="Self.pedidoapp" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="itempedido" Type="Self.itempedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidoapp">
+        <PropertyRef Name="cvepedido" />
+      </Principal>
+      <Dependent Role="itempedido">
+        <PropertyRef Name="cvepedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="sagajiservicesModelStoreContainer">
+    <EntitySet Name="itempedido" EntityType="Self.itempedido" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pedidoapp" EntityType="Self.pedidoapp" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_itempedi_pedido_it_pedidoap" Association="Self.fk_itempedi_pedido_it_pedidoap">
+      <End Role="pedidoapp" EntitySet="pedidoapp" />
+      <End Role="itempedido" EntitySet="itempedido" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

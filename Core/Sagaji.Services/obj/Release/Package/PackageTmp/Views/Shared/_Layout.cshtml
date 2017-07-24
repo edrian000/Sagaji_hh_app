@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SAGAJI.Services</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">SAGAJI</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        @Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, null)
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Aplicación <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            @*<li>
+                                    @Html.ActionLink("Aplicaciones", "App", "Home", new { area = "" }, null)
+                                </li>*@
+                            <li>
+                                @Html.ActionLink("Pedidos", "Index", "Sales", new { area = "" }, null)
+                            </li>
+                            <li>
+                                @*<a href="#">Something else here</a>*@
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                @Html.ActionLink("Descargas", "Download", "Home", new { area = "" }, null)
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                @*<a href="#">One more separated link</a>*@
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Manuales <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+
+                            <li>
+                                <a href="#">Manual de descarga</a>
+                            </li>
+                            <li>
+                                <a href="#">Manual de usuario</a>
+                            </li>
+                            <li class="divider"></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown" role="menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Videos <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"></a>Descarga de versión android</li>
+                            <li><a href="#"></a>Descarga de versión iOS</li>
+                            <li><a href="#"></a>Sincronización de catálogos</li>
+                            <li><a href="#"></a>Sincronización de pedidos</li>
+                            <li><a href="#"></a>Levantamiento de pedidos</li>
+                            <li><a href="#"></a>Pedidos en carrito</li>
+                            <li><a href="#"></a>Historico de pedidos</li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form id="signin" class="navbar-form navbar-right" role="form" ng-controller="logincontroller">
+                    <div class="input-group" ng-show="accessToken === null">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="email" type="text" class="form-control" name="email" value="" placeholder="Usuario" ng-model="userLoginEmail">
+                    </div>
+
+                    <div class="input-group" ng-show="accessToken === null">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="password" type="password" class="form-control" name="password" value="" placeholder="Contraseña" ng-model="userLoginPassword">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" ng-click="login()" ng-show="accessToken === null">
+                        <i class="glyphicon glyphicon-log-in"> Acceso</i>
+                    </button>
+                    <button type="button" class="btn btn-primary" ng-click="logout()" ng-hide="accessToken === null ">
+                        <i class="glyphicon glyphicon-log-out"> Cerrar sesión</i>
+                    </button>
+                    <label class="label label-danger">{{responseData}}</label>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - SAGAJI.Services</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/toastr.js"></script>
+
+
+    @*Angular library*@
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-animate.js"></script>
+    <script src="~/Scripts/angular-resource.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/angular-touch.js"></script>
+
+    <script src="~/Scripts/ng-file-upload/angular-file-upload.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap.js"></script>
+    <script src="~/Scripts/loading-bar.js"></script>
+    <script src="~/Scripts/toaster.js"></script>
+
+
+    @*Application*@
+
+    <script src="~/App/app.js"></script>
+    <script src="~/App/app-directive/file_directive.js"></script>
+    <script src="~/App/app-services/loginservice.js"></script>
+    <script src="~/App/app-config/app.config.js"></script>
+    <script src="~/App/app-services/hubProxy.service.js"></script>
+    <script src="~/App/app-controllers/logincontroller.js"></script>
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

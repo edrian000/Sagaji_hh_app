@@ -1,0 +1,87 @@
+﻿<ion-view view-title="Pedidos por enviar : {{loginData}}" cache-view="false" hide-back-button="false">
+
+    <ion-content class="padding" scroll="true">
+        <h4 class="title-left">Pedidos por sincronizar</h4>
+        <ion-list can-swipe="true" show-delete="false">
+            <ion-item>
+                <a class="button button-positive" ng-click="sincronizaPedidos()"
+                   ng-disabled="Pedidos.length == 0 || isSyncing">
+                    <i class="ion ion-ios-loop-strong">
+                        Sincronizar todo ({{Pedidos.length}})
+                    </i>
+                </a>
+            </ion-item>
+
+            <ion-item>
+                <progress value="{{Processed}}" max="{{InitQueue}}"></progress>
+            </ion-item>
+
+            <ion-item ng-repeat="item in Pedidos track by item.CvePedido">
+                <div>
+                    <span>
+                        <i class="ion ion-key">
+                            <small>
+                                Pedido:
+                            </small>
+                        </i>
+                        <small>{{item.CvePedido}}</small>
+                    </span>
+                    <br />
+                    <span>
+                        <i class="ion ion-key">
+                            <small>No Cliente: </small>
+                        </i>
+                        <small>{{item.Cliente.NoCliente}}</small>
+                    </span>
+                    <br />
+                    <span>
+                        <i class="ion ion-android-person">
+                            <small>Cliente:</small>
+                        </i>
+                        <small>{{item.Cliente.Nombre}}</small>
+                    </span>
+                    <br />
+                    <span>
+                        <i class="ion ion-calendar">
+                            <small>Fecha de captura: </small>
+                        </i>
+                        <small>{{item.FechaCaptura|date:'MM/dd/yyyy h:mm a'}}</small>
+                    </span>
+                    <br />
+
+                    <span>
+                        <i class="ion ion-attach">
+                            <small># Pedidos: </small>
+                        </i>
+                        <small>{{item.Partidas.length}}</small>
+                    </span>
+                    <br />
+
+                    <span>
+                        <i class="ion ion-attach">
+                            <small># Total: </small>
+                        </i>
+                        <small>{{item.Total|currency}}</small>
+                    </span>
+                </div>
+
+                <ion-option-button class="button button-energized icon ion-edit" ng-click="EditPedido(item)"></ion-option-button>
+                <ion-option-button class="button button-positive icon ion-home" ng-click="SincronizaPedido(item)"></ion-option-button>
+                <ion-option-button class="button button-assertive icon ion-close" ng-click="RemovePedido(item)"></ion-option-button>
+
+            </ion-item>
+
+        </ion-list>
+
+        <div class="button-bar">
+
+        </div>
+
+        <!--<ion-scroll direction="x" class="wide-as-needed" ng-hide="Pedidos.length === 0">
+
+
+        </ion-scroll>-->
+
+    </ion-content>
+
+</ion-view>

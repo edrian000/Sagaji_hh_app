@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="06ef82335e194939a13111358e9d94b8" Name="Diagram1">
+        <EntityTypeShape EntityType="MobileAppModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="11.75" />
+        <EntityTypeShape EntityType="MobileAppModel.app_version" Width="1.5" PointX="10" PointY="1" />
+        <EntityTypeShape EntityType="MobileAppModel.AspNetRoles" Width="1.5" PointX="0.75" PointY="2.5" />
+        <EntityTypeShape EntityType="MobileAppModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="3.625" />
+        <EntityTypeShape EntityType="MobileAppModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="1" />
+        <EntityTypeShape EntityType="MobileAppModel.AspNetUsers" Width="1.5" PointX="3" PointY="1.375" />
+        <EntityTypeShape EntityType="MobileAppModel.catalogo_bd" Width="1.5" PointX="3" PointY="13.625" />
+        <EntityTypeShape EntityType="MobileAppModel.catalogo_csv" Width="1.5" PointX="7.75" PointY="12.75" />
+        <EntityTypeShape EntityType="MobileAppModel.cliente_info" Width="1.5" PointX="10" PointY="5.25" />
+        <EntityTypeShape EntityType="MobileAppModel.descarga_clientes" Width="1.5" PointX="12.25" PointY="1" />
+        <EntityTypeShape EntityType="MobileAppModel.event_status" Width="1.5" PointX="7.75" PointY="9.375" />
+        <EntityTypeShape EntityType="MobileAppModel.itempedido" Width="1.5" PointX="15" PointY="5.25" />
+        <EntityTypeShape EntityType="MobileAppModel.pedidoapp" Width="1.5" PointX="12.75" PointY="5" />
+        <EntityTypeShape EntityType="MobileAppModel.perfil" Width="1.5" PointX="3" PointY="10.625" />
+        <EntityTypeShape EntityType="MobileAppModel.plataforma" Width="1.5" PointX="7.75" PointY="1.375" />
+        <EntityTypeShape EntityType="MobileAppModel.role" Width="1.5" PointX="0.75" PointY="8.875" />
+        <EntityTypeShape EntityType="MobileAppModel.system_logger" Width="1.5" PointX="10" PointY="9" />
+        <EntityTypeShape EntityType="MobileAppModel.usuario" Width="1.5" PointX="3" PointY="7.125" />
+        <EntityTypeShape EntityType="MobileAppModel.usuarios_sincronizacion" Width="1.5" PointX="5.25" PointY="7.375" />
+        <AssociationConnector Association="MobileAppModel.fk_app_vers_app_plata_platafor" />
+        <AssociationConnector Association="MobileAppModel.fk_descarga_app_desca_app_vers" />
+        <AssociationConnector Association="MobileAppModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="MobileAppModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="MobileAppModel.fk_usuarios_catalogo__catalogo" />
+        <AssociationConnector Association="MobileAppModel.fk_descarga_cliente_d_cliente_" />
+        <AssociationConnector Association="MobileAppModel.fk_system_l_event_s_s_event_st" />
+        <AssociationConnector Association="MobileAppModel.fk_itempedi_pedido_it_pedidoap" />
+        <AssociationConnector Association="MobileAppModel.fk_perfil_role_perf_role" />
+        <AssociationConnector Association="MobileAppModel.fk_usuario_usuario_r_role" />
+        <AssociationConnector Association="MobileAppModel.fk_usuarios_usuario_d_usuario" />
+        <AssociationConnector Association="MobileAppModel.AspNetUserRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

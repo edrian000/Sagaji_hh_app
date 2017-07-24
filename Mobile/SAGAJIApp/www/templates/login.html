@@ -1,0 +1,39 @@
+<ion-view title="SAGAJI"  style="background-color:#FFFFFF;" cache-view="false">
+
+    <ion-content padding="true" class="has-header">
+        <form class="list animated bounceInLeft" >
+            <div style="text-align:center;">
+                <img src="img/logo_sagaji.jpg" class="image">
+            </div>
+            <i class="ion ion-person">
+                <strong> Usuario</strong>
+            </i>
+            <label class="item item-input">
+                <input type="text" placeholder="Usuario"
+                       required
+                       ng-model="loginData.UserLogin"
+                       ng-required="true">
+            </label>
+            <i class="ion ion-key">
+                <strong>Contrase&ntilde;a</strong>
+            </i>
+            <label class="item item-input">
+                <input type="password" placeholder="Contrase&ntilde;a"
+                       required
+                       ng-model="loginData.UserPassword"
+                       ng-required="true">
+            </label>
+
+            
+
+            <button type="submit"
+                    class="button button-positive  button-block"
+                    ng-disabled="IsProcessing"
+                    ng-click="doLogin()">
+                <i class="ion ion-log-in"> Entrar</i>
+            </button>
+        </form>
+
+    </ion-content>
+
+</ion-view>

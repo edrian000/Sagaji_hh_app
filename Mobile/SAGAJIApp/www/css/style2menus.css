@@ -1,0 +1,75 @@
+body{
+  background-image: url('http://code.ionicframework.com/assets/img/app_icon.png');
+  background-size:cover;
+}
+ion-nav-view .view, ion-side-menu.menu,ion-side-menu.menu .bar, ion-side-menu.menu .item, ion-side-menu.menu .item .item-content{
+  background:none;
+}
+ion-side.menu-content .view{
+  border:none!important
+}
+.no-background, .no-background .pane,.no-background .view{
+  background:none!important;
+}
+
+.bar-subheader{
+  display:block;
+  z-index:1000;
+}
+.bar-subheader h3{
+  text-align:center;
+  /* color:white;color:white; */
+}
+
+/*Botó rodó superior*/
+.bar .button.button-icon.round-button{
+  bottom:-25px;
+  right:25px;
+  position:absolute;
+  z-index:1000;
+}
+
+.button.button-icon.round-button{
+  background:red;
+  border-radius:50%;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.26);
+  height:50px;
+  line-height:25px;
+  -webkit-transition: bottom 0.1s;
+  -moz-transition: bottom 0.1s;
+  transition: bottom 0.1s;
+  vertical-align:middle;
+  width:50px;
+}
+.button.button-icon.round-button.active, .button.button-icon.round-button.activated {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.12);
+    opacity: 1; 
+}
+.round-button + .sub-icon{
+  background:none;
+  border:none;
+  bottom:-18px!important;
+  color:white!important;
+  font-size:15px!important;
+  font-weight:bold!important;
+  height:15px!important;
+  line-height:15px!important;
+  position:absolute!important;
+  right:33px!important;
+  width:15px!important;
+  z-index:1001!important;
+}
+
+.bar-subheader-2 {
+  display:block;
+  top: 88px;
+  height:64px;
+  z-index:999;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.has-2-subheaders{
+  top:152px;
+}

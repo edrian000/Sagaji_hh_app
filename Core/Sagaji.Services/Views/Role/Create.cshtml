@@ -1,0 +1,29 @@
+﻿
+@model Microsoft.AspNet.Identity.EntityFramework.IdentityRole
+@{
+    ViewBag.Title = "Create";
+}
+
+<div class="container">
+    <div class="row">
+        <h2>Crear Rol</h2>
+        <div class="col-sm-4 col-md-4 col-xs-12">
+            @using (Html.BeginForm())
+            {
+                <table class="table table-responsive">
+                    <tr>
+                        <td class="form-control">Inserte el rol:</td>
+                        <td class="form-control">
+                            @Html.EditorFor(m => m.Name)
+                        </td>
+                    </tr>
+                </table>
+                <input class="btn btn-primary" type="submit" value="Crear Rol" />
+            }
+        </div>
+        <div class="col-sm-8 col-md-8 col-xs-12"></div>
+    </div>
+</div>
+
+
+

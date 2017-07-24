@@ -1,0 +1,110 @@
+/* Empty. Add your own CSS if you like */
+.list .item.item-accordion {
+    line-height: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.09s all linear;
+}
+
+    .list .item.item-accordion.ng-hide {
+        line-height: 0px;
+    }
+
+    .list .item.item-accordion.ng-hide-add,
+    .list .item.item-accordion.ng-hide-remove {
+        display: block !important;
+    }
+
+.item-toggle .toggle {
+    left: 16px !important;
+}
+
+.item-toggle .ng-binding {
+    margin-left: 98% !important;
+}
+
+
+.dark-overlay {
+    background-color: #222;
+    opacity: 0.8;
+}
+
+.dark-item {
+    background-color: transparent;
+    color: #fff;
+    border-color: #444;
+}
+
+.close-icon:before {
+    font-size: 40px !important;
+}
+
+.bar-clear {
+    background: none;
+}
+
+.overlay-spacer {
+    height: 100px;
+}
+
+
+/*custom is class added to ion-content*/
+
+.custom {
+    background-color: #3f4041 !important; /* This sets the background color*/
+}
+
+    /*Set the background to transparent for ion-item*/
+    .custom .item {
+        background-color: transparent;
+        border: none; /*Removes all borders*/
+        border-top: 1px solid; /*Top Border for each menu item*/
+        border-bottom: 2px solid; /*Bottom border for each menu item*/
+        border-color: #666; /*Sets colors for top and bottom border*/
+        color: white; /*Text color for each item*/
+    }
+
+        /*Changes the border for the last item*/
+        .custom .item:last-child {
+            border-bottom: 1px solid #666;
+        }
+
+    .custom .item-complex .item-content, .dark .item-radio .item-content {
+        background-color: transparent;
+    }
+
+    /*Just makes the type white*/
+    .custom h2,
+    .custom h3,
+    .custom h4,
+    .custom h5,
+    .custom span,
+    .custom small,
+    .custom select,
+    .custom input,
+    .custom p,
+    .custom a {
+        color: white; /*Text color for each item, overrides the color property above*/
+
+{
+    font-size: 55px !important;
+}
+
+
+
+
+.list .item.item-accordion {
+    line-height: 38px;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: 0.09s all linear;
+}
+
+    .list .item.item-accordion.ng-hide {
+        line-height: 0px;
+    }
+
+    .list .item.item-accordion.ng-hide-add,
+    .list .item.item-accordion.ng-hide-remove {
+        display: block !important;
+    }

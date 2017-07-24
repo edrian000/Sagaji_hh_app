@@ -1,0 +1,64 @@
+﻿<div class="container-fluid" ng-controller="app_controller">
+
+    <div class="row">
+        <div class="col-sm-3 col-md-4 col-xs-12">
+            <h3>Aplicación</h3>
+            <form>
+                <fieldset>
+                    <div class="form-group-sm">
+                        Version:
+                        <input class="form-control" ng-model="app.Version" placeholder="Versión" autofocus />
+                    </div>
+                    <div class="form-group-sm">
+                        Platform:
+                        <select ng-model="app.Platform"
+                                ng-options="item.Value as item.Text for item in Plataforms"
+                                class="form-control"></select>
+                    </div>
+                    <div class="form-group-sm">
+                        <input class="form-control" type="file" ng-file-select="onFileSelect($files)" multiple ng-disabled="app.Version.length === 0">
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-sm-8 col-md-8 col-xs-12">
+            <h3>Aplicaciones encoladas</h3>
+            <table class="tab-content table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Liberado</th>
+                        <th>Plataform</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr ng-repeat="app in Apps">
+                        <td>{{app.Version}}</td>
+                        <td>{{app.Release| date:'yyyy-MM-dd'}}</td>
+                        <td>{{app.Platform}}</td>
+                        <td>
+                            <a class="btn btn-danger pull-right" ng-click="Remove(app)">
+                                <i class="glyphicon glyphicon-remove"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+@section scripts{
+    <script src="~/App/app-services/plataforms_service.js"></script>
+    <script src="~/App/app-services/app_service.js"></script>
+    <script src="~/App/app-controllers/app-controller.js"></script>
+
+}

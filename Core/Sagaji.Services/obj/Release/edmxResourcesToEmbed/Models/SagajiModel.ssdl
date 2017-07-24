@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MobileAppModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="app_version">
+    <Key>
+      <PropertyRef Name="app_id" />
+      <PropertyRef Name="plataforma_id" />
+    </Key>
+    <Property Name="app_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="plataforma_id" Type="smallint" Nullable="false" />
+    <Property Name="liberacion" Type="datetime" />
+    <Property Name="version" Type="varchar" MaxLength="15" />
+    <Property Name="app" Type="image" />
+  </EntityType>
+  <EntityType Name="AspNetRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserClaims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ClaimType" Type="nvarchar(max)" />
+    <Property Name="ClaimValue" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AspNetUserLogins">
+    <Key>
+      <PropertyRef Name="LoginProvider" />
+      <PropertyRef Name="ProviderKey" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="LoginProvider" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="ProviderKey" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUserRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AspNetUsers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="PasswordHash" Type="nvarchar(max)" />
+    <Property Name="SecurityStamp" Type="nvarchar(max)" />
+    <Property Name="PhoneNumber" Type="nvarchar(max)" />
+    <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+    <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+    <Property Name="LockoutEndDateUtc" Type="datetime" />
+    <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+    <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="catalogo_bd">
+    <Key>
+      <PropertyRef Name="cat_id" />
+    </Key>
+    <Property Name="cat_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="release_date" Type="datetime" />
+    <Property Name="cat_info" Type="image" />
+  </EntityType>
+  <EntityType Name="catalogo_csv">
+    <Key>
+      <PropertyRef Name="cat_id" />
+    </Key>
+    <Property Name="cat_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="register" Type="datetime" />
+    <Property Name="cat_info" Type="image" />
+  </EntityType>
+  <EntityType Name="cliente_info">
+    <Key>
+      <PropertyRef Name="nocliente" />
+    </Key>
+    <Property Name="nocliente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="register" Type="datetime" />
+    <Property Name="count_pedidos" Type="bigint" />
+  </EntityType>
+  <EntityType Name="descarga_clientes">
+    <Key>
+      <PropertyRef Name="app_id" />
+      <PropertyRef Name="plataforma_id" />
+      <PropertyRef Name="nocliente" />
+    </Key>
+    <Property Name="app_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="plataforma_id" Type="smallint" Nullable="false" />
+    <Property Name="nocliente" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="fecha_descarga" Type="datetime" />
+    <Property Name="status" Type="bit" />
+  </EntityType>
+  <EntityType Name="event_status">
+    <Key>
+      <PropertyRef Name="id_status" />
+    </Key>
+    <Property Name="id_status" Type="smallint" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="itempedido">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="codigo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="cvepedido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="150" />
+    <Property Name="precio" Type="money" />
+    <Property Name="linea" Type="varchar" MaxLength="20" />
+    <Property Name="unidad" Type="varchar" MaxLength="20" />
+    <Property Name="cantidad" Type="smallint" />
+    <Property Name="sincronizado" Type="bit" />
+    <Property Name="fecharegistro" Type="datetime" />
+  </EntityType>
+  <EntityType Name="pedidoapp">
+    <Key>
+      <PropertyRef Name="cvepedido" />
+    </Key>
+    <Property Name="cvepedido" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="idcartera" Type="varchar" MaxLength="20" />
+    <Property Name="nocliente" Type="varchar" MaxLength="20" />
+    <Property Name="usuariologin" Type="varchar" MaxLength="20" />
+    <Property Name="domentrega" Type="varchar" MaxLength="2" />
+    <Property Name="observaciones" Type="varchar" MaxLength="255" />
+    <Property Name="subtotal" Type="money" />
+    <Property Name="iva" Type="money" />
+    <Property Name="total" Type="money" />
+    <Property Name="sincronizado" Type="bit" />
+    <Property Name="fecharegistro" Type="datetime" />
+    <Property Name="keppler_folio" Type="bigint" />
+    <Property Name="proceso_folio" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="perfil">
+    <Key>
+      <PropertyRef Name="id_modulo" />
+    </Key>
+    <Property Name="id_modulo" Type="smallint" Nullable="false" />
+    <Property Name="id_role" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="plataforma">
+    <Key>
+      <PropertyRef Name="plataforma_id" />
+    </Key>
+    <Property Name="plataforma_id" Type="smallint" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="role">
+    <Key>
+      <PropertyRef Name="id_role" />
+    </Key>
+    <Property Name="id_role" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="descriptcion" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="system_logger">
+    <Key>
+      <PropertyRef Name="logger_id" />
+    </Key>
+    <Property Name="logger_id" Type="numeric" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_status" Type="smallint" Nullable="false" />
+    <Property Name="login" Type="varchar" MaxLength="30" />
+    <Property Name="cvepedido" Type="varchar" MaxLength="50" />
+    <Property Name="register_event" Type="datetime" />
+    <Property Name="message" Type="text" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="login" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="id_role" Type="varchar" MaxLength="1" />
+    <Property Name="password" Type="int" />
+    <Property Name="fullname" Type="varchar" MaxLength="150" />
+    <Property Name="email" Type="varchar" MaxLength="30" />
+    <Property Name="register" Type="datetime" />
+    <Property Name="photo" Type="image" />
+  </EntityType>
+  <EntityType Name="usuarios_sincronizacion">
+    <Key>
+      <PropertyRef Name="cat_id" />
+      <PropertyRef Name="login" />
+    </Key>
+    <Property Name="cat_id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="login" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="fecha_descarga" Type="datetime" />
+    <Property Name="stauts" Type="bit" />
+  </EntityType>
+  <Association Name="fk_app_vers_app_plata_platafor">
+    <End Role="plataforma" Type="Self.plataforma" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="app_version" Type="Self.app_version" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="plataforma">
+        <PropertyRef Name="plataforma_id" />
+      </Principal>
+      <Dependent Role="app_version">
+        <PropertyRef Name="plataforma_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserClaims">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserLogins">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AspNetUserRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_descarga_app_desca_app_vers">
+    <End Role="app_version" Type="Self.app_version" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="descarga_clientes" Type="Self.descarga_clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="app_version">
+        <PropertyRef Name="app_id" />
+        <PropertyRef Name="plataforma_id" />
+      </Principal>
+      <Dependent Role="descarga_clientes">
+        <PropertyRef Name="app_id" />
+        <PropertyRef Name="plataforma_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_descarga_cliente_d_cliente_">
+    <End Role="cliente_info" Type="Self.cliente_info" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="descarga_clientes" Type="Self.descarga_clientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="cliente_info">
+        <PropertyRef Name="nocliente" />
+      </Principal>
+      <Dependent Role="descarga_clientes">
+        <PropertyRef Name="nocliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_itempedi_pedido_it_pedidoap">
+    <End Role="pedidoapp" Type="Self.pedidoapp" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="itempedido" Type="Self.itempedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pedidoapp">
+        <PropertyRef Name="cvepedido" />
+      </Principal>
+      <Dependent Role="itempedido">
+        <PropertyRef Name="cvepedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_perfil_role_perf_role">
+    <End Role="role" Type="Self.role" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="perfil" Type="Self.perfil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="role">
+        <PropertyRef Name="id_role" />
+      </Principal>
+      <Dependent Role="perfil">
+        <PropertyRef Name="id_role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_system_l_event_s_s_event_st">
+    <End Role="event_status" Type="Self.event_status" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="system_logger" Type="Self.system_logger" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="event_status">
+        <PropertyRef Name="id_status" />
+      </Principal>
+      <Dependent Role="system_logger">
+        <PropertyRef Name="id_status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usuario_usuario_r_role">
+    <End Role="role" Type="Self.role" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="usuario" Type="Self.usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="role">
+        <PropertyRef Name="id_role" />
+      </Principal>
+      <Dependent Role="usuario">
+        <PropertyRef Name="id_role" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usuarios_catalogo__catalogo">
+    <End Role="catalogo_bd" Type="Self.catalogo_bd" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="usuarios_sincronizacion" Type="Self.usuarios_sincronizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="catalogo_bd">
+        <PropertyRef Name="cat_id" />
+      </Principal>
+      <Dependent Role="usuarios_sincronizacion">
+        <PropertyRef Name="cat_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usuarios_usuario_d_usuario">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="usuarios_sincronizacion" Type="Self.usuarios_sincronizacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="login" />
+      </Principal>
+      <Dependent Role="usuarios_sincronizacion">
+        <PropertyRef Name="login" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MobileAppModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="app_version" EntityType="Self.app_version" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="catalogo_bd" EntityType="Self.catalogo_bd" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="catalogo_csv" EntityType="Self.catalogo_csv" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="cliente_info" EntityType="Self.cliente_info" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="descarga_clientes" EntityType="Self.descarga_clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="event_status" EntityType="Self.event_status" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="itempedido" EntityType="Self.itempedido" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="pedidoapp" EntityType="Self.pedidoapp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="perfil" EntityType="Self.perfil" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="plataforma" EntityType="Self.plataforma" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="role" EntityType="Self.role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="system_logger" EntityType="Self.system_logger" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuarios_sincronizacion" EntityType="Self.usuarios_sincronizacion" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="fk_app_vers_app_plata_platafor" Association="Self.fk_app_vers_app_plata_platafor">
+      <End Role="plataforma" EntitySet="plataforma" />
+      <End Role="app_version" EntitySet="app_version" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserLogins" EntitySet="AspNetUserLogins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+      <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+    </AssociationSet>
+    <AssociationSet Name="fk_descarga_app_desca_app_vers" Association="Self.fk_descarga_app_desca_app_vers">
+      <End Role="app_version" EntitySet="app_version" />
+      <End Role="descarga_clientes" EntitySet="descarga_clientes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_descarga_cliente_d_cliente_" Association="Self.fk_descarga_cliente_d_cliente_">
+      <End Role="cliente_info" EntitySet="cliente_info" />
+      <End Role="descarga_clientes" EntitySet="descarga_clientes" />
+    </AssociationSet>
+    <AssociationSet Name="fk_itempedi_pedido_it_pedidoap" Association="Self.fk_itempedi_pedido_it_pedidoap">
+      <End Role="pedidoapp" EntitySet="pedidoapp" />
+      <End Role="itempedido" EntitySet="itempedido" />
+    </AssociationSet>
+    <AssociationSet Name="fk_perfil_role_perf_role" Association="Self.fk_perfil_role_perf_role">
+      <End Role="role" EntitySet="role" />
+      <End Role="perfil" EntitySet="perfil" />
+    </AssociationSet>
+    <AssociationSet Name="fk_system_l_event_s_s_event_st" Association="Self.fk_system_l_event_s_s_event_st">
+      <End Role="event_status" EntitySet="event_status" />
+      <End Role="system_logger" EntitySet="system_logger" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usuario_usuario_r_role" Association="Self.fk_usuario_usuario_r_role">
+      <End Role="role" EntitySet="role" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usuarios_catalogo__catalogo" Association="Self.fk_usuarios_catalogo__catalogo">
+      <End Role="catalogo_bd" EntitySet="catalogo_bd" />
+      <End Role="usuarios_sincronizacion" EntitySet="usuarios_sincronizacion" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usuarios_usuario_d_usuario" Association="Self.fk_usuarios_usuario_d_usuario">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="usuarios_sincronizacion" EntitySet="usuarios_sincronizacion" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

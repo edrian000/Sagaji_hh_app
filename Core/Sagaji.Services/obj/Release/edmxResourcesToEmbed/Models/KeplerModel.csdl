@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KEPLERModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="KDII">
+    <Key>
+      <PropertyRef Name="C1" />
+    </Key>
+    <Property Name="C1" Type="String" MaxLength="18" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="C2" Type="String" MaxLength="200" FixedLength="true" Unicode="false" />
+    <Property Name="C3" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="C4" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="C5" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="C6" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+    <Property Name="C7" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+    <Property Name="C8" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+    <Property Name="C9" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+    <Property Name="C10" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="C11" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="C12" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="C13" Type="Double" />
+    <Property Name="C14" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="C15" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="C16" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="C17" Type="Decimal" Precision="13" Scale="2" />
+    <Property Name="C18" Type="Double" />
+    <Property Name="C19" Type="Double" />
+    <Property Name="C20" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="C21" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C22" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C23" Type="Decimal" Precision="15" Scale="6" />
+    <Property Name="C24" Type="Double" />
+    <Property Name="C25" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+    <Property Name="C26" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+    <Property Name="C27" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C28" Type="String" MaxLength="17" FixedLength="true" Unicode="false" />
+    <Property Name="C29" Type="Double" />
+    <Property Name="C30" Type="String" MaxLength="7" FixedLength="true" Unicode="false" />
+    <Property Name="C31" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="C32" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+    <Property Name="C33" Type="Decimal" Precision="13" Scale="0" />
+    <Property Name="C34" Type="Decimal" Precision="13" Scale="0" />
+    <Property Name="C35" Type="Decimal" Precision="13" Scale="0" />
+    <Property Name="C36" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="C37" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="C38" Type="String" MaxLength="5" FixedLength="true" Unicode="false" />
+    <Property Name="C39" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+    <Property Name="C40" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+    <Property Name="C41" Type="String" MaxLength="60" FixedLength="true" Unicode="false" />
+    <Property Name="C42" Type="Double" />
+    <Property Name="C43" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C44" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="C45" Type="String" MaxLength="20" FixedLength="true" Unicode="false" />
+    <Property Name="C46" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="C47" Type="String" MaxLength="3" FixedLength="true" Unicode="false" />
+    <Property Name="C48" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C49" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C50" Type="DateTime" Precision="3" />
+    <Property Name="C51" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C52" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="C53" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="C54" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="C55" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="C56" Type="DateTime" Precision="3" />
+    <Property Name="C57" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="C58" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="C59" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="C60" Type="DateTime" Precision="3" />
+    <Property Name="C61" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="C62" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="C63" Type="Decimal" Precision="5" Scale="0" />
+    <Property Name="C64" Type="DateTime" Precision="3" />
+    <Property Name="C65" Type="DateTime" Precision="3" />
+    <Property Name="C66" Type="Double" />
+    <Property Name="C67" Type="Decimal" Precision="1" Scale="0" />
+    <Property Name="C68" Type="Decimal" Precision="7" Scale="0" />
+    <Property Name="C69" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C70" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="C71" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C72" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C73" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C74" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C75" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C76" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C77" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C78" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C79" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C80" Type="Decimal" Precision="15" Scale="0" />
+    <Property Name="C81" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C82" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C83" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C84" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C85" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C86" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C87" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C88" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C89" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C90" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C91" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C92" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C93" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C94" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C95" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C96" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C97" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C98" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C99" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C100" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C101" Type="Decimal" Precision="10" Scale="0" />
+    <Property Name="C102" Type="String" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="C103" Type="Decimal" Precision="5" Scale="2" />
+    <Property Name="C104" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C105" Type="Decimal" Precision="6" Scale="4" />
+    <Property Name="C106" Type="Decimal" Precision="6" Scale="4" />
+  </EntityType>
+  <EntityType Name="KDUDENT">
+    <Key>
+      <PropertyRef Name="C1" />
+      <PropertyRef Name="C2" />
+    </Key>
+    <Property Name="C1" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="C2" Type="String" MaxLength="10" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="C3" Type="String" MaxLength="90" FixedLength="true" Unicode="false" />
+    <Property Name="C4" Type="String" MaxLength="90" FixedLength="true" Unicode="false" />
+    <Property Name="C5" Type="String" MaxLength="90" FixedLength="true" Unicode="false" />
+    <Property Name="C6" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="C7" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="C8" Type="String" MaxLength="90" FixedLength="true" Unicode="false" />
+    <Property Name="C9" Type="String" MaxLength="90" FixedLength="true" Unicode="false" />
+    <Property Name="C10" Type="String" MaxLength="244" FixedLength="true" Unicode="false" />
+    <Property Name="C11" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="C12" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="C13" Type="String" MaxLength="30" FixedLength="true" Unicode="false" />
+    <Property Name="C14" Type="String" MaxLength="18" FixedLength="true" Unicode="false" />
+    <Property Name="C15" Type="Decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="KIUSRS">
+    <Key>
+      <PropertyRef Name="C1" />
+    </Key>
+    <Property Name="C1" Type="String" MaxLength="35" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="C2" Type="String" MaxLength="15" FixedLength="true" Unicode="false" />
+    <Property Name="C3" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="C4" Type="String" MaxLength="40" FixedLength="true" Unicode="false" />
+    <Property Name="C5" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="KEPLEREntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="KDII" EntityType="Self.KDII" />
+    <EntitySet Name="KDUDENT" EntityType="Self.KDUDENT" />
+    <EntitySet Name="KIUSRS" EntityType="Self.KIUSRS" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8943cfdaf2fb4574b9669721fa264d72" Name="Diagram1">
+        <EntityTypeShape EntityType="sagaji.servicesModel.app_version" Width="1.5" PointX="5" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sagaji.servicesModel.catalogo_csv" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sagaji.servicesModel.cliente_info" Width="1.5" PointX="5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="sagaji.servicesModel.descarga_clientes" Width="1.5" PointX="7.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sagaji.servicesModel.itempedido" Width="1.5" PointX="10" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="sagaji.servicesModel.pedidoapp" Width="1.5" PointX="7.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="sagaji.servicesModel.plataforma" Width="1.5" PointX="2.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="sagaji.servicesModel.usuario" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="sagaji.servicesModel.usuarios_sincronizacion" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="sagaji.servicesModel.fk_app_vers_app_plata_platafor" ManuallyRouted="false" />
+        <AssociationConnector Association="sagaji.servicesModel.fk_descarga_app_desca_app_vers" ManuallyRouted="false" />
+        <AssociationConnector Association="sagaji.servicesModel.fk_usuarios_catalogo__catalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="sagaji.servicesModel.fk_descarga_cliente_d_cliente_" ManuallyRouted="false" />
+        <AssociationConnector Association="sagaji.servicesModel.fk_itempedi_pedido_it_pedidoap" ManuallyRouted="false" />
+        <AssociationConnector Association="sagaji.servicesModel.fk_usuarios_usuario_d_usuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

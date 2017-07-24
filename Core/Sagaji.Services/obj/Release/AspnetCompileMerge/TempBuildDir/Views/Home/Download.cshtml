@@ -1,0 +1,41 @@
+﻿<div class="container-fluid" ng-controller="app_controller">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-xs-12">
+            <h3>Descarga aplicación</h3>
+            <table class="tab-content table-condensed table-hover">
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Liberado</th>
+                        <th>Plataform</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr ng-repeat="app in Apps">
+                        <td>{{app.Version}}</td>
+                        <td>{{app.Release| date:'yyyy-MM-dd'}}</td>
+                        <td>{{app.Platform}}</td>
+                        <td>
+                            <a class="btn btn-default pull-right" href="/api/App/Download?version={{app.Version}}&platform={{app.Platform}}">
+                                <i class="glyphicon glyphicon-download"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="~/App/app-services/plataforms_service.js"></script>
+    <script src="~/App/app-services/app_service.js"></script>
+    <script src="~/App/app-controllers/app-controller.js"></script>
+
+}

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KEPLERModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'KEPLER.dbo.KUSRSECO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="KUSRSECO">
+    <Key>
+      <PropertyRef Name="C1" />
+    </Key>
+    <Property Name="C1" Type="char" MaxLength="35" Nullable="false" />
+    <Property Name="C2" Type="char" MaxLength="15" />
+    <Property Name="C3" Type="char" MaxLength="40" />
+    <Property Name="C4" Type="char" MaxLength="40" />
+    <Property Name="C5" Type="char" MaxLength="12" />
+    <Property Name="C6" Type="char" MaxLength="45" />
+    <Property Name="C7" Type="char" MaxLength="45" />
+    <Property Name="C8" Type="char" MaxLength="45" />
+    <Property Name="C9" Type="char" MaxLength="15" />
+  </EntityType>
+  <EntityContainer Name="KEPLERModelStoreContainer">
+    <EntitySet Name="KUSRSECO" EntityType="Self.KUSRSECO" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [KUSRSECO].[C1] AS [C1], 
+    [KUSRSECO].[C2] AS [C2], 
+    [KUSRSECO].[C3] AS [C3], 
+    [KUSRSECO].[C4] AS [C4], 
+    [KUSRSECO].[C5] AS [C5], 
+    [KUSRSECO].[C6] AS [C6], 
+    [KUSRSECO].[C7] AS [C7], 
+    [KUSRSECO].[C8] AS [C8], 
+    [KUSRSECO].[C9] AS [C9]
+    FROM [dbo].[KUSRSECO] AS [KUSRSECO]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
